@@ -463,20 +463,21 @@ input[type="radio"] {
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
- * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ * 2. Reset box-sizing to border-box.
  */
 /* line 481, ../sass/global.base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 492, ../sass/global.base.scss */
+/* line 493, ../sass/global.base.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -486,7 +487,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 502, ../sass/global.base.scss */
+/* line 503, ../sass/global.base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -497,7 +498,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 513, ../sass/global.base.scss */
+/* line 514, ../sass/global.base.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -509,7 +510,7 @@ textarea {
 /*
  * 1. Remove most spacing between table cells
  */
-/* line 526, ../sass/global.base.scss */
+/* line 527, ../sass/global.base.scss */
 table {
   border: 1px solid;
   border-spacing: 0;
@@ -526,7 +527,7 @@ table {
  * see Extensions > Modify Output > Design
  * $gutter-width is set in _base.scss
  */
-/* line 544, ../sass/global.base.scss */
+/* line 545, ../sass/global.base.scss */
 #main-content,
 .block-inner,
 .pane-inner,
@@ -547,7 +548,7 @@ div.messages,
  * Panel pages need negative margin equal to the gutter width applied to #content,
  * this is taken care of in theme settings as per above for normal gutters
  */
-/* line 564, ../sass/global.base.scss */
+/* line 565, ../sass/global.base.scss */
 #content .panel-display,
 #content .panel-flexible {
   margin-left: -10px;
@@ -564,14 +565,14 @@ div.messages,
  *   the "dissappering images" bug in IE8.
  * - Mapping services such as Google Maps may break also, see below for fixes.
  */
-/* line 583, ../sass/global.base.scss */
+/* line 584, ../sass/global.base.scss */
 img {
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
 
 /* Ethan Marcotte - http://front.ie/l8rJaA */
-/* line 590, ../sass/global.base.scss */
+/* line 591, ../sass/global.base.scss */
 img,
 embed,
 object,
@@ -580,7 +581,7 @@ video {
 }
 
 /* Disable flexiblity for IE8 and below */
-/* line 599, ../sass/global.base.scss */
+/* line 600, ../sass/global.base.scss */
 .lt-ie9 img,
 .lt-ie9 object,
 .lt-ie9 embed,
@@ -589,7 +590,7 @@ video {
 }
 
 /* Override max-width 100% for map displays */
-/* line 608, ../sass/global.base.scss */
+/* line 609, ../sass/global.base.scss */
 #map img,
 .gmap img,
 .view-gmap img,
@@ -607,7 +608,7 @@ video {
     Misc helpers, Accessibility classes etc
    ========================================================================== */
 /* Prevent overflowing content */
-/* line 627, ../sass/global.base.scss */
+/* line 628, ../sass/global.base.scss */
 header[role=banner],
 .content-inner,
 .nav,
@@ -629,7 +630,7 @@ header[role=banner],
  * Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
  * Additional helpers from http://html5boilerplate.com/docs/css/
  */
-/* line 650, ../sass/global.base.scss */
+/* line 651, ../sass/global.base.scss */
 .ir {
   /* Kellum Method */
   display: block !important;
@@ -649,7 +650,7 @@ header[role=banner],
 }
 
 /* More robust element-invisible and element-focuable classes */
-/* line 670, ../sass/global.base.scss */
+/* line 671, ../sass/global.base.scss */
 .element-invisible {
   border: 0;
   clip: rect(1px 1px 1px 1px);
@@ -662,7 +663,7 @@ header[role=banner],
   width: 1px;
 }
 
-/* line 682, ../sass/global.base.scss */
+/* line 683, ../sass/global.base.scss */
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {
   clip: auto;
@@ -673,7 +674,7 @@ header[role=banner],
 }
 
 /* Shift content offscreen, can be usefull when you reall need to do this */
-/* line 693, ../sass/global.base.scss */
+/* line 694, ../sass/global.base.scss */
 .offscreen {
   position: absolute;
   top: -99999em;
@@ -684,7 +685,7 @@ header[role=banner],
 }
 
 /* Hide content from all users */
-/* line 704, ../sass/global.base.scss */
+/* line 705, ../sass/global.base.scss */
 .element-hidden {
   display: none;
 }

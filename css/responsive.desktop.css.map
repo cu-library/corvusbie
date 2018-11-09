@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAIA;;;;;;;;GAQG",
+"sources": ["../sass/responsive.desktop.scss"],
 "names": [],
 "file": "responsive.desktop.css"
 }
