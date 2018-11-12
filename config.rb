@@ -55,3 +55,9 @@ line_comments = (environment == :development) ? true : false
 # Sourcemaps
 # -----------------------------------------------------------------------------
 sourcemap = (environment == :development) ? true : false
+
+# Drush cc all on saving new stylesheet
+# -----------------------------------------------------------------------------
+on_stylesheet_saved do |filename|
+	system('drush cc all')
+end
