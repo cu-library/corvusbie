@@ -129,7 +129,6 @@
   features[] = comment_user_verification
   features[] = favicon
   features[] = main_menu
-  features[] = secondary_menu
 
   ; Default settings for site features
   settings[toggle_logo]                      = 1
@@ -140,8 +139,6 @@
   settings[toggle_comment_user_verification] = 1
   settings[toggle_favicon]                   = 1
   settings[toggle_main_menu]                 = 1
-  settings[toggle_secondary_menu]            = 1
-
 
 ;----------// Theme Settings
 
@@ -153,7 +150,7 @@
   settings[bigscreen_page_width]     = 100
   settings[bigscreen_sidebar_first]  = 25
   settings[bigscreen_sidebar_second] = 25
-  settings[bigscreen_set_max_width]  = 1
+  settings[bigscreen_set_max_width]  = 0
   settings[bigscreen_max_width]      = 1140
   settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
 
@@ -286,7 +283,7 @@
 
 
   ; Enable extensions
-  settings[enable_extensions]          = 0
+  settings[enable_extensions]          = 1
   settings[enable_font_settings]       = 0
   settings[enable_heading_settings]    = 0
   settings[enable_image_settings]      = 0
@@ -296,6 +293,7 @@
   settings[enable_context_regions]     = 0
   settings[enable_float_region_blocks] = 0
   settings[enable_markup_overides]     = 0
+  settings[enable_menu_toggle]     = 1
 
 
   ; Font type
@@ -437,7 +435,7 @@
   settings[rel_author] = 0
 
 
-  ; Mobile metu toggle
+  ; Mobile menu toggle
   settings[menu_toggle_tablet_portrait]  = 1
   settings[menu_toggle_tablet_landscape] = 0
   settings[menu_toggle_main_menu]        = 1

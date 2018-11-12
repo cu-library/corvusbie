@@ -130,13 +130,17 @@
                 <!-- start: Site name and Slogan -->
                 <div<?php print $hgroup_attributes; ?>>
 
-                  <?php if ($site_name): ?>
-                    <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-                  <?php endif; ?>
+                  <a title="Home Page" href="<?php print $front_page; ?>">
 
-                  <?php if ($site_slogan): ?>
-                    <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-                  <?php endif; ?>
+                    <?php if ($site_slogan): ?>
+                      <span<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></span>
+                    <?php endif; ?>
+
+                    <?php if ($site_name): ?>
+                      <h1 aria-label="<?php print $site_slogan; ?> <?php print $site_name_unlinked; ?>"<?php print $site_name_attributes; ?>>  <?php print $site_name_unlinked; ?></h1>
+                    <?php endif; ?>
+
+                  </a>
 
                 </div><!-- /end #name-and-slogan -->
               <?php endif; ?>
@@ -145,21 +149,21 @@
             </div><!-- /end #branding -->
           <?php endif; ?>
 
+          <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
+            <div id="nav-wrapper">
+              <div class="container clearfix">
+                <?php print render($page['menu_bar']); ?>
+                <?php if ($primary_navigation): print $primary_navigation; endif; ?>
+                <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
+              </div>
+            </div>
+          <?php endif; ?>
+
         <?php print render($page['header']); ?>
 
         </header>
       </div>
     </div>
-
-    <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
-      <div id="nav-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['menu_bar']); ?>
-          <?php if ($primary_navigation): print $primary_navigation; endif; ?>
-          <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
-        </div>
-      </div>
-    <?php endif; ?>
 
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb-wrapper">
@@ -199,7 +203,7 @@
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
 
-                <?php if ($title): ?>
+                <?php if ($title && !$is_front): ?>
                   <h1 id="page-title"><?php print $title; ?></h1>
                 <?php endif; ?>
 

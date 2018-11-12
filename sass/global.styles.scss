@@ -44,7 +44,7 @@ html {
 
 body {
   font-family: $gotham-montserrat-sans-serif; // Set from _custom.scss font variables
-  font-size: 87.5%;
+  font-size: 100%;
 }
 
 
@@ -168,7 +168,11 @@ var {
 /*
  * Wraps all header elements - branding and .region-header
  */
-#header {}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
 
 
 /*
@@ -237,7 +241,9 @@ var {
  * Wraps the nav elements
  */
 #nav-wrapper {
-  .container {}
+  flex: 1 1 auto;
+  .container {
+  }
 }
 
 
@@ -285,9 +291,6 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
-  /* Debug styles, is this working? */
-  background: $debug;
-
   .container {}
 }
 
@@ -299,17 +302,24 @@ var {
 /*
  * Wraps all the branding elements, logo, name and slogan
  */
-#branding {}
+#branding {
+  display: flex;
+  align-items: center;
+  border-right: $carleton_light_border;
+  padding: 0px 10px;
+}
 
 
 /*
  * Logo
  */
 #logo {
-  padding: 10px 0;
+  padding: 10px 10px 10px 0px;
+  flex: 0 0 auto;
 
   img {
     vertical-align: bottom;
+    height: 50px;
   }
 }
 
@@ -317,7 +327,24 @@ var {
 /*
  * Wrapper for the site name and slogan
  */
-#name-and-slogan {}
+#name-and-slogan {
+  a {
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $carleton_red;
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+  }
+}
 
 
 /*
@@ -325,19 +352,9 @@ var {
  */
 #site-name {
   margin: 0;
-
-  a {
-
-    &:link,
-    &:visited {
-      text-decoration: none;
-    }
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 
@@ -346,6 +363,8 @@ var {
  */
 #site-slogan {
   margin: 0;
+  line-height: 1;
+  font-size: 0.85rem;
 }
 
 
@@ -558,6 +577,7 @@ a {
 .nav {
   clear: both;
   margin: 10px 0;
+  font-size: 1.3rem;
 
   ul,
   ul.menu {
@@ -578,12 +598,21 @@ a {
   ul.menu li a {
     display: block;
     white-space: nowrap;
-    padding: 0 10px;
+    padding: 0 20px;
 
-    &:visited {}
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
 
     &:hover,
-    &:focus {}
+    &:focus {
+      text-decoration: none;
+      color: $carleton_red;
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
   }
 
   .block {
@@ -1970,5 +1999,27 @@ tr.error {
     margin: 0 20px 20px 0;
     min-height: 260px;
     width: auto;
+  }
+}
+
+/* =============================================================================
+ *   Frontpage - First Block
+ * ========================================================================== */
+
+body.front {
+  #main-content {
+    margin: 0px;
+    div.block.first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 400px;
+      background-image: linear-gradient(
+          rgba(24, 49, 64, 0.88),
+          rgba(37, 111, 154, 0.85)
+        ), url(images/bigsearch.jpg);
+      background-position: 50%;
+      background-size: 100%;
+    }
   }
 }

@@ -12,11 +12,6 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
-/* Increase the default font size on small touch devices */
-body {
-  font-size: 100%;
-}
-
 /* =============================================================================
  *   Mobile Menu Toggle
  *   See your theme settings extensions for how to enable the menu toggle.
@@ -27,7 +22,7 @@ body {
   /* The toggle link */
   h2 {
     margin-bottom: 5px;
-    
+
     a {
       background: #eee;
       border: 2px solid #ccc;
