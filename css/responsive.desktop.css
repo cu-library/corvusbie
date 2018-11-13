@@ -7,5 +7,9 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
+/* line 15, ../sass/responsive.desktop.scss */
+#branding {
+  border-right: 1px solid #eee;
+}
 
 /*# sourceMappingURL=responsive.desktop.css.map */

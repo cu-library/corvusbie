@@ -169,9 +169,11 @@ var {
  * Wraps all header elements - branding and .region-header
  */
 #header {
+  height: $header_height;
   display: flex;
   align-items: center;
   justify-content: left;
+  border-top: $carleton_red_border;
 }
 
 
@@ -305,8 +307,9 @@ var {
 #branding {
   display: flex;
   align-items: center;
-  border-right: $carleton_light_border;
-  padding: 0px 10px;
+  padding-right: 15px;
+  margin-right: 0px;
+  height: $header_height;
 }
 
 
@@ -314,12 +317,9 @@ var {
  * Logo
  */
 #logo {
-  padding: 10px 10px 10px 0px;
-  flex: 0 0 auto;
-
+  padding-right: 10px;
   img {
-    vertical-align: bottom;
-    height: 50px;
+    height: 40px;
   }
 }
 
@@ -329,13 +329,13 @@ var {
  */
 #name-and-slogan {
   a {
-
+    display: flex;
+    flex-direction: column;
     &:link,
     &:visited {
       text-decoration: none;
       color: black;
     }
-
     &:hover,
     &:focus {
       text-decoration: none;
@@ -352,9 +352,10 @@ var {
  */
 #site-name {
   margin: 0;
-  line-height: 0.9;
+  line-height: 1;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 
@@ -364,7 +365,7 @@ var {
 #site-slogan {
   margin: 0;
   line-height: 1;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 
@@ -574,10 +575,39 @@ a {
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
 
+#primary-menu-bar {
+  font-size: 1.1rem;
+
+  nav {
+    margin: 0px;
+
+    li a,
+    ul.menu li a {
+      display: block;
+      white-space: nowrap;
+      padding: 0 15px;
+
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: black;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $carleton_red;
+        transition-property: color;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+
+
 .nav {
   clear: both;
   margin: 10px 0;
-  font-size: 1.3rem;
 
   ul,
   ul.menu {
@@ -598,7 +628,7 @@ a {
   ul.menu li a {
     display: block;
     white-space: nowrap;
-    padding: 0 20px;
+    padding: 0 15px;
 
     &:link,
     &:visited {
@@ -2015,8 +2045,8 @@ body.front {
       align-items: center;
       min-height: 400px;
       background-image: linear-gradient(
-          rgba(24, 49, 64, 0.88),
-          rgba(37, 111, 154, 0.85)
+          rgba(51, 10, 10, 0.73),
+          rgba(51, 10, 10, 0.73)
         ), url(images/bigsearch.jpg);
       background-position: 50%;
       background-size: 100%;
