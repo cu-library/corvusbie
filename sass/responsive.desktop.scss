@@ -15,3 +15,64 @@
 #branding{
   border-right: $carleton_light_border;
 }
+
+body.front {
+  #main-content {
+    div.block.first {
+
+      .row {
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #searchcontainer {
+
+          flex: 1 1 auto;
+
+          max-width: 900px;
+
+          form {
+
+            input[type='text'] {
+
+            }
+
+            input[type='submit'] {
+
+            }
+          }
+
+          ul {
+
+
+            li{
+              a {
+              }
+            }
+          }
+        }
+
+        #quicklinks {
+
+          max-width: 200px;
+
+          border-radius: 3px;
+          margin: 20px;
+
+          h2 {
+          }
+          ul {
+
+            li {
+
+              a {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

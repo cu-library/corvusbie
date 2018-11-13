@@ -12,4 +12,22 @@
   border-right: 1px solid #eee;
 }
 
+/* line 23, ../sass/responsive.desktop.scss */
+body.front #main-content div.block.first .row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 29, ../sass/responsive.desktop.scss */
+body.front #main-content div.block.first .row #searchcontainer {
+  flex: 1 1 auto;
+  max-width: 900px;
+}
+/* line 56, ../sass/responsive.desktop.scss */
+body.front #main-content div.block.first .row #quicklinks {
+  max-width: 200px;
+  border-radius: 3px;
+  margin: 20px;
+}
+
 /*# sourceMappingURL=responsive.desktop.css.map */

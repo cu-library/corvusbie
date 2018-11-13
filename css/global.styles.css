@@ -39,7 +39,7 @@ html {
 /* line 45, ../sass/global.styles.scss */
 body {
   font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", Montserrat, "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 100%;
+  font-size: 95%;
 }
 
 /* =============================================================================
@@ -1350,7 +1350,7 @@ div.messages ul {
 }
 
 /* =============================================================================
- *   Frontpage - First Block
+ *   Frontpage
  * ========================================================================== */
 /* line 2040, ../sass/global.styles.scss */
 body.front #main-content {
@@ -1358,13 +1358,89 @@ body.front #main-content {
 }
 /* line 2042, ../sass/global.styles.scss */
 body.front #main-content div.block.first {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
+  margin: 0px;
   background-image: linear-gradient(rgba(51, 10, 10, 0.73), rgba(51, 10, 10, 0.73)), url(images/bigsearch.jpg);
   background-position: 50%;
   background-size: 100%;
+}
+/* line 2051, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 300px;
+}
+/* line 2058, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 560px;
+  min-height: 300px;
+  padding: 0px 50px;
+}
+/* line 2066, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer form {
+  display: flex;
+  width: 100%;
+}
+/* line 2069, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer form input[type='text'] {
+  flex: 1 1 auto;
+  font-size: 1.3rem;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  padding: 20px;
+}
+/* line 2077, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer form input[type='submit'] {
+  flex: 0 1 auto;
+  font-size: 1.1rem;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  padding: 10px 20px;
+}
+/* line 2086, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 0px;
+}
+/* line 2093, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer ul li {
+  list-style: none;
+  padding: 0px 10px;
+}
+/* line 2096, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #searchcontainer ul li a {
+  color: white;
+}
+/* line 2103, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #quicklinks {
+  background: lightgrey;
+  padding: 20px;
+}
+/* line 2107, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #quicklinks h2 {
+  text-align: center;
+  margin: 0px 0px 0px 5px;
+}
+/* line 2111, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #quicklinks ul {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 2114, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #quicklinks ul li {
+  list-style: none;
+}
+/* line 2116, ../sass/global.styles.scss */
+body.front #main-content div.block.first .row #quicklinks ul li a {
+  font-size: 1rem;
+  color: black;
 }
 
 /*# sourceMappingURL=global.styles.css.map */

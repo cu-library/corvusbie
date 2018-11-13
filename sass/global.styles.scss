@@ -44,7 +44,7 @@ html {
 
 body {
   font-family: $gotham-montserrat-sans-serif; // Set from _custom.scss font variables
-  font-size: 100%;
+  font-size: 95%;
 }
 
 
@@ -2033,23 +2033,97 @@ tr.error {
 }
 
 /* =============================================================================
- *   Frontpage - First Block
+ *   Frontpage
  * ========================================================================== */
 
 body.front {
   #main-content {
     margin: 0px;
     div.block.first {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 400px;
+      margin: 0px;
       background-image: linear-gradient(
           rgba(51, 10, 10, 0.73),
           rgba(51, 10, 10, 0.73)
         ), url(images/bigsearch.jpg);
       background-position: 50%;
       background-size: 100%;
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-height: 300px;
+
+        #searchcontainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-width: 560px;
+          min-height: 300px;
+          padding: 0px 50px;
+
+          form {
+            display: flex;
+            width: 100%;
+            input[type='text'] {
+              flex: 1 1 auto;
+              font-size: 1.3rem;
+              border-radius: 10px 0px 0px 10px;
+              border: none;
+              padding: 20px;
+            }
+
+            input[type='submit'] {
+              flex: 0 1 auto;
+              font-size: 1.1rem;
+              border-radius: 0px 10px 10px 0px;
+              border: none;
+              padding: 10px 20px;
+            }
+          }
+
+          ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 0px;
+
+            li{
+              list-style: none;
+              padding: 0px 10px;
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+
+        #quicklinks {
+          background: lightgrey;
+          padding: 20px;
+
+          h2 {
+            text-align: center;
+            margin: 0px 0px 0px 5px;
+          }
+          ul {
+            padding: 0px;
+            margin: 0px;
+            li {
+              list-style: none;
+              a {
+                font-size: 1rem;
+                color: black;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
+
+
+
