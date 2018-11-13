@@ -29,5 +29,23 @@ body.front #main-content div.block.first .row #quicklinks {
   border-radius: 3px;
   margin: 20px;
 }
+/* line 78, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-3 .row {
+  justify-content: space-around;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+}
+/* line 82, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-3 .row div.card {
+  flex: 1 1 auto;
+  border-bottom: none;
+  border-left: 1px solid #eee;
+  flex-direction: column;
+}
+/* line 87, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-3 .row div.card div.icon-header {
+  flex-direction: row;
+  min-height: 90px;
+}
 
 /*# sourceMappingURL=responsive.desktop.css.map */
