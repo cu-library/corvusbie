@@ -1487,11 +1487,15 @@ body.front #main-content div.block-count-3 .row #services {
   background: #eee;
 }
 /* line 2162, ../sass/global.styles.scss */
+body.front #main-content div.block-count-3 .row #inthebuilding {
+  background: #fff;
+}
+/* line 2166, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card {
   display: flex;
   padding: 10px;
 }
-/* line 2166, ../sass/global.styles.scss */
+/* line 2170, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header {
   flex: 1 1 0;
   display: flex;
@@ -1499,46 +1503,46 @@ body.front #main-content div.block-count-3 .row div.card div.icon-header {
   justify-content: center;
   align-items: center;
 }
-/* line 2173, ../sass/global.styles.scss */
+/* line 2177, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header h2 {
   padding: 10px;
   text-align: center;
   margin: 0px;
   max-width: 150px;
 }
-/* line 2180, ../sass/global.styles.scss */
+/* line 2184, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header img {
   width: 50px;
 }
-/* line 2186, ../sass/global.styles.scss */
+/* line 2190, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more {
   flex: 1 1 0;
   padding-left: 10px;
 }
-/* line 2190, ../sass/global.styles.scss */
+/* line 2194, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul {
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
-/* line 2193, ../sass/global.styles.scss */
+/* line 2197, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul li {
   list-style: none;
 }
-/* line 2201, ../sass/global.styles.scss */
+/* line 2205, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 {
   margin: 0px;
 }
-/* line 2203, ../sass/global.styles.scss */
+/* line 2207, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row {
   display: flex;
   flex-direction: column;
 }
-/* line 2206, ../sass/global.styles.scss */
+/* line 2210, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature {
   flex: 1 1 0;
   padding: 10px;
 }
-/* line 2210, ../sass/global.styles.scss */
+/* line 2214, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news {
   flex: 1 1 0;
 }

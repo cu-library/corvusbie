@@ -79,7 +79,7 @@ body.front {
         justify-content: center;
         flex-direction: row;
         border-bottom: $carleton_light_border;
-        background: linear-gradient(to right, #eeeeee 0%,#eeeeee 30%,#ffffff 31%);
+        background: linear-gradient(to right, $carleton_grey 0%,$carleton_grey 50%,#ffffff 51%);
         div.card {
           flex-direction: column;
           min-width: 250px;

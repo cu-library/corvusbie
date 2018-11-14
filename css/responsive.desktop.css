@@ -34,7 +34,7 @@ body.front #main-content div.block-count-3 .row {
   justify-content: center;
   flex-direction: row;
   border-bottom: 1px solid #eee;
-  background: linear-gradient(to right, #eeeeee 0%, #eeeeee 30%, #ffffff 31%);
+  background: linear-gradient(to right, #eeeeee 0%, #eeeeee 50%, #ffffff 51%);
 }
 /* line 83, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-3 .row div.card {
