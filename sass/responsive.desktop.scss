@@ -91,5 +91,17 @@ body.front {
         }
       }
     }
+    div.block-count-4 {
+      .row {
+        flex-direction: row;
+        #feature{
+          flex: 1 1 0;
+          padding: 10px;
+        }
+        #news {
+          flex: 1 1 0;
+        }
+      }
+    }
   }
 }

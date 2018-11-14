@@ -47,5 +47,18 @@ body.front #main-content div.block-count-3 .row div.card div.icon-header {
   flex-direction: row;
   min-height: 90px;
 }
+/* line 95, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-4 .row {
+  flex-direction: row;
+}
+/* line 97, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-4 .row #feature {
+  flex: 1 1 0;
+  padding: 10px;
+}
+/* line 101, ../sass/responsive.desktop.scss */
+body.front #main-content div.block-count-4 .row #news {
+  flex: 1 1 0;
+}
 
 /*# sourceMappingURL=responsive.desktop.css.map */

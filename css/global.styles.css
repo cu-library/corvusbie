@@ -1359,7 +1359,7 @@ body.front #main-content {
 /* line 2042, ../sass/global.styles.scss */
 body.front #main-content div.block.first {
   margin: 0px;
-  background-image: linear-gradient(rgba(51, 10, 10, 0.73), rgba(51, 10, 10, 0.73)), url(images/bigsearch.jpg);
+  background-image: linear-gradient(rgba(160, 7, 7, 0.73), rgba(160, 7, 7, 0.73)), url(images/bigsearch.jpg);
   background-position: 50%;
   background-size: 100%;
 }
@@ -1452,18 +1452,21 @@ body.front #main-content div.block-count-2 .row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
   min-height: 70px;
 }
-/* line 2134, ../sass/global.styles.scss */
+/* line 2133, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row .button {
   padding: 10px;
   border-radius: 3px;
   background: lightblue;
 }
-/* line 2138, ../sass/global.styles.scss */
+/* line 2137, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row .button a {
   color: black;
+}
+/* line 2143, ../sass/global.styles.scss */
+body.front #main-content div.block-count-3 {
+  margin: 0px;
 }
 /* line 2145, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row {
@@ -1510,6 +1513,24 @@ body.front #main-content div.block-count-3 .row div.card div.list-and-more ul {
 /* line 2183, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul li {
   list-style: none;
+}
+/* line 2191, ../sass/global.styles.scss */
+body.front #main-content div.block-count-4 {
+  margin: 0px;
+}
+/* line 2193, ../sass/global.styles.scss */
+body.front #main-content div.block-count-4 .row {
+  display: flex;
+  flex-direction: column;
+}
+/* line 2196, ../sass/global.styles.scss */
+body.front #main-content div.block-count-4 .row #feature {
+  flex: 1 1 0;
+  padding: 10px;
+}
+/* line 2200, ../sass/global.styles.scss */
+body.front #main-content div.block-count-4 .row #news {
+  flex: 1 1 0;
 }
 
 /*# sourceMappingURL=global.styles.css.map */

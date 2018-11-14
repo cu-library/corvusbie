@@ -29,7 +29,7 @@ function corvusbie_preprocess_html(&$vars) {
   global $theme_key;
 
   // Add the external CSS for Montserrat
-  drupal_add_css('http://fonts.googleapis.com/css?family=Montserrat', array('type' => 'external'));
+  drupal_add_css('https://fonts.googleapis.com/css?family=Montserrat', array('type' => 'external'));
 
 }
 

@@ -2042,8 +2042,8 @@ body.front {
     div.block.first {
       margin: 0px;
       background-image: linear-gradient(
-          rgba(51, 10, 10, 0.73),
-          rgba(51, 10, 10, 0.73)
+          rgba(160, 7, 7, 0.73),
+          rgba(160, 7, 7, 0.73)
         ), url(images/bigsearch.jpg);
       background-position: 50%;
       background-size: 100%;
@@ -2129,7 +2129,6 @@ body.front {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 100%;
         min-height: 70px;
         .button{
           padding: 10px;
@@ -2142,6 +2141,7 @@ body.front {
       }
     }
     div.block-count-3 {
+      margin: 0px;
       .row{
         display: flex;
         flex-direction: column;
@@ -2185,6 +2185,20 @@ body.front {
               }
             }
           }
+        }
+      }
+    }
+    div.block-count-4 {
+      margin: 0px;
+      .row {
+        display: flex;
+        flex-direction: column;
+        #feature{
+          flex: 1 1 0;
+          padding: 10px;
+        }
+        #news {
+          flex: 1 1 0;
         }
       }
     }
