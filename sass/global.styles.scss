@@ -2147,11 +2147,21 @@ body.front {
         display: flex;
         flex-direction: column;
 
+        #find {
+          background: $carleton_grey;
+        }
+
+        #research {
+          background: #fff;
+        }
+
+        #services {
+          background: $carleton_grey;
+        }
+
         div.card {
           display: flex;
-          margin: 10px;
           padding: 10px;
-          border-bottom: $carleton_light_border;
 
           div.icon-header {
             flex: 1 1 0;
@@ -2159,7 +2169,6 @@ body.front {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-width: 200px;
 
             h2 {
               padding: 10px;

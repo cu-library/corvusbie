@@ -31,32 +31,31 @@ body.front #main-content div.block.first .row #quicklinks {
 }
 /* line 78, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-3 .row {
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   border-bottom: 1px solid #eee;
+  background: linear-gradient(to right, #eeeeee 0%, #eeeeee 30%, #ffffff 31%);
 }
-/* line 82, ../sass/responsive.desktop.scss */
+/* line 83, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-3 .row div.card {
-  flex: 1 1 auto;
-  border-bottom: none;
-  border-left: 1px solid #eee;
   flex-direction: column;
+  min-width: 250px;
 }
-/* line 87, ../sass/responsive.desktop.scss */
+/* line 86, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header {
   flex-direction: row;
   min-height: 90px;
 }
-/* line 95, ../sass/responsive.desktop.scss */
+/* line 94, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-4 .row {
   flex-direction: row;
 }
-/* line 97, ../sass/responsive.desktop.scss */
+/* line 96, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-4 .row #feature {
   flex: 1 1 0;
   padding: 10px;
 }
-/* line 101, ../sass/responsive.desktop.scss */
+/* line 100, ../sass/responsive.desktop.scss */
 body.front #main-content div.block-count-4 .row #news {
   flex: 1 1 0;
 }

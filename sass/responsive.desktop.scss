@@ -76,14 +76,13 @@ body.front {
     }
     div.block-count-3 {
       .row{
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         border-bottom: $carleton_light_border;
+        background: linear-gradient(to right, #eeeeee 0%,#eeeeee 30%,#ffffff 31%);
         div.card {
-          flex: 1 1 auto;
-          border-bottom: none;
-          border-left: $carleton_light_border;
           flex-direction: column;
+          min-width: 250px;
           div.icon-header {
             flex-direction: row;
             min-height: 90px;

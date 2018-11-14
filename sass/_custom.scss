@@ -43,7 +43,8 @@ $primary_task_hover:  $light;
 $primary_task_active: $page;
 
 $carleton_red: #cf112d;
-$carleton_light_border: 1px solid #eee;
+$carleton_grey: #eee;
+$carleton_light_border: 1px solid $carleton_grey;
 $header_height: 73px;
 $carleton_red_border: 3px solid $carleton_red;
 

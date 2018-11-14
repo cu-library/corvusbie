@@ -1279,7 +1279,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 191, ../sass/_custom.scss */
+/* line 192, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -1475,61 +1475,70 @@ body.front #main-content div.block-count-3 .row {
   flex-direction: column;
 }
 /* line 2150, ../sass/global.styles.scss */
+body.front #main-content div.block-count-3 .row #find {
+  background: #eee;
+}
+/* line 2154, ../sass/global.styles.scss */
+body.front #main-content div.block-count-3 .row #research {
+  background: #fff;
+}
+/* line 2158, ../sass/global.styles.scss */
+body.front #main-content div.block-count-3 .row #services {
+  background: #eee;
+}
+/* line 2162, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card {
   display: flex;
-  margin: 10px;
   padding: 10px;
-  border-bottom: 1px solid #eee;
 }
-/* line 2156, ../sass/global.styles.scss */
+/* line 2166, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 200px;
 }
-/* line 2164, ../sass/global.styles.scss */
+/* line 2173, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header h2 {
   padding: 10px;
   text-align: center;
   margin: 0px;
   max-width: 150px;
 }
-/* line 2171, ../sass/global.styles.scss */
+/* line 2180, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header img {
   width: 50px;
 }
-/* line 2177, ../sass/global.styles.scss */
+/* line 2186, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more {
   flex: 1 1 0;
   padding-left: 10px;
 }
-/* line 2181, ../sass/global.styles.scss */
+/* line 2190, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul {
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
-/* line 2184, ../sass/global.styles.scss */
+/* line 2193, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul li {
   list-style: none;
 }
-/* line 2192, ../sass/global.styles.scss */
+/* line 2201, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 {
   margin: 0px;
 }
-/* line 2194, ../sass/global.styles.scss */
+/* line 2203, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row {
   display: flex;
   flex-direction: column;
 }
-/* line 2197, ../sass/global.styles.scss */
+/* line 2206, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature {
   flex: 1 1 0;
   padding: 10px;
 }
-/* line 2201, ../sass/global.styles.scss */
+/* line 2210, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news {
   flex: 1 1 0;
 }
