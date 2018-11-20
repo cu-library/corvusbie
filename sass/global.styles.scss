@@ -207,7 +207,56 @@ var {
 /*
  * Footer wrapper
  */
-#footer {}
+#footer {
+  background: rgb(25, 25, 25);
+  color: #DEDFD7;
+
+  #footer-one-content {
+    padding: 40px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(90, 89, 85);
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-top: 25px;
+      li {
+        padding: 5px;
+        a {
+          color: #DEDFD7;
+          border-bottom: 1px solid #999;
+        }
+      }
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+  #footer-two {
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 24px;
+    }
+    .boldr {
+      color: white;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+    a {
+      color: white;
+    }
+  }
+}
+
+#block-block-6 {
+  margin: 0px;
+}
 
 
 /*
@@ -581,6 +630,19 @@ a {
 
   nav {
     margin: 0px;
+
+    ul{
+      li:nth-last-child(2),
+      li:last-child {
+        float: right;
+      }
+    }
+
+    li.last a {
+      background: #33d2b2;
+      padding: 10px 15px;
+      border-radius: 3px;
+    }
 
     li a,
     ul.menu li a {
@@ -2039,6 +2101,11 @@ tr.error {
 
 body.front {
   #main-content {
+
+    #node-1, .feed-icon {
+      display: none;
+    }
+
     margin: 0px;
     div.block.first {
       margin: 0px;
@@ -2131,8 +2198,21 @@ body.front {
         align-items: center;
         justify-content: space-evenly;
         min-height: 70px;
+
+        #hours{
+          display: flex;
+          align-items: center;
+          .clock {
+            height: 20px;
+            width: 20px;
+            padding-right: 10px;
+            stroke-width: 10px;
+            fill: #fff;
+            stroke: #007b4b;
+          }
+        }
         .button{
-          padding: 10px;
+          padding: 10px 15px;
           border-radius: 3px;
           background: lightblue;
           a {
@@ -2187,9 +2267,21 @@ body.front {
 
           }
 
+          div.separator {
+            background: $carleton_red;
+            height: 3px;
+            width: 50px;
+            margin: 0 auto;
+          }
+
           div.list-and-more {
+
             flex: 1 1 0;
-            padding-left: 10px;
+            padding: 20px;
+
+            a {
+              color: black;
+            }
 
             ul {
               padding: 0px;
@@ -2197,6 +2289,10 @@ body.front {
               li {
                 list-style: none;
               }
+            }
+
+            a.view-more {
+              color: $carleton_red;
             }
           }
         }
@@ -2210,9 +2306,57 @@ body.front {
         #feature{
           flex: 1 1 0;
           padding: 10px;
+          position: relative;
+          #featured {
+            position: absolute;
+            top: 30px;
+            background: $carleton_red;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+          }
+          #newsdesc {
+            position: absolute;
+            bottom: 90px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 30px;
+            left: 20px;
+          }
+          #learnmore {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            a {
+              color: $carleton_red;
+              background: #fff;
+              border-radius: 3px;
+              padding: 15px 20px;
+              transition: all .5s ease;
+            }
+            a:hover {
+              color: #fff;
+              background: #cf112d;
+              transition: all .5s ease;
+              text-decoration: none;
+            }
+          }
         }
         #news {
           flex: 1 1 0;
+          ul {
+            padding: 0px;
+            margin: 0px 0px 10px 0px;
+            li {
+              list-style: none;
+              padding-bottom: 20px;
+            }
+          }
+          a.view-more {
+            color: $carleton_red;
+          }
         }
       }
     }
