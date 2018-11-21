@@ -1520,70 +1520,71 @@ body.front #main-content div.block.first .row #quicklinks ul li a {
 /* line 2193, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 {
   margin: 0px;
-  background: darkgrey;
+  border-bottom: 1px solid #eee;
 }
 /* line 2196, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 70px;
+  min-height: 90px;
 }
 /* line 2202, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row #hours {
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }
-/* line 2205, ../sass/global.styles.scss */
+/* line 2206, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row #hours .clock {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding-right: 10px;
   stroke-width: 10px;
   fill: #fff;
   stroke: #007b4b;
 }
-/* line 2214, ../sass/global.styles.scss */
+/* line 2215, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row .button {
   padding: 10px 15px;
   border-radius: 3px;
   background: lightblue;
 }
-/* line 2218, ../sass/global.styles.scss */
+/* line 2219, ../sass/global.styles.scss */
 body.front #main-content div.block-count-2 .row .button a {
   color: black;
 }
-/* line 2224, ../sass/global.styles.scss */
+/* line 2225, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 {
   margin: 0px;
 }
-/* line 2226, ../sass/global.styles.scss */
+/* line 2227, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row {
   display: flex;
   flex-direction: column;
 }
-/* line 2230, ../sass/global.styles.scss */
+/* line 2231, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row #find {
   background: #eee;
 }
-/* line 2234, ../sass/global.styles.scss */
+/* line 2235, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row #research {
   background: #fff;
 }
-/* line 2238, ../sass/global.styles.scss */
+/* line 2239, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row #services {
   background: #eee;
 }
-/* line 2242, ../sass/global.styles.scss */
+/* line 2243, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row #inthebuilding {
   background: #fff;
 }
-/* line 2246, ../sass/global.styles.scss */
+/* line 2247, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card {
   display: flex;
   padding: 10px;
 }
-/* line 2250, ../sass/global.styles.scss */
+/* line 2251, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header {
   flex: 1 1 0;
   display: flex;
@@ -1591,62 +1592,62 @@ body.front #main-content div.block-count-3 .row div.card div.icon-header {
   justify-content: center;
   align-items: center;
 }
-/* line 2257, ../sass/global.styles.scss */
+/* line 2258, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header h2 {
   padding: 10px;
   text-align: center;
   margin: 0px;
   max-width: 150px;
 }
-/* line 2264, ../sass/global.styles.scss */
+/* line 2265, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.icon-header img {
   width: 50px;
 }
-/* line 2270, ../sass/global.styles.scss */
+/* line 2271, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.separator {
   background: #cf112d;
   height: 3px;
   width: 50px;
   margin: 0 auto;
 }
-/* line 2277, ../sass/global.styles.scss */
+/* line 2278, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more {
   flex: 1 1 0;
   padding: 20px;
 }
-/* line 2282, ../sass/global.styles.scss */
+/* line 2283, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more a {
   color: black;
 }
-/* line 2286, ../sass/global.styles.scss */
+/* line 2287, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul {
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
-/* line 2289, ../sass/global.styles.scss */
+/* line 2290, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more ul li {
   list-style: none;
 }
-/* line 2294, ../sass/global.styles.scss */
+/* line 2295, ../sass/global.styles.scss */
 body.front #main-content div.block-count-3 .row div.card div.list-and-more a.view-more {
   color: #cf112d;
 }
-/* line 2301, ../sass/global.styles.scss */
+/* line 2302, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 {
   margin: 0px;
 }
-/* line 2303, ../sass/global.styles.scss */
+/* line 2304, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row {
   display: flex;
   flex-direction: column;
 }
-/* line 2306, ../sass/global.styles.scss */
+/* line 2307, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature {
   flex: 1 1 0;
   padding: 10px;
   position: relative;
 }
-/* line 2310, ../sass/global.styles.scss */
+/* line 2311, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature #featured {
   position: absolute;
   top: 30px;
@@ -1655,7 +1656,7 @@ body.front #main-content div.block-count-4 .row #feature #featured {
   padding: 10px 30px;
   text-align: center;
 }
-/* line 2318, ../sass/global.styles.scss */
+/* line 2319, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature #newsdesc {
   position: absolute;
   bottom: 90px;
@@ -1666,13 +1667,13 @@ body.front #main-content div.block-count-4 .row #feature #newsdesc {
   padding: 10px 30px;
   left: 20px;
 }
-/* line 2328, ../sass/global.styles.scss */
+/* line 2329, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature #learnmore {
   position: absolute;
   bottom: 40px;
   left: 20px;
 }
-/* line 2332, ../sass/global.styles.scss */
+/* line 2333, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature #learnmore a {
   color: #cf112d;
   background: #fff;
@@ -1680,28 +1681,28 @@ body.front #main-content div.block-count-4 .row #feature #learnmore a {
   padding: 15px 20px;
   transition: all .5s ease;
 }
-/* line 2339, ../sass/global.styles.scss */
+/* line 2340, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #feature #learnmore a:hover {
   color: #fff;
   background: #cf112d;
   transition: all .5s ease;
   text-decoration: none;
 }
-/* line 2347, ../sass/global.styles.scss */
+/* line 2348, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news {
   flex: 1 1 0;
 }
-/* line 2349, ../sass/global.styles.scss */
+/* line 2350, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news ul {
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
-/* line 2352, ../sass/global.styles.scss */
+/* line 2353, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news ul li {
   list-style: none;
   padding-bottom: 20px;
 }
-/* line 2357, ../sass/global.styles.scss */
+/* line 2358, ../sass/global.styles.scss */
 body.front #main-content div.block-count-4 .row #news a.view-more {
   color: #cf112d;
 }

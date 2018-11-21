@@ -2192,19 +2192,20 @@ body.front {
     }
     div.block-count-2 {
       margin: 0px;
-      background: darkgrey;
+      border-bottom: $carleton_light_border;
       .row {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        min-height: 70px;
+        min-height: 90px;
 
         #hours{
           display: flex;
           align-items: center;
+          font-size: 1.5rem;
           .clock {
-            height: 20px;
-            width: 20px;
+            height: 30px;
+            width: 30px;
             padding-right: 10px;
             stroke-width: 10px;
             fill: #fff;
