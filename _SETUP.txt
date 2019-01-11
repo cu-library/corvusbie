@@ -1,0 +1,6 @@
+- Disable displaying these blocks:
+    Leaderboard-Left
+    Main Menu (Nice Menu)
+    Main Menu
+    Secondary Menu to Leaderboard Left
+    Secondary Menu
