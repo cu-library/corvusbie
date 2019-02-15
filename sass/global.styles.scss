@@ -43,8 +43,11 @@ html {
 }
 
 body {
-  font-family: $gotham-montserrat-sans-serif; // Set from _custom.scss font variables
+  font-family: $roboto-sans-serif; // Set from _custom.scss font variables
   font-size: 100%;
+  font-weight: 300;
+  line-height: 1.6;
+  background: $carleton_footer_background;
 }
 
 
@@ -52,10 +55,15 @@ body {
  *   HTML Elements
  * ========================================================================== */
 
-h1 {}
+h1 {
+  font-weight: 500;
+  font-size: 36pt;
+}
 
 
-h2 {}
+h2 {
+  font-weight: 400;
+}
 
 
 h3 {}
@@ -157,7 +165,9 @@ var {
  * margins etc.
  */
 
-#page-wrapper {}
+#page-wrapper {
+  background: #fff;
+}
 
 
 #page  {
@@ -169,12 +179,30 @@ var {
  * Wraps all header elements - branding and .region-header
  */
 #header {
-  height: $header_height;
   display: flex;
   align-items: center;
   justify-content: left;
   border-top: $carleton_red_border;
   border-bottom: $carleton_light_border;
+
+  a {
+    color: black;
+    height: $menubar_height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $carleton_red;
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+  }
 }
 
 
@@ -208,56 +236,90 @@ var {
  * Footer wrapper
  */
 #footer {
-  background: rgb(25, 25, 25);
-  color: #DEDFD7;
 
-  #footer-one-content {
-    padding: 40px 0 70px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  a {
+    color: $carleton_footer_text;
+    &:hover,
+    &:focus {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  ul, li {
+    list-style-image: none;
+    list-style-type: none;
+  }
+
+  div.footer-header {
+    margin: 1em 0px;
+  }
+
+  div.footer-content {
+    color: $carleton_footer_text;
+  }
+
+  > div > div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid rgb(90, 89, 85);
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      padding-top: 25px;
-      li {
-        padding: 5px;
-        a {
-          color: #DEDFD7;
-          border-bottom: 1px solid #999;
-        }
+    flex-wrap: wrap;
+    > nav {
+    }
+    > div:nth-child(2) {
+      border-left: $carleton_dark_border;
+      padding-left: 20px;
+      flex: 1 0 auto;
+    }
+    > div:nth-child(3) {
+      border-left: $carleton_dark_border;
+      padding-left: 20px;
+      width: 230px;
+      padding-top: 1em;
+      flex: 1 0 auto;
+      img {
+        width: 200px;
+        height: 53px;
+        margin-bottom: 15px;
+      }
+      #footer-carleton-links a {
+        padding-right: 15px;
       }
     }
-
-    img {
-      width: 300px;
+    > div:nth-child(4) {
+      flex: 1 0 100%;
     }
   }
-  #footer-two {
-    height: 135px;
+
+  #block-menu-menu-footer-menu ul.menu {
+    padding: 0px;
+  }
+
+  #block-menu-menu-footer-menu > div > div > ul.menu {
     display: flex;
-    justify-content: center;
+    > li {
+      width: 230px;
+    }
+  }
+
+  #copyright-and-social-links {
+    display: flex;
     align-items: center;
-    div {
-      padding: 24px;
+    justify-content: space-between;
+    img {
+      height: 30px;
+      transition: filter 0.3s ease-in-out;
+      filter: none;
     }
-    .boldr {
-      color: white;
-      font-weight: bold;
-      padding-right: 5px;
-    }
-    a {
-      color: white;
+    a:focus,
+    a:hover {
+      img {
+        filter: brightness(50%) sepia(1%);
+      }
     }
   }
 }
-
-#block-block-6 {
-  margin: 0px;
-}
-
 
 /*
  * Panels may need additional margin wrangling when in the $content region
@@ -280,70 +342,97 @@ var {
   .container {}
 }
 
-
 /*
- * Wraps the header
+ * Wraps the menubar elements
  */
-#header-wrapper {
-  .container {}
+#menubar-wrapper {
+  .container {
+  }
 }
-
 
 /*
  * Wraps the nav elements
  */
 #nav-wrapper {
   flex: 1 1 auto;
+  align-items: center;
   .container {
+    font-size: 1.1rem;
+    display: flex;
   }
 }
 
+/*
+ * Wraps the header
+ */
+#header-wrapper {
+  background: linear-gradient(180deg, #606060 0%, #5a5a5a 100%);
+  color: white;
+  min-height: $header_height;
+  display: flex;
+  margin-bottom: 36px;
+  align-items: center;
+  .container {
+    max-width: $constrain-width;
+  }
+}
 
 /*
  * Wraps breadcrumb
  */
 #breadcrumb-wrapper {
-  .container {}
+  .container {
+  }
 }
-
 
 /*
  * Wraps messages and help
  */
 #messages-help-wrapper {
-  .container {}
+  .container {
+    max-width: $constrain-width;
+  }
 }
-
 
 /*
  * Wraps the secondary content/preface region
  */
 #secondary-content-wrapper {
-  .container {}
+  .container {
+    max-width: $constrain-width;
+  }
 }
-
 
 /*
  * Wraps the main content column
  */
-#content-wrapper {
-  .container {}
+body:not(.front) #content-wrapper {
+  .container {
+    max-width: $constrain-width;
+  }
 }
-
 
 /*
  * Wraps the tertiary content/postfix region
  */
 #tertiary-content-wrapper {
-  .container {}
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  .container {
+    max-width: $constrain-width;
+  }
 }
-
 
 /*
  * Footer wrapper
  */
 #footer-wrapper {
-  .container {}
+  background: $carleton_footer_background;
+  color: #fff;
+  .container {
+    max-width: $constrain-width;
+  }
 }
 
 
@@ -357,11 +446,9 @@ var {
 #branding {
   display: flex;
   align-items: center;
-  padding-right: 15px;
-  margin-right: 0px;
-  height: $header_height;
+  margin-right: 20px;
+  min-width: 165px;
 }
-
 
 /*
  * Logo
@@ -373,26 +460,13 @@ var {
   }
 }
 
-
 /*
  * Wrapper for the site name and slogan
  */
 #name-and-slogan {
   a {
-    display: flex;
     flex-direction: column;
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: black;
-    }
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $carleton_red;
-      transition-property: color;
-      transition-duration: 0.3s;
-    }
+    align-items: flex-start;
   }
 }
 
@@ -408,7 +482,6 @@ var {
   font-size: 1.5rem;
 }
 
-
 /*
  * Site slogan (h2)
  */
@@ -418,24 +491,76 @@ var {
   font-size: 0.8rem;
 }
 
+/* =============================================================================
+ *   Header Region
+ * ========================================================================== */
+
+#breadcrumb {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  /* If the label is set to show in theme settings the label class is added */
+  .breadcrumb-label {
+    font-size: 1em;
+    display: inline;
+    padding-right: 10px;
+
+    &:after {
+      content: ":";
+    }
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  .with-breadcrumb-label ol {
+    display: inline;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  li.crumb-first {}
+
+  li.crumb-last {}
+
+  a {
+
+    color: white;
+
+    &:link,
+    &:visited {}
+
+    &:active,
+    &.active {}
+
+    &:hover,
+    &:focus {}
+  }
+}
+
+/*
+ * The main page title (h1)
+ */
+#page-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
 
 /* =============================================================================
  *   Page content header
  * ========================================================================== */
 
 /*
- * Main content header wraps the page title, tabs and actions links
+ * Main content header wraps tabs and actions links
  */
 #main-content-header {}
-
-
-/*
- * The main page title (h1)
- */
-#page-title {
-  margin: 0;
-}
-
 
 /* =============================================================================
  *   Misc Global Styles
@@ -574,7 +699,16 @@ ul.links {
 /*
  * Sidebars - targets both
  */
-.sidebar {}
+.sidebar {
+  section.block, nav.block {
+    border-radius: 5px;
+    border-left: $carleton_light_border;
+    border-right: $carleton_light_border;
+    border-bottom: $carleton_light_border;
+    border-top: $carleton_red_border;
+    padding: 5%;
+  }
+}
 
 
 /*
@@ -592,7 +726,38 @@ ul.links {
 /*
  * Tertiary content
  */
-.region-tertiary-content {}
+.region-tertiary-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .block {
+    margin: 0px;
+  }
+
+  #helpandchat a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background: $carleton_red;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    transition: padding 0.3s ease-in-out;
+    border-radius: 5px 5px 0px 0px;
+
+    img {
+      padding-right: 7px;
+      height: 25px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      padding-bottom: 15px;
+    }
+  }
+}
 
 
 /*
@@ -606,6 +771,7 @@ ul.links {
  * ========================================================================== */
 
 a {
+  color: $carleton_red;
   text-decoration: none;
 
   &:link,
@@ -620,49 +786,30 @@ a {
   }
 }
 
+h2 {
+  a {
+    color: black;
+  }
+}
+
 
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
 
 #primary-menu-bar {
-  font-size: 1.1rem;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+
 
   nav {
     margin: 0px;
 
-    ul{
-      li:nth-last-child(2),
-      li:last-child {
-        float: right;
-      }
-    }
-
-    li.last a {
-      background: #33d2b2;
-      padding: 10px 15px;
-      border-radius: 3px;
-    }
-
     li a,
     ul.menu li a {
-      display: block;
-      white-space: nowrap;
       padding: 0 15px;
-
-      &:link,
-      &:visited {
-        text-decoration: none;
-        color: black;
-      }
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        color: $carleton_red;
-        transition-property: color;
-        transition-duration: 0.3s;
-      }
     }
   }
 }
@@ -692,24 +839,38 @@ a {
     display: block;
     white-space: nowrap;
     padding: 0 15px;
-
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: black;
-    }
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $carleton_red;
-      transition-property: color;
-      transition-duration: 0.3s;
-    }
   }
 
   .block {
     margin-bottom: 0;
+  }
+}
+
+
+/* =============================================================================
+ *   Search Widget
+ * ========================================================================== */
+
+.nav-widget {
+
+  border-left: $carleton_light_border;
+
+  a {
+    min-width: 150px;
+    img {
+      transition: filter 0.3s ease-in-out;
+      filter: none;
+    }
+    &:focus,
+    &:hover {
+      img {
+        filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
+      }
+    }
+  }
+
+  img {
+    padding-right: 10px;
   }
 }
 
@@ -840,7 +1001,6 @@ ul.sf-menu {
   }
 }
 
-
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
@@ -896,7 +1056,9 @@ ul.menu {
 
 .book-navigation {
 
-  .page-links {}
+  .page-links {
+    border: none;
+  }
 
   .page-previous {}
 
@@ -909,57 +1071,8 @@ ul.menu {
   }
 
   .menu {
+    border-top: none;
     margin-left: 0;
-  }
-}
-
-
-/* =============================================================================
- *   Breadcrumbs
- * ========================================================================== */
-
-#breadcrumb {
-  margin: 10px 0;
-
-  /* If the label is set to show in theme settings the label class is added */
-  .breadcrumb-label {
-    font-size: 1em;
-    display: inline;
-    padding-right: 10px;
-
-    &:after {
-      content: ":";
-    }
-  }
-
-  ol {
-    margin: 0;
-    padding: 0;
-  }
-
-  .with-breadcrumb-label ol {
-    display: inline;
-  }
-
-  li {
-    list-style: none;
-    display: inline;
-  }
-
-  li.crumb-first {}
-
-  li.crumb-last {}
-
-  a {
-
-    &:link,
-    &:visited {}
-
-    &:active,
-    &.active {}
-
-    &:hover,
-    &:focus {}
   }
 }
 
@@ -1181,7 +1294,7 @@ ul.action-links {
  */
 .field-label {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
   font-family: inherit;
   line-height: inherit;
   margin-bottom: 0;
@@ -1781,7 +1894,7 @@ ul.action-links {
   }
 
   label {
-    font-weight: 700;
+    font-weight: 400;
   }
 
   label.option {
@@ -1794,6 +1907,10 @@ ul.action-links {
   &.form-checkboxes ,
   &.form-radios {
   }
+}
+
+.views-exposed-form label {
+  font-weight: 400;
 }
 
 
@@ -2103,13 +2220,16 @@ tr.error {
 body.front {
   #main-content {
 
+    margin: 0px;
+
     #node-1, .feed-icon {
       display: none;
     }
 
-    margin: 0px;
-    div.block.first {
+    #content > div:nth-child(1) {
+
       margin: 0px;
+      min-height: 300px;
       background-image: linear-gradient(
           rgba(160, 7, 7, 0.73),
           rgba(160, 7, 7, 0.73)
@@ -2117,246 +2237,222 @@ body.front {
       background-position: 50%;
       background-size: 100%;
 
-      .row {
+      div.block.panel-pane {
+        margin-bottom: 0px;
+      }
+
+      div.at-panel {
+        max-width: $constrain-width;
+        margin: 0 auto;
+      }
+
+      #summon-box {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+        min-width: 560px;
         min-height: 300px;
+        padding: 0px;
 
-        #searchcontainer {
+        form {
           display: flex;
-          flex-direction: column;
+          width: 100%;
           justify-content: center;
-          min-width: 560px;
-          min-height: 300px;
-          padding: 0px 50px;
+          padding: 0px 10px;
 
-          form {
-            display: flex;
-            width: 100%;
-            input[type='text'] {
-              flex: 1 1 auto;
-              font-size: 1.3rem;
-              border-radius: 10px 0px 0px 10px;
-              border: none;
-              padding: 20px;
-            }
-
-            input[type='submit'] {
-              flex: 0 1 auto;
-              font-size: 1.1rem;
-              border-radius: 0px 10px 10px 0px;
-              border: none;
-              padding: 10px 20px;
-            }
+          input[type='text'] {
+            flex: 1 1 auto;
+            font-size: 1.3rem;
+            border-radius: 10px 0px 0px 10px;
+            border: none;
+            padding: 20px;
+            max-width: 750px;
           }
 
-          ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;
-            padding: 0px;
-
-            li{
-              list-style: none;
-              padding: 0px 10px;
-              a {
-                color: white;
-              }
-            }
+          input[type='submit'] {
+            flex: 0 1 auto;
+            font-size: 1.1rem;
+            border-radius: 0px 10px 10px 0px;
+            border: none;
+            padding: 10px 20px;
           }
         }
 
-        #quicklinks {
-          background: lightgrey;
-          padding: 20px;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+          padding: 0px;
 
-          h2 {
-            text-align: center;
-            margin: 0px 0px 0px 5px;
-          }
-          ul {
-            padding: 0px;
-            margin: 0px;
-            li {
-              list-style: none;
-              a {
-                font-size: 1rem;
-                color: black;
-              }
+          li{
+            list-style: none;
+            padding: 0px 10px;
+            a {
+              color: white;
             }
           }
         }
       }
-    }
-    div.block-count-2 {
-      margin: 0px;
-      border-bottom: $carleton_light_border;
-      .row {
+
+      div.pane-views-hours-today-block {
+        margin: 0px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        min-height: 90px;
+        min-height: 300px;
 
-        #hours{
+        p > a {
+          color: $carleton_red;
+        }
+
+        div.view-id-hours_today {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          font-size: 1.5rem;
-          .clock {
-            height: 30px;
-            width: 30px;
-            padding-right: 10px;
-            stroke-width: 10px;
-            fill: #fff;
-            stroke: #007b4b;
+          justify-content: space-evenly;
+          padding: 8px 20px;
+          background: $carleton_lightgrey;
+          border-radius: 3px;
+
+          div.view-content {
+            font-size: 150%;
+            margin-top: 0px;
+            margin-bottom: 0.83em;
           }
         }
-        .button{
-          padding: 10px 15px;
-          border-radius: 3px;
-          background: lightblue;
+      }
+    }
+
+    #content > div:nth-child(2) {
+      margin: 0px;
+
+      background: linear-gradient(to right, #eeeeee 0%, #eeeeee 50%, #ffffff 51%);
+
+      div.at-panel {
+        max-width: $constrain-width;
+        margin: 0 auto;
+      }
+
+      div.region-four-first {
+        background: $carleton_lightgrey;
+      }
+
+      div.region-four-second {
+        background: #fff;
+      }
+
+      div.region-four-third {
+        background: $carleton_lightgrey;
+      }
+
+      div.region-four-fourth {
+        background: #fff;
+      }
+
+      div.card {
+
+        div.icon-header {
+          flex: 1 1 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 50px 0px 10px 0px;
+
+          h2 {
+            padding: 10px;
+            text-align: center;
+            margin: 0px;
+          }
+
+          img {
+            width: 40px;
+          }
+        }
+
+        div.separator {
+          background: $carleton_red;
+          height: 3px;
+          width: 50px;
+          margin: 0 auto;
+        }
+
+        div.list-and-more {
+
+          flex: 1 1 0;
+          padding: 20px;
+
           a {
             color: black;
           }
-        }
-      }
-    }
-    div.block-count-3 {
-      margin: 0px;
-      .row{
-        display: flex;
-        flex-direction: column;
 
-        #find {
-          background: $carleton_grey;
-        }
-
-        #research {
-          background: #fff;
-        }
-
-        #services {
-          background: $carleton_grey;
-        }
-
-        #inthebuilding{
-          background: #fff;
-        }
-
-        div.card {
-          display: flex;
-          padding: 10px;
-
-          div.icon-header {
-            flex: 1 1 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h2 {
-              padding: 10px;
-              text-align: center;
-              margin: 0px;
-              max-width: 150px;
-            }
-
-            img {
-              width: 50px;
-            }
-
-          }
-
-          div.separator {
-            background: $carleton_red;
-            height: 3px;
-            width: 50px;
-            margin: 0 auto;
-          }
-
-          div.list-and-more {
-
-            flex: 1 1 0;
-            padding: 20px;
-
-            a {
-              color: black;
-            }
-
-            ul {
-              padding: 0px;
-              margin: 0px 0px 10px 0px;
-              li {
-                list-style: none;
-              }
-            }
-
-            a.view-more {
-              color: $carleton_red;
-            }
-          }
-        }
-      }
-    }
-    div.block-count-4 {
-      margin: 0px;
-      .row {
-        display: flex;
-        flex-direction: column;
-        #feature{
-          flex: 1 1 0;
-          padding: 10px;
-          position: relative;
-          #featured {
-            position: absolute;
-            top: 30px;
-            background: $carleton_red;
-            color: white;
-            padding: 10px 30px;
-            text-align: center;
-          }
-          #newsdesc {
-            position: absolute;
-            bottom: 90px;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 30px;
-            left: 20px;
-          }
-          #learnmore {
-            position: absolute;
-            bottom: 40px;
-            left: 20px;
-            a {
-              color: $carleton_red;
-              background: #fff;
-              border-radius: 3px;
-              padding: 15px 20px;
-              transition: all .5s ease;
-            }
-            a:hover {
-              color: #fff;
-              background: #cf112d;
-              transition: all .5s ease;
-              text-decoration: none;
-            }
-          }
-        }
-        #news {
-          flex: 1 1 0;
           ul {
             padding: 0px;
             margin: 0px 0px 10px 0px;
             li {
               list-style: none;
-              padding-bottom: 20px;
             }
           }
+
           a.view-more {
+            color: $carleton_red;
+          }
+        }
+      }
+    }
+
+    #content > div:nth-child(3) {
+
+    padding-top: 40px;
+
+      a {
+        color: black;
+      }
+
+      div.at-panel {
+        max-width: $constrain-width;
+        margin: 0 auto;
+      }
+
+      div.view-news-random-image {
+        position: relative;
+        padding: 10px;
+        #featured {
+          position: absolute;
+          top: 30px;
+          background: $carleton_red;
+          color: white;
+          padding: 10px 30px;
+          text-align: center;
+        }
+        div.slide-title {
+          position: absolute;
+          bottom: 33px;
+          color: white;
+          font-weight: bold;
+          font-size: 1rem;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 10px 30px;
+          left: 20px;
+          a {
+            color: white;
+          }
+        }
+        img {
+          width: 100%;
+          max-height: 380px;
+        }
+      }
+
+      div.view-library-news {
+        div.view-content {
+          div.views-row {
+            margin-bottom: 10px;
+          }
+        }
+        div.more-link {
+          float: left;
+          a {
             color: $carleton_red;
           }
         }
@@ -2365,5 +2461,62 @@ body.front {
   }
 }
 
+/* =============================================================================
+ *   Top-level pages
+ * ========================================================================== */
 
+#main-content {
+  
+  .view-find-guides-frontpage {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    .views-row {
+      padding: 15px 0;
+      border-bottom: thin solid #eee;
+
+      a {
+        font-weight: 500;
+        }
+      }
+    }
+
+  table.top-level-page {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    thead tr {
+      background-color: #fff;
+      }
+
+    tr.even, tr:nth-child(2n+2) {
+      background-color: #fff;
+      }
+
+    td {
+      padding: 15px;
+      }
+    }
+
+  .top-level-panel {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 10px solid #606060;
+
+    .block-title {
+      font-size: 1.8em;
+      }
+
+    .block-content {
+      font-size: 1.4em;
+      }
+
+      p {
+       font-size: 0.8em;
+       }
+
+    }
+  }
 

@@ -112,7 +112,7 @@
       </div>
     <?php endif; ?>
 
-    <div id="header-wrapper">
+    <div id="menubar-wrapper">
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
 
@@ -152,23 +152,51 @@
           <?php if ($page['menu_bar'] || $primary_navigation || $secondary_navigation): ?>
             <div id="nav-wrapper">
               <div class="container clearfix">
-                <?php print render($page['menu_bar']); ?>
                 <?php if ($primary_navigation): print $primary_navigation; endif; ?>
                 <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
+                <div id="login-widget" class="nav-widget">
+                  <a href="/login">
+                    <img src="/sites/all/themes/corvusbie/images/person.svg" />
+                    <span>Login</span>
+                  </a>
+                </div>
+                <div id="search-widget" class="nav-widget">
+                  <a href="/search-options">
+                    <img src="/sites/all/themes/corvusbie/images/search.svg" />
+                    <span>Search</span>
+                  </a>
+                </div>
+                <?php print render($page['menu_bar']); ?>
               </div>
             </div>
           <?php endif; ?>
-
-        <?php print render($page['header']); ?>
 
         </header>
       </div>
     </div>
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb-wrapper">
+    <?php if ($page['header'] || ($title && !$is_front)): ?>
+      <div id="header-wrapper">
         <div class="container clearfix">
-          <?php print $breadcrumb; ?>
+          <?php if ($breadcrumb): ?>
+            <div id="breadcrumb-wrapper">
+              <div class="container clearfix">
+                <?php print $breadcrumb; ?>
+              </div>
+            </div>
+          <?php endif; ?>
+          <?php if ($title && !$is_front): ?>
+            <h1 id="page-title"><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($page['header']); ?>
+        </div>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($page['secondary_content']): ?>
+      <div id="secondary-content-wrapper">
+        <div class="container clearfix">
+          <?php print render($page['secondary_content']); ?>
         </div>
       </div>
     <?php endif; ?>
@@ -178,14 +206,6 @@
         <div class="container clearfix">
           <?php print $messages; ?>
           <?php print render($page['help']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($page['secondary_content']): ?>
-      <div id="secondary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['secondary_content']); ?>
         </div>
       </div>
     <?php endif; ?>
@@ -202,10 +222,6 @@
 
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
-
-                <?php if ($title && !$is_front): ?>
-                  <h1 id="page-title"><?php print $title; ?></h1>
-                <?php endif; ?>
 
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
                   <div id="tasks">

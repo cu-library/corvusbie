@@ -529,6 +529,7 @@ table {
  */
 /* line 545, ../sass/global.base.scss */
 #main-content,
+#page-title,
 .block-inner,
 .pane-inner,
 .menu-wrapper,
@@ -548,13 +549,15 @@ div.messages,
  * Panel pages need negative margin equal to the gutter width applied to #content,
  * this is taken care of in theme settings as per above for normal gutters
  */
-/* line 565, ../sass/global.base.scss */
-#content .panel-display,
-#content .panel-flexible {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
+/*
+ * Disabling in corvusbie
+ *
+ * #content .panel-display,
+ * #content .panel-flexible {
+ *   margin-left: -$gutter-width;
+ *   margin-right: -$gutter-width;
+ * }
+ */
 /* =============================================================================
     Flexible Media and Cross browser improvements
    ========================================================================== */
@@ -565,14 +568,14 @@ div.messages,
  *   the "dissappering images" bug in IE8.
  * - Mapping services such as Google Maps may break also, see below for fixes.
  */
-/* line 584, ../sass/global.base.scss */
+/* line 590, ../sass/global.base.scss */
 img {
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
 
 /* Ethan Marcotte - http://front.ie/l8rJaA */
-/* line 591, ../sass/global.base.scss */
+/* line 597, ../sass/global.base.scss */
 img,
 embed,
 object,
@@ -581,7 +584,7 @@ video {
 }
 
 /* Disable flexiblity for IE8 and below */
-/* line 600, ../sass/global.base.scss */
+/* line 606, ../sass/global.base.scss */
 .lt-ie9 img,
 .lt-ie9 object,
 .lt-ie9 embed,
@@ -590,7 +593,7 @@ video {
 }
 
 /* Override max-width 100% for map displays */
-/* line 609, ../sass/global.base.scss */
+/* line 615, ../sass/global.base.scss */
 #map img,
 .gmap img,
 .view-gmap img,
@@ -608,7 +611,7 @@ video {
     Misc helpers, Accessibility classes etc
    ========================================================================== */
 /* Prevent overflowing content */
-/* line 628, ../sass/global.base.scss */
+/* line 634, ../sass/global.base.scss */
 header[role=banner],
 .content-inner,
 .nav,
@@ -630,7 +633,7 @@ header[role=banner],
  * Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
  * Additional helpers from http://html5boilerplate.com/docs/css/
  */
-/* line 651, ../sass/global.base.scss */
+/* line 657, ../sass/global.base.scss */
 .ir {
   /* Kellum Method */
   display: block !important;
@@ -650,7 +653,7 @@ header[role=banner],
 }
 
 /* More robust element-invisible and element-focuable classes */
-/* line 671, ../sass/global.base.scss */
+/* line 677, ../sass/global.base.scss */
 .element-invisible {
   border: 0;
   clip: rect(1px 1px 1px 1px);
@@ -663,7 +666,7 @@ header[role=banner],
   width: 1px;
 }
 
-/* line 683, ../sass/global.base.scss */
+/* line 689, ../sass/global.base.scss */
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {
   clip: auto;
@@ -674,7 +677,7 @@ header[role=banner],
 }
 
 /* Shift content offscreen, can be usefull when you reall need to do this */
-/* line 694, ../sass/global.base.scss */
+/* line 700, ../sass/global.base.scss */
 .offscreen {
   position: absolute;
   top: -99999em;
@@ -685,7 +688,7 @@ header[role=banner],
 }
 
 /* Hide content from all users */
-/* line 705, ../sass/global.base.scss */
+/* line 711, ../sass/global.base.scss */
 .element-hidden {
   display: none;
 }
