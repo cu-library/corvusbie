@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  font-family: $roboto-sans-serif; // Set from _custom.scss font variables
+  font-family: $carleton-hosted; // Set from _custom.scss font variables
   font-size: 100%;
   font-weight: 300;
   line-height: 1.6;
@@ -366,7 +366,7 @@ var {
  * Wraps the header
  */
 #header-wrapper {
-  background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url(/sites/default/files/interface/sculpture1.jpg);
+  background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-sculpture.jpg");
   color: white;
   min-height: $header_height;
   display: flex;
@@ -374,6 +374,48 @@ var {
   align-items: center;
   .container {
     max-width: $constrain-width;
+  }
+}
+
+/*
+ * Special cases for banner image
+ */
+
+body {
+  &.page-node-11736, &.page-node-11737, &.node-type-service-point, &.node-type-floor-map {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-canoe.jpg");
+    }
+  }
+
+  &.page-services, &.node-type-service {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-discoctr.jpg");
+    }
+  }
+
+  &.page-find, &.node-type-find-guide {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-globe.jpg");
+    }
+  }
+
+  &.page-node-15395, &.page-node-15668, &.page-node-11738, &.node-type-collection-page {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-skylight.jpg");
+    }
+  }
+
+  &.page-research-course-guides, &.node-type-course-guide, &.course-guide-child-page {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-stair1.jpg");
+    }
+  }
+
+  &.page-research-subject-guides, &.node-type-subject-detailed-guide, &.node-type-subject-quick-guide {
+    #header-wrapper {
+      background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-stair2.jpg");
+    }
   }
 }
 
@@ -2305,7 +2347,7 @@ body.front {
       background-image: linear-gradient(
           rgba(160, 7, 7, 0.73),
           rgba(160, 7, 7, 0.73)
-        ), url(/sites/default/files/interface/exterior.jpg);
+        ), url("images/main-exterior.jpg");
       background-position: 50%;
       background-size: 100%;
 
@@ -2538,7 +2580,7 @@ body.front {
  * ========================================================================== */
 
 #main-content {
-  
+
   .view-find-guides-frontpage {
      .views-row {
       padding: 15px 0;
@@ -3025,7 +3067,7 @@ margin:0 55px;
   float:left;
   padding: 10px;
 }
- 
+
 .collection-block h3 {
   margin:0;
 }
