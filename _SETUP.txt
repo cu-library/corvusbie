@@ -116,12 +116,13 @@
 
 -- Remove unneeded footer blocks.
 
--- Edit random news view: /admin/structure/views/view/news_random_image/edit
+-- Edit random news view: /admin/structure/views/view/news_random_image/edit to change Filter content type to Feature (from News) and remove News Item has Image (= Include a featured image for the front page), Post date (>=-100 days), and the Sort criteria (Random)
 
 -- /admin/structure/views/view/hours_today/edit, and remove unneeded fields
 
 -- Move "View: Display URL with nid" block to footer or main content
 
--- change 'library hours' to 'today's hours'
+-- On Find>Books and Find>Reserves pages pull the first <li> of the quicksearch-more-links section out of the <ul> and into a <p>
+
 
 

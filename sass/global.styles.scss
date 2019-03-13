@@ -366,7 +366,7 @@ var {
  * Wraps the header
  */
 #header-wrapper {
-  background: linear-gradient(180deg, #606060 0%, #5a5a5a 100%);
+  background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url(/sites/default/files/interface/sculpture1.jpg);
   color: white;
   min-height: $header_height;
   display: flex;
@@ -786,12 +786,6 @@ a {
   }
 }
 
-h2 {
-  a {
-    color: black;
-  }
-}
-
 
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
@@ -1068,12 +1062,21 @@ ul.menu {
     /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
     min-width: 2em;
     white-space: nowrap;
+    display: none;
   }
 
   .menu {
     border-top: none;
     margin-left: 0;
   }
+
+  li.leaf {
+    list-style: disc !important;
+  }
+}
+
+#block-book-navigation li.leaf {
+  list-style: disc !important;
 }
 
 
@@ -1209,6 +1212,7 @@ ul.primary {
       float: left;
       height: 1.5em;
       line-height: 1.5em;
+      color: #186d92;
 
       &:hover,
       &:focus {
@@ -1249,6 +1253,28 @@ ul.secondary {
   }
 }
 
+/* =============================================================================
+ *   Editing screens
+ * ========================================================================== */
+
+.node-form {
+  a {
+  color: #186d92;
+  }
+
+  .form-item input, .form-item textarea, .form-item select {
+    padding: 1px;
+  }
+
+  .form-actions .form-submit {
+    padding: 0 8px;
+  }
+}
+
+body.cke_editable {
+  background: #fff;
+}
+
 
 /* =============================================================================
  *   Action links
@@ -1257,6 +1283,10 @@ ul.secondary {
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
+
+  a {
+    color: #186d92;
+  }
 
   li {}
 }
@@ -1885,7 +1915,19 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
+fieldset.webform-component-fieldset a.fieldset-title {
+  color: black;
+  }
+
 .form-item {
+
+  input,
+  textarea,
+  select {
+      border: 1px solid #c3c3c3;
+      padding: 15px;
+      margin: 8px 0;
+  }
 
   input.error,
   textarea.error,
@@ -1898,6 +1940,16 @@ ul.action-links {
   }
 
   label.option {
+    margin-left: 8px;
+    font-size: .9em;
+  }
+
+  select[multiple] {
+    padding: 0;
+  }
+
+  select option {
+    padding-bottom: 2px;
   }
 
   .description {
@@ -1907,7 +1959,21 @@ ul.action-links {
   &.form-checkboxes ,
   &.form-radios {
   }
+
+  .form-managed-file .form-file {
+  padding: 0;
+  }
+
+  .form-managed-file .form-submit {
+  padding: 3px;
+  }
+
 }
+
+.form-actions input {
+  font-family: inherit;
+  padding: .85rem 1.35rem;
+  }
 
 .views-exposed-form label {
   font-weight: 400;
@@ -2226,6 +2292,12 @@ body.front {
       display: none;
     }
 
+    h2 {
+      a {
+        color: black;
+      }
+    }
+
     #content > div:nth-child(1) {
 
       margin: 0px;
@@ -2233,7 +2305,7 @@ body.front {
       background-image: linear-gradient(
           rgba(160, 7, 7, 0.73),
           rgba(160, 7, 7, 0.73)
-        ), url(images/bigsearch.jpg);
+        ), url(/sites/default/files/interface/exterior.jpg);
       background-position: 50%;
       background-size: 100%;
 
@@ -2468,11 +2540,7 @@ body.front {
 #main-content {
   
   .view-find-guides-frontpage {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 0 25px;
-
-    .views-row {
+     .views-row {
       padding: 15px 0;
       border-bottom: thin solid #eee;
 
@@ -2482,18 +2550,7 @@ body.front {
       }
     }
 
-  table.top-level-page {
-    max-width: 1150px;
-    margin: 0 auto;
-
-    thead tr {
-      background-color: #fff;
-      }
-
-    tr.even, tr:nth-child(2n+2) {
-      background-color: #fff;
-      }
-
+  .top-level-page {
     td {
       padding: 15px;
       }
@@ -2503,7 +2560,7 @@ body.front {
     max-width: 768px;
     margin: 0 auto;
     padding-top: 40px;
-    border-top: 10px solid #606060;
+    border-top: 10px solid $carleton_darkgrey;
 
     .block-title {
       font-size: 1.8em;
@@ -2520,3 +2577,455 @@ body.front {
     }
   }
 
+/* =============================================================================
+ *   Interface components
+ * ========================================================================== */
+
+/* Quicksearch (Find) boxes */
+.quicksearch {
+  input,
+  textarea,
+  select {
+      border: 1px solid #c3c3c3;
+      padding: 15px;
+      margin: 8px 0;
+  }
+
+  .radio-button input {
+    margin: 5px 5px 5px 10px;
+  }
+}
+
+.quicksearch-more-links {
+  margin: 20px 0;
+
+  p, ul {
+    margin: 0;
+  }
+}
+
+/* Help boxes */
+.help-box {
+  width: 230px;
+  height: 120px;
+  font-size: 1.45em;
+  margin: 10px;
+  padding: 12px 10px 15px 15px;
+  border-radius: 5px;
+  float: left;
+  border-top: solid #e1e1e1 1px;
+  box-shadow: 0 1px 2px rgba(2,2,2,.3);
+  }
+
+.help-box a::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  margin-top: 115px;
+  background: $carleton_darkgrey;
+  }
+
+/* Donate (single line) boxes */
+.donate {
+  font-size: 1.45em;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  float: left;
+  border-top: solid #e1e1e1 1px;
+  box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
+  font-weight: 500;
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #4a4a4a;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-top: 45px;
+    background: #bf112b;
+  }
+}
+
+/* Data & GIS (multi-line) boxes */
+.data-box-links {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  float: left;
+  border-top: solid #e1e1e1 1px;
+  box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
+  font-weight: 500;
+  width: 85%;
+  height: 140px;
+
+  h2 {
+    margin: 0;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-top: 125px;
+    background: $carleton_darkgrey;
+  }
+}
+
+/* Accordions */
+.field-collection-view {
+  padding: 0;
+  border: 0;
+}
+
+.field-collection-container .field-items .field-item {
+  margin: 0;
+}
+
+.guide-accordion-header-wrapper {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  background-color: $carleton_lightgrey;
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+  min-height: 100px;
+
+  h2 {
+    margin: 1px;
+    padding: 25px 10px;
+    width: 85%;
+  }
+}
+
+.guide-accordion-content {
+  max-height: 9999px;
+  padding: 0 30px;
+  transition: all .35s;
+}
+
+.guide-accordion-content-collapsed {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all .35s;
+}
+
+.guide-accordion-header.guide-accordion-header-collapsed::after {
+  transform: rotate(0deg);
+}
+
+.guide-accordion-header::after {
+  content: "+";
+  transform: rotate(135deg);
+}
+
+.guide-accordion-header::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 4em;
+  line-height: 4;
+  text-align: center;
+  transition: all .35s;
+}
+
+/* Action buttons (header) */
+.header-action-button {
+  float: right;
+  margin-top: -75px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 400;
+  transition: .35s ease;
+}
+
+a.header-action-button:hover {
+  text-decoration: none;
+  background: $carleton_red;
+  color: #fff;
+}
+
+/* Paragraphs */
+.paragraphs-item-full-width-image,
+.paragraphs-item-text-with-right-image,
+.paragraphs-item-text-with-left-image {
+ margin-bottom:20px;
+ padding:5px;
+ background:lightgrey;
+}
+.paragraphs-item-text-with-left-image figure,
+.paragraphs-item-text-with-right-image figure {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+.field-name-field-image-caption {
+ font-size:120%;
+ padding:20px 10px 10px 10px;
+}
+.field-name-field-image-caption p {
+ margin:0px;
+}
+
+/* Google Custom Search boxes */
+.gsc-control-cse {
+  background: transparent !important;
+  border: none !important;
+}
+
+.gsc-search-box td,
+.gsc-search-box tr,
+.gsc-search box tbody {
+  border: none !important;
+}
+
+.gsc-input table{
+margin: 0px;
+}
+
+/* =============================================================================
+ *   One-off pages
+ * ========================================================================== */
+/* Hours calendar */
+.calendar-calendar div.calendar {
+font-size: inherit;
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview {
+background: none repeat scroll 0 0 #fff;
+height: 5em;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+color: $carleton_darkgrey !important;
+font-weight: 500;
+}
+
+.calendar-calendar .month-view .full td.single-day .calendar.monthview .contents {
+width: 115px;
+}
+
+.calendar-calendar .cutoff {
+display: none;
+}
+
+.calendar-calendar .month-view .full td.date-box.today, calendar-calendar .month-view .full tr td.single-day.ends-today, .calendar-calendar .month-view .full tr td.single-day.today {
+border-color: $carleton_red;
+}
+
+.calendar-calendar th.days {
+color: $carleton_darkgrey;
+background-color: #fff;
+}
+
+.view .date-nav-wrapper .date-prev,
+.view .date-nav-wrapper .date-next {
+background: #eee;
+}
+
+.views-field-field-hours-building-note br {
+display:none;
+}
+
+.views-field-field-hours-building-note .field-content {
+font-size: .8em;
+}
+
+/* Floor Maps */
+.node-type-floor-map  {
+  .views-row tr:nth-child(2n+2) {
+    background-color: #fff;
+  }
+
+  .block-6 ul.primary li a {
+    padding: 10px 20px;
+    color: #bf112b;
+  }
+}
+
+/* Citation Styles */
+.apa-style, .mla-style {
+  line-height: 2.5em;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.chicago-bib {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.chicago-notes {
+  text-indent: 2em;
+}
+
+.ieee-style {
+  padding-left: 3em;
+}
+
+.ieee-style .number {
+  margin-left: -2.6em;
+  margin-right: 1.3em;
+}
+
+/* Strategic Plan */
+.kpm-theme {
+  font-weight: bold;
+}
+
+.kpm-theme h2 {
+  margin: 0;
+}
+
+.kpm-goal h3 {
+  background-color: $carleton_lightgrey;
+  margin: 0;
+}
+
+.kpm-goal p {
+  font-weight: 400;
+}
+
+/* Subject Guides */
+/* Subject Guides - editing */
+
+#guide-section-limit-reached-message {
+  margin-left: 1.5rem;
+  color: green;
+  font-weight: bolder;
+}
+
+#edit-field-other-subject-guides-und,
+#edit-field-general-research-help-und,
+#edit-field-related-guides-help-und,
+#edit-field-sidebar-subject-guides-und {
+  height: 300px;
+}
+
+#edit-field-related-help-und,
+#edit-field-related-find-und,
+#edit-field-related-govinfo-und {
+  height: 200px;
+}
+
+/* Subject Guides page */
+#block-views-subject-guides-block {
+  width: 95%;
+  font-size: 1.25em;
+
+  .views-summary {
+    padding-right: 2px;
+  }
+}
+
+.view-subject-guides {
+  .views-row {
+    padding-top: 10px;
+    font-size: 1.15em;
+  }
+
+  .views-field-title {
+    font-weight: 500;
+  }
+
+  .subject-guide-type {
+    color: $carleton_darkgrey;
+    font-style:italic;
+    font-size:0.9em;
+  }
+}
+
+#views-exposed-form-subject-guides-page .form-item #edit-uid {
+  max-width: 220px;
+}
+
+/* Quick Guides */
+
+.node-subject-quick-guide {
+
+/* section.field-name-field-key-resources {
+    padding: 10px;
+    padding-top: 0;
+    margin: 25px 35px 0;
+} */
+
+  .field-name-field-key-resources h2.field-label {
+    font-size: 1.5em;
+/* font-weight: bold;
+margin-left: 0.5em; */
+    padding-bottom: 10px;
+  }
+
+  .field-collection-item-field-key-resources .field-name-field-key-resource-databases {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+
+  .field-name-field-key-resource-link {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+
+  .field-collection-view {
+    border: 0;
+    padding: 0.5em 0 0.3em 0;
+  }
+
+  .field-collection-container {
+    border: 0;
+  }
+
+/* .need-more {
+margin:0 55px;
+} */
+
+}
+
+/* Find Databases */
+.custom-alpha-pager {
+  width: 95%;
+  font-size: 1.25em;
+
+  a {
+    padding-right: 3px;
+  }
+}
+
+#edit-submit-databases-title {
+  border: 1px solid #c3c3c3;
+  padding: 15px;
+  margin-top: 33px;
+}
+
+/* Find Data */
+.data-search {
+  background: $carleton_lightgrey;
+
+  input, select {
+    padding: 15px;
+  }
+}
+
+/* Ottawa Room and Collections pages */
+.collection-block {
+  float:left;
+  padding: 10px;
+}
+ 
+.collection-block h3 {
+  margin:0;
+}
