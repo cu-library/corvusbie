@@ -34,11 +34,22 @@ function corvusbie_preprocess_html(&$vars) {
   drupal_add_css('https://cloud.typography.com/6307052/6144772/css/fonts.css', array('type' => 'external'));
 
   // Add body classes to course guide book pages
-  $courseguidepathprefix = "research/course-guides/";
+  $courseguidepathprefix = 'research/course-guides/';
   if (strncmp(request_path(), $courseguidepathprefix, strlen($courseguidepathprefix)) === 0 ){
     $vars['classes_array'][] = 'course-guide-child-page';
   }
 
+  // Add body classes to find/ pages
+  $findpathprefix = 'find/';
+  if (strncmp(request_path(), $findpathprefix, strlen($findpathprefix)) === 0 ){
+    $vars['classes_array'][] = 'find-child-page';
+  }
+
+  // Add body classes to services/ child pages
+  $servicespathprefix = 'services/';
+  if (strncmp(request_path(), $servicespathprefix, strlen($servicespathprefix)) === 0 ){
+    $vars['classes_array'][] = 'services-child-page';
+  }
 }
 
 

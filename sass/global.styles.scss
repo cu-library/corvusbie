@@ -367,6 +367,7 @@ var {
  */
 #header-wrapper {
   background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-sculpture.jpg");
+  background-size: cover;
   color: white;
   min-height: $header_height;
   display: flex;
@@ -374,6 +375,9 @@ var {
   align-items: center;
   .container {
     max-width: $constrain-width;
+  }
+  > div.container {
+    padding: 1rem 0;
   }
 }
 
@@ -388,13 +392,13 @@ body {
     }
   }
 
-  &.page-services, &.node-type-service {
+  &.page-services, &.node-type-service, &.services-child-page {
     #header-wrapper {
       background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-discoctr.jpg");
     }
   }
 
-  &.page-find, &.node-type-find-guide {
+  &.page-find, &.node-type-find-guide, &.node-type-database, &.find-child-page {
     #header-wrapper {
       background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-globe.jpg");
     }
