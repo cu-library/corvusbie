@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAIA;;;;;;;;GAQG;;AAEH,SAAU;EACR,YAAY,ECmCU,cAA6B",
+"mappings": "AAIA;;;;;;;;GAQG;;AAEH,SAAU;EACR,WAAW,ECmCW,cAA6B;EDlCnD,IAAI,EAAE,QAAQ;EACd,KAAK,EAAE,CAAC",
 "sources": ["../sass/responsive.desktop.scss","../sass/_custom.scss"],
 "names": [],
 "file": "responsive.desktop.css"

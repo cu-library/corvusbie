@@ -154,6 +154,7 @@
               <div class="container clearfix">
                 <?php if ($primary_navigation): print $primary_navigation; endif; ?>
                 <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
+                <?php print render($page['menu_bar']); ?>
                 <div id="login-widget" class="nav-widget">
                   <a href="/login">
                     <img src="/sites/all/themes/corvusbie/images/person.svg" />
@@ -166,7 +167,6 @@
                     <span>Search</span>
                   </a>
                 </div>
-                <?php print render($page['menu_bar']); ?>
               </div>
             </div>
           <?php endif; ?>
