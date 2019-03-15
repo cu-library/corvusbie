@@ -207,6 +207,7 @@ var {
     align-items: center;
     justify-content: center;
   }
+
 }
 
 
@@ -358,7 +359,6 @@ var {
  * Wraps the nav elements
  */
 #nav-wrapper {
-  flex: 1 1 auto;
   align-items: center;
   .container {
     display: flex;
@@ -493,6 +493,7 @@ body:not(.front) #content-wrapper {
  * Wraps all the branding elements, logo, name and slogan
  */
 #branding {
+  flex: 1 0 auto;
   display: flex;
   align-items: center;
   min-width: 225px;
@@ -842,11 +843,32 @@ a {
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
 
-#menu-bar {
-  display: flex;
-  align-items: center;
-  margin: 0px;
-  order: 1;
+#sidr-wrapper-0 {
+
+  a {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("images/menu.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin: 0px 10px;
+    transition-property: background-image;
+    transition-duration: 0.1s;
+
+    &:focus,
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+body.sidr-0-open #sidr-wrapper-0 {
+  a {
+    background-image: url("images/clear.png");
+    transition-property: background-image;
+    transition-duration: 0.1s;
+  }
 }
 
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
@@ -856,7 +878,6 @@ a {
     background: white;
   }
 }
-
 
 .nav {
   clear: both;
@@ -889,35 +910,18 @@ a {
   }
 }
 
+#sidr-0 {
+
+
+}
+
 
 /* =============================================================================
- *   Search Widget
+ *   Search Widget and Login Widget
  * ========================================================================== */
 
 .nav-widget {
-
-  flex: 1 1 auto;
-  max-width: 150px;
-
-  border-left: $carleton_light_border;
-
-  a {
-    min-width: 100px;
-    img {
-      transition: filter 0.3s ease-in-out;
-      filter: none;
-    }
-    &:focus,
-    &:hover {
-      img {
-        filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
-      }
-    }
-  }
-
-  img {
-    padding-right: 10px;
-  }
+  display: none;
 }
 
 
@@ -2359,7 +2363,7 @@ body.front {
           rgba(160, 7, 7, 0.73)
         ), url("images/main-exterior.jpg");
       background-position: 50%;
-      background-size: 100%;
+      background-size: cover;
 
       div.block.panel-pane {
         margin-bottom: 0px;
@@ -2374,7 +2378,6 @@ body.front {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 560px;
         min-height: 300px;
         padding: 0px;
 
@@ -2382,11 +2385,9 @@ body.front {
           display: flex;
           width: 100%;
           justify-content: center;
-          padding: 0px 10px;
 
           input[type='text'] {
             flex: 1 1 auto;
-            font-size: 1.3rem;
             border-radius: 10px 0px 0px 10px;
             border: none;
             padding: 20px;
@@ -2395,7 +2396,6 @@ body.front {
 
           input[type='submit'] {
             flex: 0 1 auto;
-            font-size: 1.1rem;
             border-radius: 0px 10px 10px 0px;
             border: none;
             padding: 10px 20px;
@@ -2408,6 +2408,7 @@ body.front {
           align-items: center;
           margin: 10px;
           padding: 0px;
+          flex-wrap: wrap;
 
           li{
             list-style: none;

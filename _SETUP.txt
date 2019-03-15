@@ -124,5 +124,5 @@
 
 -- On Find>Books and Find>Reserves pages pull the first <li> of the quicksearch-more-links section out of the <ul> and into a <p>
 
-
+-- Add responsive menu module, config sidr
 

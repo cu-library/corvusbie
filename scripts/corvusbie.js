@@ -1,11 +1,13 @@
 jQuery(document).ready(function($) {
   $("#admin-menu").detach().prependTo('#page');
+
+  $("#superfish-1-accordion").detach().appendTo('#menubar-wrapper');
 });
 
 //Subject Guide Accordion
 jQuery(document).ready(function($) {
 
-  // Add permalinks to each detailed guide accordion content div. 
+  // Add permalinks to each detailed guide accordion content div.
   $('div.detailed-guide-accordion-content').each(function() {
     var anchor = '#' + $(this).closest('div.content').find('a.guide-accordion-header-wrapper').attr('id');
     var anchorLink = '<a tabindex="-1" class="guide-accordion-header-permalink" href="'+anchor+'" title="Permalink to this section">¶</a>';
@@ -19,9 +21,9 @@ jQuery(document).ready(function($) {
     $(this).closest('div.content,section').find('div.guide-accordion-content').toggleClass('guide-accordion-content-collapsed');
   });
 
-  // If the hash is an id of a accordion header wrapper a, emulate a click. 
-  // This expands the content when using the permalinks. 
-  // The extra call to filter() keeps this from being used to click on other elements on the page. 
+  // If the hash is an id of a accordion header wrapper a, emulate a click.
+  // This expands the content when using the permalinks.
+  // The extra call to filter() keeps this from being used to click on other elements on the page.
   var hash = window.location.hash;
   if ( hash !== "" && hash !== "#" ){
     $(hash).filter("a.guide-accordion-header-wrapper").click();
@@ -67,4 +69,36 @@ jQuery(document).ready(function($) {
   }
 
 });
+
+// Close the sidr menu on desktop.
+(function ($) {
+
+  Drupal.behaviors.SidrMenuClose = {
+    attach: function (context, settings) {
+
+      if ($.browser.msie && parseFloat($.browser.version) <= 8) {
+        return;
+      }
+
+      var activeTheme = Drupal.settings["ajaxPageState"]["theme"];
+      var themeSettings = Drupal.settings['adaptivetheme'];
+
+      if (typeof themeSettings[activeTheme] == 'undefined') {
+        return;
+      }
+
+      var breakpoint = themeSettings[activeTheme]['media_query_settings']['bigscreen'];
+      var mm = window.matchMedia(breakpoint);
+      mm.addListener(cb);
+
+      // Callback
+      function cb(e){
+        if (e.matches) {
+          $.sidr('close', 'sidr-0');
+        }
+      }
+    }
+  };
+})(jQuery);
+
 

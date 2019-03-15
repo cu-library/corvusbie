@@ -9,9 +9,82 @@
  */
 /* line 15, ../sass/responsive.desktop.scss */
 #menu-bar {
+  flex: 1 1 auto;
   border-left: 1px solid #eee;
-  flex: 1 0 auto;
-  order: 0;
+  align-items: center;
+  margin: 0px;
+}
+/* line 21, ../sass/responsive.desktop.scss */
+#menu-bar li.sf-item-6, #menu-bar li.sf-item-7 {
+  display: none;
+}
+/* line 25, ../sass/responsive.desktop.scss */
+#menu-bar nav > ul {
+  display: flex;
+}
+/* line 29, ../sass/responsive.desktop.scss */
+#menu-bar nav {
+  margin: 0px;
+}
+
+/* line 34, ../sass/responsive.desktop.scss */
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+  top: 70px;
+}
+/* line 36, ../sass/responsive.desktop.scss */
+.sf-menu li:hover > ul a, .sf-menu li.sfHover > ul a {
+  height: 50px;
+  background: white;
+}
+
+/* line 42, ../sass/responsive.desktop.scss */
+.nav-widget {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 150px;
+  border-left: 1px solid #eee;
+}
+/* line 49, ../sass/responsive.desktop.scss */
+.nav-widget a {
+  min-width: 100px;
+}
+/* line 51, ../sass/responsive.desktop.scss */
+.nav-widget a img {
+  transition: filter 0.3s ease-in-out;
+  filter: none;
+  height: 24px;
+}
+/* line 58, ../sass/responsive.desktop.scss */
+.nav-widget a:focus img, .nav-widget a:hover img {
+  filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
+}
+/* line 64, ../sass/responsive.desktop.scss */
+.nav-widget img {
+  padding-right: 10px;
+}
+
+/* line 69, ../sass/responsive.desktop.scss */
+#nav-wrapper {
+  flex: 1 1 auto;
+}
+
+/* line 74, ../sass/responsive.desktop.scss */
+#branding {
+  flex: 0 0 auto;
+}
+
+/* line 83, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
+  font-size: 1.3rem;
+}
+/* line 86, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
+  font-size: 1.3rem;
+}
+/* line 92, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul li a {
+  color: white;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=responsive.desktop.css.map */
