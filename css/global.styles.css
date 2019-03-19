@@ -177,13 +177,13 @@ var {
 }
 /* line 278, ../sass/global.styles.scss */
 #footer > div > div > div:nth-child(2) {
-  border-left: 1px solid #4a4a4a;
+  border-left: 1px solid #bdbdbd;
   padding-left: 20px;
   flex: 1 0 auto;
 }
 /* line 283, ../sass/global.styles.scss */
 #footer > div > div > div:nth-child(3) {
-  border-left: 1px solid #4a4a4a;
+  border-left: 1px solid #bdbdbd;
   padding-left: 20px;
   width: 230px;
   padding-top: 1em;
@@ -586,10 +586,10 @@ ul.links li {
  */
 /* line 758, ../sass/global.styles.scss */
 .sidebar section.block, .sidebar nav.block {
-  border-radius: 5px;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-radius: 4px;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
   border-top: 3px solid #bf112b;
   padding: 5%;
 }
@@ -623,7 +623,7 @@ ul.links li {
   color: white;
   padding: 10px 25px 10px 25px;
   transition: padding 0.3s ease-in-out;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
 }
 /* line 804, ../sass/global.styles.scss */
 .region-tertiary-content #helpandchat a img {
@@ -1747,7 +1747,7 @@ body.front #main-content #content > div:nth-child(1) #summon-box form {
 /* line 2393, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
   flex: 1 1 auto;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 4px 0px 0px 4px;
   border: none;
   padding: 20px;
   max-width: 750px;
@@ -1755,7 +1755,7 @@ body.front #main-content #content > div:nth-child(1) #summon-box form input[type
 /* line 2401, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
   flex: 0 1 auto;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 4px 4px 0px;
   border: none;
   padding: 10px 20px;
 }
@@ -1771,7 +1771,7 @@ body.front #main-content #content > div:nth-child(1) #summon-box ul {
 /* line 2417, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box ul li {
   list-style: none;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 /* line 2420, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box ul li a {
@@ -1793,11 +1793,11 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   padding: 8px 20px;
   background: #eee;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 /* line 2447, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
@@ -1892,12 +1892,12 @@ body.front #main-content #content > div:nth-child(3) div.at-panel {
   margin: 0 auto;
 }
 /* line 2546, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-news-random-image {
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image {
   position: relative;
   padding: 10px;
 }
 /* line 2549, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-news-random-image #featured {
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image #featured {
   position: absolute;
   top: 30px;
   background: #bf112b;
@@ -1906,7 +1906,7 @@ body.front #main-content #content > div:nth-child(3) div.view-news-random-image 
   text-align: center;
 }
 /* line 2557, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-news-random-image div.slide-title {
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title {
   position: absolute;
   bottom: 33px;
   color: white;
@@ -1917,59 +1917,69 @@ body.front #main-content #content > div:nth-child(3) div.view-news-random-image 
   left: 20px;
 }
 /* line 2566, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-news-random-image div.slide-title a {
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title a {
   color: white;
 }
 /* line 2570, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-news-random-image img {
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image img {
   width: 100%;
   max-height: 380px;
 }
-/* line 2578, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-library-news div.view-content div.views-row {
-  margin-bottom: 10px;
+/* line 2577, ../sass/global.styles.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second h2 {
+  margin: 0px;
 }
-/* line 2582, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-library-news div.more-link {
+/* line 2580, ../sass/global.styles.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.separator {
+  background: #bf112b;
+  height: 3px;
+  width: 50px;
+}
+/* line 2587, ../sass/global.styles.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.view-content div.views-row {
+  margin-bottom: 20px;
+}
+/* line 2591, ../sass/global.styles.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.more-link {
   float: left;
 }
-/* line 2584, ../sass/global.styles.scss */
-body.front #main-content #content > div:nth-child(3) div.view-library-news div.more-link a {
+/* line 2593, ../sass/global.styles.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.more-link a {
   color: #bf112b;
 }
 
 /* =============================================================================
  *   Top-level pages
  * ========================================================================== */
-/* line 2600, ../sass/global.styles.scss */
+/* line 2611, ../sass/global.styles.scss */
 #main-content .view-find-guides-frontpage .views-row {
   padding: 15px 0;
   border-bottom: thin solid #eee;
 }
-/* line 2604, ../sass/global.styles.scss */
+/* line 2615, ../sass/global.styles.scss */
 #main-content .view-find-guides-frontpage .views-row a {
   font-weight: 500;
 }
-/* line 2611, ../sass/global.styles.scss */
+/* line 2622, ../sass/global.styles.scss */
 #main-content .top-level-page td {
   padding: 15px;
 }
-/* line 2616, ../sass/global.styles.scss */
+/* line 2627, ../sass/global.styles.scss */
 #main-content .top-level-panel {
   max-width: 768px;
   margin: 0 auto;
   padding-top: 40px;
-  border-top: 10px solid #4a4a4a;
+  border-top: 10px solid #bdbdbd;
 }
-/* line 2622, ../sass/global.styles.scss */
+/* line 2633, ../sass/global.styles.scss */
 #main-content .top-level-panel .block-title {
   font-size: 1.8em;
 }
-/* line 2626, ../sass/global.styles.scss */
+/* line 2637, ../sass/global.styles.scss */
 #main-content .top-level-panel .block-content {
   font-size: 1.4em;
 }
-/* line 2630, ../sass/global.styles.scss */
+/* line 2641, ../sass/global.styles.scss */
 #main-content .top-level-panel p {
   font-size: 0.8em;
 }
@@ -1978,7 +1988,7 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
  *   Interface components
  * ========================================================================== */
 /* Quicksearch (Find) boxes */
-/* line 2643, ../sass/global.styles.scss */
+/* line 2654, ../sass/global.styles.scss */
 .quicksearch input,
 .quicksearch textarea,
 .quicksearch select {
@@ -1986,65 +1996,65 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
   padding: 15px;
   margin: 8px 0;
 }
-/* line 2651, ../sass/global.styles.scss */
+/* line 2662, ../sass/global.styles.scss */
 .quicksearch .radio-button input {
   margin: 5px 5px 5px 10px;
 }
 
-/* line 2656, ../sass/global.styles.scss */
+/* line 2667, ../sass/global.styles.scss */
 .quicksearch-more-links {
   margin: 20px 0;
 }
-/* line 2659, ../sass/global.styles.scss */
+/* line 2670, ../sass/global.styles.scss */
 .quicksearch-more-links p, .quicksearch-more-links ul {
   margin: 0;
 }
 
 /* Help boxes */
-/* line 2665, ../sass/global.styles.scss */
+/* line 2676, ../sass/global.styles.scss */
 .help-box {
   width: 230px;
   height: 120px;
   font-size: 1.45em;
   margin: 10px;
   padding: 12px 10px 15px 15px;
-  border-radius: 5px;
+  border-radius: 4px;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
 }
 
-/* line 2677, ../sass/global.styles.scss */
+/* line 2688, ../sass/global.styles.scss */
 .help-box a::before {
   content: "";
   position: absolute;
   width: 40px;
   height: 2px;
   margin-top: 115px;
-  background: #4a4a4a;
+  background: #bdbdbd;
 }
 
 /* Donate (single line) boxes */
-/* line 2687, ../sass/global.styles.scss */
+/* line 2698, ../sass/global.styles.scss */
 .donate {
   font-size: 1.45em;
   margin: 10px;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 4px;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
   font-weight: 500;
 }
-/* line 2697, ../sass/global.styles.scss */
+/* line 2708, ../sass/global.styles.scss */
 .donate p {
   margin-bottom: 10px;
 }
-/* line 2701, ../sass/global.styles.scss */
+/* line 2712, ../sass/global.styles.scss */
 .donate a {
   color: #4a4a4a;
 }
-/* line 2705, ../sass/global.styles.scss */
+/* line 2716, ../sass/global.styles.scss */
 .donate a::before {
   content: "";
   position: absolute;
@@ -2055,11 +2065,11 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
 }
 
 /* Data & GIS (multi-line) boxes */
-/* line 2716, ../sass/global.styles.scss */
+/* line 2727, ../sass/global.styles.scss */
 .data-box-links {
   margin: 10px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 4px;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
@@ -2067,33 +2077,33 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
   width: 85%;
   height: 140px;
 }
-/* line 2727, ../sass/global.styles.scss */
+/* line 2738, ../sass/global.styles.scss */
 .data-box-links h2 {
   margin: 0;
 }
-/* line 2731, ../sass/global.styles.scss */
+/* line 2742, ../sass/global.styles.scss */
 .data-box-links a::before {
   content: "";
   position: absolute;
   width: 40px;
   height: 2px;
   margin-top: 125px;
-  background: #4a4a4a;
+  background: #bdbdbd;
 }
 
 /* Accordions */
-/* line 2742, ../sass/global.styles.scss */
+/* line 2753, ../sass/global.styles.scss */
 .field-collection-view {
   padding: 0;
   border: 0;
 }
 
-/* line 2747, ../sass/global.styles.scss */
+/* line 2758, ../sass/global.styles.scss */
 .field-collection-container .field-items .field-item {
   margin: 0;
 }
 
-/* line 2751, ../sass/global.styles.scss */
+/* line 2762, ../sass/global.styles.scss */
 .guide-accordion-header-wrapper {
   position: relative;
   display: block;
@@ -2104,21 +2114,21 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
   color: black;
   min-height: 100px;
 }
-/* line 2761, ../sass/global.styles.scss */
+/* line 2772, ../sass/global.styles.scss */
 .guide-accordion-header-wrapper h2 {
   margin: 1px;
   padding: 25px 10px;
   width: 85%;
 }
 
-/* line 2768, ../sass/global.styles.scss */
+/* line 2779, ../sass/global.styles.scss */
 .guide-accordion-content {
   max-height: 9999px;
   padding: 0 30px;
   transition: all .35s;
 }
 
-/* line 2774, ../sass/global.styles.scss */
+/* line 2785, ../sass/global.styles.scss */
 .guide-accordion-content-collapsed {
   max-height: 0;
   overflow: hidden;
@@ -2126,18 +2136,18 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
   transition: all .35s;
 }
 
-/* line 2781, ../sass/global.styles.scss */
+/* line 2792, ../sass/global.styles.scss */
 .guide-accordion-header.guide-accordion-header-collapsed::after {
   transform: rotate(0deg);
 }
 
-/* line 2785, ../sass/global.styles.scss */
+/* line 2796, ../sass/global.styles.scss */
 .guide-accordion-header::after {
   content: "+";
   transform: rotate(135deg);
 }
 
-/* line 2790, ../sass/global.styles.scss */
+/* line 2801, ../sass/global.styles.scss */
 .guide-accordion-header::after {
   position: absolute;
   right: 0;
@@ -2151,18 +2161,18 @@ body.front #main-content #content > div:nth-child(3) div.view-library-news div.m
 }
 
 /* Action buttons (header) */
-/* line 2803, ../sass/global.styles.scss */
+/* line 2814, ../sass/global.styles.scss */
 .header-action-button {
   float: right;
   margin-top: -75px;
   background: #fff;
   padding: 10px 15px;
-  border-radius: 3px;
+  border-radius: 4px;
   font-weight: 400;
   transition: .35s ease;
 }
 
-/* line 2813, ../sass/global.styles.scss */
+/* line 2824, ../sass/global.styles.scss */
 a.header-action-button:hover {
   text-decoration: none;
   background: #bf112b;
@@ -2170,7 +2180,7 @@ a.header-action-button:hover {
 }
 
 /* Paragraphs */
-/* line 2820, ../sass/global.styles.scss */
+/* line 2831, ../sass/global.styles.scss */
 .paragraphs-item-full-width-image,
 .paragraphs-item-text-with-right-image,
 .paragraphs-item-text-with-left-image {
@@ -2179,7 +2189,7 @@ a.header-action-button:hover {
   background: lightgrey;
 }
 
-/* line 2827, ../sass/global.styles.scss */
+/* line 2838, ../sass/global.styles.scss */
 .paragraphs-item-text-with-left-image figure,
 .paragraphs-item-text-with-right-image figure {
   display: flex;
@@ -2187,32 +2197,32 @@ a.header-action-button:hover {
   align-items: center;
 }
 
-/* line 2833, ../sass/global.styles.scss */
+/* line 2844, ../sass/global.styles.scss */
 .field-name-field-image-caption {
   font-size: 120%;
   padding: 20px 10px 10px 10px;
 }
 
-/* line 2837, ../sass/global.styles.scss */
+/* line 2848, ../sass/global.styles.scss */
 .field-name-field-image-caption p {
   margin: 0px;
 }
 
 /* Google Custom Search boxes */
-/* line 2842, ../sass/global.styles.scss */
+/* line 2853, ../sass/global.styles.scss */
 .gsc-control-cse {
   background: transparent !important;
   border: none !important;
 }
 
-/* line 2847, ../sass/global.styles.scss */
+/* line 2858, ../sass/global.styles.scss */
 .gsc-search-box td,
 .gsc-search-box tr,
 .gsc-search box tbody {
   border: none !important;
 }
 
-/* line 2853, ../sass/global.styles.scss */
+/* line 2864, ../sass/global.styles.scss */
 .gsc-input table {
   margin: 0px;
 }
@@ -2221,132 +2231,132 @@ a.header-action-button:hover {
  *   One-off pages
  * ========================================================================== */
 /* Hours calendar */
-/* line 2861, ../sass/global.styles.scss */
+/* line 2872, ../sass/global.styles.scss */
 .calendar-calendar div.calendar {
   font-size: inherit;
 }
 
-/* line 2865, ../sass/global.styles.scss */
+/* line 2876, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.single-day div.monthview {
   background: none repeat scroll 0 0 #fff;
   height: 5em;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  color: #4a4a4a !important;
+  color: #bdbdbd !important;
   font-weight: 500;
 }
 
-/* line 2875, ../sass/global.styles.scss */
+/* line 2886, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.single-day .calendar.monthview .contents {
   width: 115px;
 }
 
-/* line 2879, ../sass/global.styles.scss */
+/* line 2890, ../sass/global.styles.scss */
 .calendar-calendar .cutoff {
   display: none;
 }
 
-/* line 2883, ../sass/global.styles.scss */
+/* line 2894, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.date-box.today, calendar-calendar .month-view .full tr td.single-day.ends-today, .calendar-calendar .month-view .full tr td.single-day.today {
   border-color: #bf112b;
 }
 
-/* line 2887, ../sass/global.styles.scss */
+/* line 2898, ../sass/global.styles.scss */
 .calendar-calendar th.days {
-  color: #4a4a4a;
+  color: #bdbdbd;
   background-color: #fff;
 }
 
-/* line 2892, ../sass/global.styles.scss */
+/* line 2903, ../sass/global.styles.scss */
 .view .date-nav-wrapper .date-prev,
 .view .date-nav-wrapper .date-next {
   background: #eee;
 }
 
-/* line 2897, ../sass/global.styles.scss */
+/* line 2908, ../sass/global.styles.scss */
 .views-field-field-hours-building-note br {
   display: none;
 }
 
-/* line 2901, ../sass/global.styles.scss */
+/* line 2912, ../sass/global.styles.scss */
 .views-field-field-hours-building-note .field-content {
   font-size: .8em;
 }
 
 /* Floor Maps */
-/* line 2907, ../sass/global.styles.scss */
+/* line 2918, ../sass/global.styles.scss */
 .node-type-floor-map .views-row tr:nth-child(2n+2) {
   background-color: #fff;
 }
-/* line 2911, ../sass/global.styles.scss */
+/* line 2922, ../sass/global.styles.scss */
 .node-type-floor-map .block-6 ul.primary li a {
   padding: 10px 20px;
   color: #bf112b;
 }
 
 /* Citation Styles */
-/* line 2918, ../sass/global.styles.scss */
+/* line 2929, ../sass/global.styles.scss */
 .apa-style, .mla-style {
   line-height: 2.5em;
   text-indent: -2em;
   padding-left: 2em;
 }
 
-/* line 2924, ../sass/global.styles.scss */
+/* line 2935, ../sass/global.styles.scss */
 .chicago-bib {
   text-indent: -2em;
   padding-left: 2em;
 }
 
-/* line 2929, ../sass/global.styles.scss */
+/* line 2940, ../sass/global.styles.scss */
 .chicago-notes {
   text-indent: 2em;
 }
 
-/* line 2933, ../sass/global.styles.scss */
+/* line 2944, ../sass/global.styles.scss */
 .ieee-style {
   padding-left: 3em;
 }
 
-/* line 2937, ../sass/global.styles.scss */
+/* line 2948, ../sass/global.styles.scss */
 .ieee-style .number {
   margin-left: -2.6em;
   margin-right: 1.3em;
 }
 
 /* Strategic Plan */
-/* line 2943, ../sass/global.styles.scss */
+/* line 2954, ../sass/global.styles.scss */
 .kpm-theme {
   font-weight: bold;
 }
 
-/* line 2947, ../sass/global.styles.scss */
+/* line 2958, ../sass/global.styles.scss */
 .kpm-theme h2 {
   margin: 0;
 }
 
-/* line 2951, ../sass/global.styles.scss */
+/* line 2962, ../sass/global.styles.scss */
 .kpm-goal h3 {
   background-color: #eee;
   margin: 0;
 }
 
-/* line 2956, ../sass/global.styles.scss */
+/* line 2967, ../sass/global.styles.scss */
 .kpm-goal p {
   font-weight: 400;
 }
 
 /* Subject Guides */
 /* Subject Guides - editing */
-/* line 2963, ../sass/global.styles.scss */
+/* line 2974, ../sass/global.styles.scss */
 #guide-section-limit-reached-message {
   margin-left: 1.5rem;
   color: green;
   font-weight: bolder;
 }
 
-/* line 2969, ../sass/global.styles.scss */
+/* line 2980, ../sass/global.styles.scss */
 #edit-field-other-subject-guides-und,
 #edit-field-general-research-help-und,
 #edit-field-related-guides-help-und,
@@ -2354,7 +2364,7 @@ a.header-action-button:hover {
   height: 300px;
 }
 
-/* line 2976, ../sass/global.styles.scss */
+/* line 2987, ../sass/global.styles.scss */
 #edit-field-related-help-und,
 #edit-field-related-find-und,
 #edit-field-related-govinfo-und {
@@ -2362,39 +2372,39 @@ a.header-action-button:hover {
 }
 
 /* Subject Guides page */
-/* line 2983, ../sass/global.styles.scss */
+/* line 2994, ../sass/global.styles.scss */
 #block-views-subject-guides-block {
   width: 95%;
   font-size: 1.25em;
 }
-/* line 2987, ../sass/global.styles.scss */
+/* line 2998, ../sass/global.styles.scss */
 #block-views-subject-guides-block .views-summary {
   padding-right: 2px;
 }
 
-/* line 2993, ../sass/global.styles.scss */
+/* line 3004, ../sass/global.styles.scss */
 .view-subject-guides .views-row {
   padding-top: 10px;
   font-size: 1.15em;
 }
-/* line 2998, ../sass/global.styles.scss */
+/* line 3009, ../sass/global.styles.scss */
 .view-subject-guides .views-field-title {
   font-weight: 500;
 }
-/* line 3002, ../sass/global.styles.scss */
+/* line 3013, ../sass/global.styles.scss */
 .view-subject-guides .subject-guide-type {
-  color: #4a4a4a;
+  color: #bdbdbd;
   font-style: italic;
   font-size: 0.9em;
 }
 
-/* line 3009, ../sass/global.styles.scss */
+/* line 3020, ../sass/global.styles.scss */
 #views-exposed-form-subject-guides-page .form-item #edit-uid {
   max-width: 220px;
 }
 
 /* Quick Guides */
-/* line 3015, ../sass/global.styles.scss */
+/* line 3026, ../sass/global.styles.scss */
 .node-subject-quick-guide {
   /* section.field-name-field-key-resources {
       padding: 10px;
@@ -2405,45 +2415,45 @@ a.header-action-button:hover {
   margin:0 55px;
   } */
 }
-/* line 3023, ../sass/global.styles.scss */
+/* line 3034, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resources h2.field-label {
   font-size: 1.5em;
   /* font-weight: bold;
   margin-left: 0.5em; */
   padding-bottom: 10px;
 }
-/* line 3030, ../sass/global.styles.scss */
+/* line 3041, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-item-field-key-resources .field-name-field-key-resource-databases {
   font-size: 1.17em;
   font-weight: bold;
 }
-/* line 3035, ../sass/global.styles.scss */
+/* line 3046, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resource-link {
   font-size: 1.17em;
   font-weight: bold;
 }
-/* line 3040, ../sass/global.styles.scss */
+/* line 3051, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-view {
   border: 0;
   padding: 0.5em 0 0.3em 0;
 }
-/* line 3045, ../sass/global.styles.scss */
+/* line 3056, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-container {
   border: 0;
 }
 
 /* Find Databases */
-/* line 3056, ../sass/global.styles.scss */
+/* line 3067, ../sass/global.styles.scss */
 .custom-alpha-pager {
   width: 95%;
   font-size: 1.25em;
 }
-/* line 3060, ../sass/global.styles.scss */
+/* line 3071, ../sass/global.styles.scss */
 .custom-alpha-pager a {
   padding-right: 3px;
 }
 
-/* line 3065, ../sass/global.styles.scss */
+/* line 3076, ../sass/global.styles.scss */
 #edit-submit-databases-title {
   border: 1px solid #c3c3c3;
   padding: 15px;
@@ -2451,48 +2461,48 @@ a.header-action-button:hover {
 }
 
 /* Find Data */
-/* line 3072, ../sass/global.styles.scss */
+/* line 3083, ../sass/global.styles.scss */
 .data-search {
   background: #eee;
 }
-/* line 3075, ../sass/global.styles.scss */
+/* line 3086, ../sass/global.styles.scss */
 .data-search input, .data-search select {
   padding: 15px;
 }
 
 /* Ottawa Room and Collections pages */
-/* line 3081, ../sass/global.styles.scss */
+/* line 3092, ../sass/global.styles.scss */
 .collection-block {
   float: left;
   padding: 10px;
 }
 
-/* line 3086, ../sass/global.styles.scss */
+/* line 3097, ../sass/global.styles.scss */
 .collection-block h3 {
   margin: 0;
 }
 
 /* Fix edit buttons */
-/* line 3091, ../sass/global.styles.scss */
+/* line 3102, ../sass/global.styles.scss */
 td.ctools-export-ui-operations .ctools-dropbutton {
   position: relative;
 }
 
 /* Subject Guide References */
-/* line 3096, ../sass/global.styles.scss */
+/* line 3107, ../sass/global.styles.scss */
 div.field-name-field-link-to-detailed-guide {
   font-size: 150%;
 }
 
-/* line 3101, ../sass/global.styles.scss */
+/* line 3112, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item {
   font-size: 110%;
 }
-/* line 3103, ../sass/global.styles.scss */
+/* line 3114, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::before {
   content: "Just need a few resources to get you started? Try the ";
 }
-/* line 3106, ../sass/global.styles.scss */
+/* line 3117, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::after {
   content: ".";
 }

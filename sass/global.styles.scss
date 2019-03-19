@@ -756,10 +756,10 @@ ul.links {
  */
 .sidebar {
   section.block, nav.block {
-    border-radius: 5px;
-    border-left: $carleton_light_border;
-    border-right: $carleton_light_border;
-    border-bottom: $carleton_light_border;
+    border-radius: $rounded_radius;
+    border-left: $carleton_dark_border;
+    border-right: $carleton_dark_border;
+    border-bottom: $carleton_dark_border;
     border-top: $carleton_red_border;
     padding: 5%;
   }
@@ -799,7 +799,7 @@ ul.links {
     color: white;
     padding: 10px 25px 10px 25px;
     transition: padding 0.3s ease-in-out;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: $rounded_radius $rounded_radius 0px 0px;
 
     img {
       padding-right: 7px;
@@ -2392,7 +2392,7 @@ body.front {
 
           input[type='text'] {
             flex: 1 1 auto;
-            border-radius: 10px 0px 0px 10px;
+            border-radius: $rounded_radius 0px 0px $rounded_radius;
             border: none;
             padding: 20px;
             max-width: 750px;
@@ -2400,7 +2400,7 @@ body.front {
 
           input[type='submit'] {
             flex: 0 1 auto;
-            border-radius: 0px 10px 10px 0px;
+            border-radius: 0px $rounded_radius $rounded_radius 0px;
             border: none;
             padding: 10px 20px;
           }
@@ -2416,7 +2416,7 @@ body.front {
 
           li{
             list-style: none;
-            padding: 0px 10px;
+            padding: 0px 15px;
             a {
               color: white;
             }
@@ -2438,11 +2438,11 @@ body.front {
         div.view-id-hours_today {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-evenly;
           padding: 8px 20px;
           background: $carleton_lightgrey;
-          border-radius: 3px;
+          border-radius: $rounded_radius;
 
           div.view-content {
             font-size: 150%;
@@ -2541,48 +2541,59 @@ body.front {
       div.at-panel {
         max-width: $constrain-width;
         margin: 0 auto;
-      }
 
-      div.view-news-random-image {
-        position: relative;
-        padding: 10px;
-        #featured {
-          position: absolute;
-          top: 30px;
-          background: $carleton_red;
-          color: white;
-          padding: 10px 30px;
-          text-align: center;
-        }
-        div.slide-title {
-          position: absolute;
-          bottom: 33px;
-          color: white;
-          font-weight: bold;
-          font-size: 1rem;
-          background-color: rgba(0, 0, 0, 0.7);
-          padding: 10px 30px;
-          left: 20px;
-          a {
-            color: white;
+        div.region-two-50-first {
+          div.view-news-random-image {
+            position: relative;
+            padding: 10px;
+            #featured {
+              position: absolute;
+              top: 30px;
+              background: $carleton_red;
+              color: white;
+              padding: 10px 30px;
+              text-align: center;
+            }
+            div.slide-title {
+              position: absolute;
+              bottom: 33px;
+              color: white;
+              font-weight: bold;
+              font-size: 1rem;
+              background-color: rgba(0, 0, 0, 0.7);
+              padding: 10px 30px;
+              left: 20px;
+              a {
+                color: white;
+              }
+            }
+            img {
+              width: 100%;
+              max-height: 380px;
+            }
           }
         }
-        img {
-          width: 100%;
-          max-height: 380px;
-        }
-      }
-
-      div.view-library-news {
-        div.view-content {
-          div.views-row {
-            margin-bottom: 10px;
+        div.region-two-50-second {
+          h2 {
+            margin: 0px;
           }
-        }
-        div.more-link {
-          float: left;
-          a {
-            color: $carleton_red;
+          div.separator {
+            background: $carleton_red;
+            height: 3px;
+            width: 50px;
+          }
+          div.view-library-news {
+            div.view-content {
+              div.views-row {
+                margin-bottom: 20px;
+              }
+            }
+            div.more-link {
+              float: left;
+              a {
+                color: $carleton_red;
+              }
+            }
           }
         }
       }
@@ -2668,7 +2679,7 @@ body.front {
   font-size: 1.45em;
   margin: 10px;
   padding: 12px 10px 15px 15px;
-  border-radius: 5px;
+  border-radius: $rounded_radius;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2,2,2,.3);
@@ -2688,7 +2699,7 @@ body.front {
   font-size: 1.45em;
   margin: 10px;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: $rounded_radius;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
@@ -2716,7 +2727,7 @@ body.front {
 .data-box-links {
   margin: 10px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: $rounded_radius;
   float: left;
   border-top: solid #e1e1e1 1px;
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
@@ -2805,7 +2816,7 @@ body.front {
   margin-top: -75px;
   background: #fff;
   padding: 10px 15px;
-  border-radius: 3px;
+  border-radius: $rounded_radius;
   font-weight: 400;
   transition: .35s ease;
 }
