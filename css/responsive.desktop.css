@@ -15,7 +15,7 @@
   margin: 0px;
 }
 /* line 21, ../sass/responsive.desktop.scss */
-#menu-bar li.sf-item-6, #menu-bar li.sf-item-7 {
+#menu-bar li.sf-item-6.sf-depth-1, #menu-bar li.sf-item-7.sf-depth-1 {
   display: none;
 }
 /* line 25, ../sass/responsive.desktop.scss */

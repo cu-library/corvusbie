@@ -55,6 +55,10 @@ body {
  *   HTML Elements
  * ========================================================================== */
 
+a {
+  font-weight: 400;
+}
+
 h1 {
   font-weight: 500;
   font-size: 36pt;
@@ -187,7 +191,6 @@ var {
 
   a {
     color: black;
-    font-weight: 300;
     &:link,
     &:visited {
       text-decoration: none;
@@ -825,6 +828,7 @@ ul.links {
 a {
   color: $carleton_red;
   text-decoration: none;
+
 
   &:link,
   &:visited {}
@@ -3081,4 +3085,25 @@ margin:0 55px;
 
 .collection-block h3 {
   margin:0;
+}
+
+/* Fix edit buttons */
+td.ctools-export-ui-operations .ctools-dropbutton {
+  position: relative;
+}
+
+/* Subject Guide References */
+div.field-name-field-link-to-detailed-guide {
+  font-size: 150%;
+}
+
+
+div.field-name-field-link-to-quick-guide div.field-item {
+  font-size: 110%;
+  &::before {
+    content: "Just need a few resources to get you started? Try the ";
+  }
+  &::after {
+    content: ".";
+  }
 }

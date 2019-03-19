@@ -52,7 +52,6 @@ function corvusbie_preprocess_html(&$vars) {
   }
 }
 
-
 /**
  * Process variables for the html template.
  */
@@ -83,7 +82,6 @@ function corvusbie_process_node(&$vars) {
 }
 // */
 
-
 /**
  * Override or insert variables into the comment templates.
  */
@@ -104,3 +102,24 @@ function corvusbie_preprocess_block(&$vars) {
 function corvusbie_process_block(&$vars) {
 }
 // */
+
+function corvusbie_preprocess_field(&$vars) {
+  if ($vars['element']['#field_name'] == 'field_link_to_detailed_guide') {
+    foreach ($vars['items'] as $delta => $item) {
+      $vars['items'][$delta]['#label'] = $vars['items'][$delta]['#label'] . " Subject Guide: Detailed Version";
+    }
+  } elseif ($vars['element']['#field_name'] == 'field_link_to_quick_guide') {
+    foreach ($vars['items'] as $delta => $item) {
+      $vars['items'][$delta]['#label'] = $vars['items'][$delta]['#label'] . " Quick Guide";
+    }
+  }
+}
+
+function corvusbie_admin_menu_output_alter(&$content) {
+  $content['menu']['imce'] = array(
+    "#title" => "File Browser",
+    "#href" => "imce",
+    "#weight" => -20,
+    );
+}
+

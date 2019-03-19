@@ -22,7 +22,7 @@
         <input class="summonsubmit" type="submit" value="Search" />
       </form>
       <ul>
-        <li><a href="http://proxy.library.carleton.ca/login?url=http://carletonu.summon.serialssolutions.com/">Off-campus login</a> </li>
+        <li><a href="http://proxy.library.carleton.ca/login?url=http://carletonu.summon.serialssolutions.com/">Off-campus Login</a> </li>
         <li><a href="http://carletonu.summon.serialssolutions.com/#!/advanced">Advanced Search</a></li>
         <li><a href="/find/databases">Databases</a></li>
         <li><a href="https://wc2pu2sa3d.search.serialssolutions.com/ejp/?libHash=WC2PU2SA3D#/">eJournals</a></li>
@@ -35,48 +35,50 @@
 
 <div class="card">
 <div class="icon-header"><img alt="Find" src="/sites/all/themes/corvusbie/images/compass.svg" />
-<h2><a href="/research">Research</a></h2>
+<h2><a href="/find">Find</a></h2>
 </div>
 
 <div class="separator">&nbsp;</div>
 
 <div class="list-and-more">
 <ul>
-  <li><a class="page-link" href="/find/archives">Archives</a></li>
-  <li><a class="page-link" href="/find/data">Data</a></li>
-  <li><a class="page-link" href="/find/gis">GIS</a></li>
-  <li><a class="page-link" href="/find/government-information">Government Information</a></li>
-  <li><a class="page-link" href="/find/maps">Maps</a></li>
+	<li><a class="page-link" href="/find/archives">Archives</a></li>
+	<li><a class="page-link" href="/find/data">Data</a></li>
+	<li><a class="page-link" href="/find/gis">GIS</a></li>
+	<li><a class="page-link" href="/find/government-information">Government Information</a></li>
+	<li><a class="page-link" href="/find/maps">Maps</a></li>
 </ul>
-<a class="view-more" href="/find">View More → <span class="element-hidden"> types of information to find</span></a></div>
+<a class="view-more" href="/find">View More &rarr; <span class="element-hidden"> types of information to find</span></a></div>
 </div>
+
 
 ---
 
 <div class="card">
-<div class="icon-header"><img alt="Research" src="/sites/all/themes/corvusbie/images/book.svg" />
-<h2><a href="/research">Research</a></h2>
+<div class="icon-header"><img alt="Research Support" src="/sites/all/themes/corvusbie/images/book.svg" />
+<h2><a href="/research">Research Support</a></h2>
 </div>
 
 <div class="separator">&nbsp;</div>
 
 <div class="list-and-more">
 <ul>
-  <li><a class="page-link" href="/research/subject-guides">Subject Guides</a></li>
-  <li><a class="page-link" href="/research/course-guides">Course Guides</a></li>
-  <li><a class="page-link" href="/research/collections">Specialized Collections</a></li>
-  <li><a class="page-link" href="/services/open-access">Open Access Support</a></li>
-  <li><a class="page-link" href="/services/research-help">Research Help</a></li>
+	<li><a class="page-link" href="/research/subject-guides">Subject Guides</a></li>
+	<li><a class="page-link" href="/research/course-guides">Course Guides</a></li>
+	<li><a class="page-link" href="/research/collections">Specialized Collections</a></li>
+	<li><a class="page-link" href="/services/open-access">Open Access Support</a></li>
+	<li><a class="page-link" href="/services/research-help">Research Help</a></li>
 </ul>
-<a class="view-more" href="/find">View More → <span class="element-hidden">  research options</span></a></div>
+<a class="view-more" href="/research">View More &rarr; <span class="element-hidden"> research options</span></a></div>
 </div>
+
 
 ---
 
 
 <div class="card">
 <div class="icon-header"><img alt="Services" src="/sites/all/themes/corvusbie/images/organization.svg" />
-<h2><a href="/research">Services</a></h2>
+<h2><a href="/services">Services</a></h2>
 </div>
 
 <div class="separator">&nbsp;</div>
@@ -89,28 +91,29 @@
   <li><a class="page-link" href="/services/quiet-please">Quiet, Please!</a></li>
   <li><a class="page-link" href="/services/Services%20For...">Services for...</a></li>
 </ul>
-<a class="view-more" href="/find">View More → <span class="element-hidden">  services</span></a></div>
+<a class="view-more" href="/services">View More → <span class="element-hidden">  services</span></a></div>
 </div>
 
 ---
 
 <div class="card">
 <div class="icon-header"><img alt="In the Building" src="/sites/all/themes/corvusbie/images/location.svg" />
-<h2><a href="/research">In the Building</a></h2>
+<h2><a href="/in-the-building">In the Building</a></h2>
 </div>
 
 <div class="separator">&nbsp;</div>
 
 <div class="list-and-more">
 <ul>
-  <li><a class="page-link" href="/contact/service-points">Service Points</a></li>
-  <li><a class="page-link" href="/floor-maps/floor-2">Floor Maps</a></li>
-  <li><a class="page-link" href="/services/group-study-rooms">Book a Group Study Room</a></li>
-  <li><a class="page-link" href="/building/study-spaces">Study Spaces</a></li>
-  <li><a class="page-link" href="/hours">Hours</a></li>
+	<li><a class="page-link" href="/contact/service-points">Service Points</a></li>
+	<li><a class="page-link" href="/floor-maps/floor-2">Floor Maps</a></li>
+	<li><a class="page-link" href="/services/group-study-rooms">Book a Group Study Room</a></li>
+	<li><a class="page-link" href="/building/study-spaces">Study Spaces</a></li>
+	<li><a class="page-link" href="/hours">Hours</a></li>
 </ul>
-<a class="view-more" href="/find">View More → <span class="element-hidden">  of what&#39;s in the building</span></a></div>
+<a class="view-more" href="/in-the-building">View More &rarr; <span class="element-hidden"> of what is in the building</span></a></div>
 </div>
+
 
 -- Add footer blocks (copy html)
 
@@ -125,4 +128,6 @@
 -- On Find>Books and Find>Reserves pages pull the first <li> of the quicksearch-more-links section out of the <ul> and into a <p>
 
 -- Add responsive menu module, config sidr
+
+-- Copy over any custom formatters
 
