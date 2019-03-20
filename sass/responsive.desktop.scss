@@ -22,6 +22,38 @@
     display: none;
   }
 
+  li.sf-depth-2 img {
+    display: none;
+  }
+
+  li.sf-depth-2.last img {
+    display: inline;
+    margin: 0px 10px 0px 0px;
+    transform: rotate(-90deg);
+  }
+
+  li.sf-depth-1 a {
+    img {
+      width: 10px;
+      margin-left: 5px;
+      transition: filter 0.1s ease-in-out;
+      filter: none;
+      transition: transform 0.1s ease-in-out;
+      transform: rotate(0deg);
+    }
+    &:focus,
+    &:hover {
+      img {
+        filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
+      }
+    }
+
+    &.sf-clicked img {
+      transform: rotate(180deg);
+      transition: transform 0.1s ease-in-out;
+    }
+  }
+
   nav > ul {
     display: flex;
   }
@@ -34,7 +66,7 @@
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
   top: $menubar_height;
   a {
-    height: 50px;
+    padding: 5px 10px;
     background: white;
   }
 }
@@ -49,7 +81,7 @@
   a {
     min-width: 100px;
     img {
-      transition: filter 0.3s ease-in-out;
+      transition: filter 0.1s ease-in-out;
       filter: none;
       height: 24px;
     }

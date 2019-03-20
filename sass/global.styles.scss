@@ -200,7 +200,7 @@ var {
       text-decoration: none;
       color: $carleton_red;
       transition-property: color;
-      transition-duration: 0.3s;
+      transition-duration: 0.1s;
     }
   }
 
@@ -875,14 +875,6 @@ body.sidr-0-open #sidr-wrapper-0 {
   }
 }
 
-.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
-  top: $menubar_height;
-  a {
-    height: 50px;
-    background: white;
-  }
-}
-
 .nav {
   clear: both;
   margin: 10px 0;
@@ -915,6 +907,10 @@ body.sidr-0-open #sidr-wrapper-0 {
 }
 
 #sidr-0 {
+
+  img {
+    display: none;
+  }
 
 
 }
@@ -2767,7 +2763,7 @@ body.front {
   font-weight: 400;
   cursor: pointer;
   color: black;
-  min-height: 100px;
+  min-height: 80px;
 
   h2 {
     margin: 1px;

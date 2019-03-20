@@ -2,6 +2,11 @@ jQuery(document).ready(function($) {
   $("#admin-menu").detach().prependTo('#page');
 
   $("#superfish-1-accordion").detach().appendTo('#menubar-wrapper');
+
+  $("#menu-bar li.sf-depth-2.last img").each(function(){
+    parent = $(this).parent();
+    $(this).detach().prependTo(parent);
+  });
 });
 
 //Subject Guide Accordion
