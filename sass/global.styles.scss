@@ -429,6 +429,23 @@ body {
   }
 }
 
+/* Action buttons (header) */
+#header-wrapper .header-action-button {
+  float: right;
+  margin-top: -75px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: $rounded_radius;
+  font-weight: 400;
+  transition: .35s ease;
+}
+
+#header-wrapper a.header-action-button:hover {
+  text-decoration: none;
+  background: $carleton_red;
+  color: #fff;
+}
+
 /*
  * Wraps breadcrumb
  */
@@ -790,7 +807,7 @@ ul.links {
   .view-sidebar-related-links .field-content,
   .view-sidebar-related-policies .field-content {
     padding-top: 8px;
-  } 
+  }
 }
 
 
@@ -1127,7 +1144,7 @@ ul.menu {
 
   .page-links {
     border: none;
-  } 
+  }
 
   .page-previous {}
 
@@ -2832,23 +2849,6 @@ body.front {
 
 .field-name-field-detailed-guide-section-lab a:hover {
   text-decoration: none;
-}
-
-/* Action buttons (header) */
-.header-action-button {
-  float: right;
-  margin-top: -75px;
-  background: #fff;
-  padding: 10px 15px;
-  border-radius: $rounded_radius;
-  font-weight: 400;
-  transition: .35s ease;
-}
-
-a.header-action-button:hover {
-  text-decoration: none;
-  background: $carleton_red;
-  color: #fff;
 }
 
 /* Paragraphs */
