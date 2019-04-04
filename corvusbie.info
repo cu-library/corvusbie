@@ -13,8 +13,8 @@
 ;----------// Stylesheets
 
   ; See each stylesheet for extensive documentation and help.
-  stylesheets[screen][] = css/global.base.css
-  stylesheets[screen][] = css/global.styles.css
+  stylesheets[all][] = css/global.base.css
+  stylesheets[all][] = css/global.styles.css
 
   ; Print - uncomment to load basic print styles.
   ; stylesheets[print][] = css/print.css
@@ -154,7 +154,7 @@
   settings[bigscreen_sidebar_second] = 25
   settings[bigscreen_set_max_width]  = 0
   settings[bigscreen_max_width]      = 1140
-  settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
+  settings[bigscreen_media_query]    = '(min-width:1025px)'
 
 
   ; Layout settings - Tablet landscape
@@ -164,7 +164,7 @@
   settings[tablet_landscape_page_width]     = 100
   settings[tablet_landscape_sidebar_first]  = 20
   settings[tablet_landscape_sidebar_second] = 20
-  settings[tablet_landscape_media_query]    = 'only screen and (min-width:769px) and (max-width:1024px)'
+  settings[tablet_landscape_media_query]    = '(min-width:769px) and (max-width:1024px)'
 
 
   ; Layout settings - Tablet portrait
@@ -174,7 +174,7 @@
   settings[tablet_portrait_page_width]     = 100
   settings[tablet_portrait_sidebar_first]  = 50
   settings[tablet_portrait_sidebar_second] = 50
-  settings[tablet_portrait_media_query]    = 'only screen and (min-width:581px) and (max-width:768px)'
+  settings[tablet_portrait_media_query]    = '(min-width:581px) and (max-width:768px)'
 
 
   ; Layout settings - Smalltouch landscape
@@ -184,7 +184,7 @@
   settings[smalltouch_landscape_page_width]     = 100
   settings[smalltouch_landscape_sidebar_first]  = 50
   settings[smalltouch_landscape_sidebar_second] = 50
-  settings[smalltouch_landscape_media_query]    = 'only screen and (min-width:321px) and (max-width:580px)'
+  settings[smalltouch_landscape_media_query]    = '(min-width:321px) and (max-width:580px)'
 
 
   ; Layout settings - Smalltouch portrait
@@ -194,7 +194,7 @@
   settings[smalltouch_portrait_page_width]     = 100
   settings[smalltouch_portrait_sidebar_first]  = 100
   settings[smalltouch_portrait_sidebar_second] = 100
-  settings[smalltouch_portrait_media_query]    = 'only screen and (max-width:320px)'
+  settings[smalltouch_portrait_media_query]    = '(max-width:320px)'
 
 
   ; Responsive Panels - Standard layout
