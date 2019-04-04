@@ -698,6 +698,11 @@ ul.links {
   }
 }
 
+/* Small text */
+.small {
+  font-size: 0.8em;
+}
+
 
 /* =============================================================================
  *   Regions
@@ -755,7 +760,7 @@ ul.links {
  * Sidebars - targets both
  */
 .sidebar {
-  section.block, nav.block {
+  section.block, nav.block, .block-24 {
     border-radius: $rounded_radius;
     border-left: $carleton_dark_border;
     border-right: $carleton_dark_border;
@@ -775,7 +780,18 @@ ul.links {
 /*
  * Second sidebar
  */
-.region-sidebar-second {}
+.region-sidebar-second {
+  .view-sidebar-related-help .field-content,
+  .view-sidebar-related-subject-guides .field-content,
+  .view-sidebar-related-services .field-content,
+  .view-sidebar-related-find-guides .field-content,
+  .view-sidebar-related-course-guides .field-content,
+  .view-sidebar-related-government-information .field-content,
+  .view-sidebar-related-links .field-content,
+  .view-sidebar-related-policies .field-content {
+    padding-top: 8px;
+  } 
+}
 
 
 /*
@@ -1106,9 +1122,12 @@ ul.menu {
 
 .book-navigation {
 
+  border-top: $carleton_dark_border;
+  margin-top: 50px;
+
   .page-links {
     border: none;
-  }
+  } 
 
   .page-previous {}
 
@@ -2035,6 +2054,11 @@ fieldset.webform-component-fieldset a.fieldset-title {
   font-weight: 400;
 }
 
+.views-exposed-widget input.form-submit {
+  padding: 15px;
+  margin-top: 2em !important;
+}
+
 
 /*
  * Highlight marks and form required mark
@@ -2806,6 +2830,10 @@ body.front {
   transition: all .35s;
 }
 
+.field-name-field-detailed-guide-section-lab a:hover {
+  text-decoration: none;
+}
+
 /* Action buttons (header) */
 .header-action-button {
   float: right;
@@ -2859,6 +2887,13 @@ a.header-action-button:hover {
 
 .gsc-input table{
 margin: 0px;
+}
+
+/* Service Hours */
+.service-hours {
+  border-top: thick solid lightgray;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /* =============================================================================
@@ -3059,7 +3094,7 @@ margin:0 55px;
 
 }
 
-/* Find Databases */
+/* Find Databases and Database Details */
 .custom-alpha-pager {
   width: 95%;
   font-size: 1.25em;
@@ -3073,6 +3108,35 @@ margin:0 55px;
   border: 1px solid #c3c3c3;
   padding: 15px;
   margin-top: 33px;
+}
+
+.field-name-field-database-advisory {
+  color: black;
+  font-weight: 500;
+}
+
+.database-alert {
+  color: black;
+}
+
+.db-connect-link {
+  font-size:1.25em;
+
+  a {
+    font-weight:500;
+  }
+}
+
+.connect-box {
+  border: 2px solid $border;
+  padding-top: 20px;
+}
+
+.db-news ul,
+.db-news li {
+  margin: 0px;
+  padding: 5px 0 0 0;
+  list-style: none;
 }
 
 /* Find Data */
@@ -3113,4 +3177,11 @@ div.field-name-field-link-to-quick-guide div.field-item {
   &::after {
     content: ".";
   }
+}
+
+/* Collaborative Futures News box */
+#block-views-library-news-block-2 {
+  padding: 20px;
+  border: solid thin $border;
+  border-radius: $rounded_radius;
 }

@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
       var activeTheme = Drupal.settings["ajaxPageState"]["theme"];
       var themeSettings = Drupal.settings['adaptivetheme'];
 
-      if (typeof themeSettings[activeTheme] == 'undefined') {
+      if (typeof themeSettings == 'undefined') || (typeof themeSettings[activeTheme] == 'undefined') {
         return;
       }
 
