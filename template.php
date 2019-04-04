@@ -50,6 +50,24 @@ function corvusbie_preprocess_html(&$vars) {
   if (strncmp(request_path(), $servicespathprefix, strlen($servicespathprefix)) === 0 ){
     $vars['classes_array'][] = 'services-child-page';
   }
+
+  // Add prefetch / preload tags for login and search
+  drupal_add_html_head_link(array(
+    'rel' => 'prefetch prerender',
+    // Force the URL to be absolute, for consistency with other <link> tags
+    // output by Drupal.
+    'href' => url('login', array(
+      'absolute' => TRUE,
+    )),
+  ));
+  drupal_add_html_head_link(array(
+    'rel' => 'prefetch prerender',
+    // Force the URL to be absolute, for consistency with other <link> tags
+    // output by Drupal.
+    'href' => url('search-options', array(
+      'absolute' => TRUE,
+    )),
+  ));
 }
 
 /**
