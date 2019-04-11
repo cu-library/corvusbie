@@ -2451,8 +2451,20 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   max-width: 220px;
 }
 
+/* Detailed Guide Sidebar - Related Guides */
+/* line 3066, ../sass/global.styles.scss */
+.detailed-guide-related-guides .views-label {
+  font-weight: 400;
+}
+
+/* line 3070, ../sass/global.styles.scss */
+.detailed-guide-related-guides .item-list ul li {
+  margin: 0 0 0.5em 0;
+  list-style: none;
+}
+
 /* Quick Guides */
-/* line 3067, ../sass/global.styles.scss */
+/* line 3077, ../sass/global.styles.scss */
 .node-subject-quick-guide {
   /* section.field-name-field-key-resources {
       padding: 10px;
@@ -2463,78 +2475,78 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   margin:0 55px;
   } */
 }
-/* line 3075, ../sass/global.styles.scss */
+/* line 3085, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resources h2.field-label {
   font-size: 1.5em;
   /* font-weight: bold;
   margin-left: 0.5em; */
   padding-bottom: 10px;
 }
-/* line 3082, ../sass/global.styles.scss */
+/* line 3092, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-item-field-key-resources .field-name-field-key-resource-databases {
   font-size: 1.17em;
   font-weight: bold;
 }
-/* line 3087, ../sass/global.styles.scss */
+/* line 3097, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resource-link {
   font-size: 1.17em;
   font-weight: bold;
 }
-/* line 3092, ../sass/global.styles.scss */
+/* line 3102, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-view {
   border: 0;
   padding: 0.5em 0 0.3em 0;
 }
-/* line 3097, ../sass/global.styles.scss */
+/* line 3107, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-container {
   border: 0;
 }
 
 /* Find Databases and Database Details */
-/* line 3108, ../sass/global.styles.scss */
+/* line 3118, ../sass/global.styles.scss */
 .custom-alpha-pager {
   width: 95%;
   font-size: 1.25em;
 }
-/* line 3112, ../sass/global.styles.scss */
+/* line 3122, ../sass/global.styles.scss */
 .custom-alpha-pager a {
   padding-right: 3px;
 }
 
-/* line 3117, ../sass/global.styles.scss */
+/* line 3127, ../sass/global.styles.scss */
 #edit-submit-databases-title {
   border: 1px solid #c3c3c3;
   padding: 15px;
   margin-top: 33px;
 }
 
-/* line 3123, ../sass/global.styles.scss */
+/* line 3133, ../sass/global.styles.scss */
 .field-name-field-database-advisory {
   color: black;
   font-weight: 500;
 }
 
-/* line 3128, ../sass/global.styles.scss */
+/* line 3138, ../sass/global.styles.scss */
 .database-alert {
   color: black;
 }
 
-/* line 3132, ../sass/global.styles.scss */
+/* line 3142, ../sass/global.styles.scss */
 .db-connect-link {
   font-size: 1.25em;
 }
-/* line 3135, ../sass/global.styles.scss */
+/* line 3145, ../sass/global.styles.scss */
 .db-connect-link a {
   font-weight: 500;
 }
 
-/* line 3140, ../sass/global.styles.scss */
+/* line 3150, ../sass/global.styles.scss */
 .connect-box {
   border: 2px solid #ccc;
   padding-top: 20px;
 }
 
-/* line 3145, ../sass/global.styles.scss */
+/* line 3155, ../sass/global.styles.scss */
 .db-news ul,
 .db-news li {
   margin: 0px;
@@ -2543,54 +2555,54 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Find Data */
-/* line 3153, ../sass/global.styles.scss */
+/* line 3163, ../sass/global.styles.scss */
 .data-search {
   background: #eee;
 }
-/* line 3156, ../sass/global.styles.scss */
+/* line 3166, ../sass/global.styles.scss */
 .data-search input, .data-search select {
   padding: 15px;
 }
 
 /* Ottawa Room and Collections pages */
-/* line 3162, ../sass/global.styles.scss */
+/* line 3172, ../sass/global.styles.scss */
 .collection-block {
   float: left;
   padding: 10px;
 }
 
-/* line 3167, ../sass/global.styles.scss */
+/* line 3177, ../sass/global.styles.scss */
 .collection-block h3 {
   margin: 0;
 }
 
 /* Fix edit buttons */
-/* line 3172, ../sass/global.styles.scss */
+/* line 3182, ../sass/global.styles.scss */
 td.ctools-export-ui-operations .ctools-dropbutton {
   position: relative;
 }
 
 /* Subject Guide References */
-/* line 3177, ../sass/global.styles.scss */
+/* line 3187, ../sass/global.styles.scss */
 div.field-name-field-link-to-detailed-guide {
   font-size: 150%;
 }
 
-/* line 3182, ../sass/global.styles.scss */
+/* line 3192, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item {
   font-size: 110%;
 }
-/* line 3184, ../sass/global.styles.scss */
+/* line 3194, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::before {
   content: "Just need a few resources to get you started? Try the ";
 }
-/* line 3187, ../sass/global.styles.scss */
+/* line 3197, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::after {
   content: ".";
 }
 
 /* Collaborative Futures News box */
-/* line 3193, ../sass/global.styles.scss */
+/* line 3203, ../sass/global.styles.scss */
 #block-views-library-news-block-2 {
   padding: 20px;
   border: solid thin #ccc;

@@ -6,12 +6,12 @@
 /*
  * Body
  */
-/* line 14, ../sass/print.scss */
+/* line 9, ../sass/print.scss */
 body {
   width: 100% !important;
-  margin: 0 !important;
+  margin: 1em !important;
   padding: 0 !important;
-  line-height: 1.4;
+  /*  line-height: 1.4; */
   word-spacing: 1.1pt;
   letter-spacing: 0.2pt;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -23,23 +23,41 @@ body {
 /*
  * Links
  */
-/* line 31, ../sass/print.scss */
+/* line 25, ../sass/print.scss */
 a {
   background: transparent;
-  font-weight: 700;
   text-decoration: underline;
-  color: #0000ee;
-}
-/* line 38, ../sass/print.scss */
-a[href^="http://"]:after, a[href^="http://"]:visited:after {
-  content: "(" attr(href) ")";
-  font-size: 10pt;
 }
 
+/* line 29, ../sass/print.scss */
+a:link {
+  color: #000;
+}
+
+/* line 30, ../sass/print.scss */
+a:visited {
+  color: #000;
+}
+
+/* line 31, ../sass/print.scss */
+a:hover {
+  color: #00f;
+}
+
+/* line 33, ../sass/print.scss */
+.print-links {
+  font-size: 0.8em;
+}
+
+/* Original styling for links -- adding URL after the link. Decided we prefer footnote approach
+  a[href^="http://"]:after, a[href^="http://"]:visited:after {
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+}  */
 /*
  * Strip background from likely candidates
  */
-/* line 49, ../sass/print.scss */
+/* line 46, ../sass/print.scss */
 div[id*="wrapper"],
 [class*="title"],
 [class*="inner"],
@@ -71,10 +89,16 @@ table * {
 
 /*
  * Hide various bits of the page
- */
-/* line 82, ../sass/print.scss */
-.sidebar,
+
+.sidebar, */
+/* line 79, ../sass/print.scss */
+#nav-wrapper,
+#footer,
+#tertiary-content-wrapper,
+.region-header,
+.region-footer,
 #breadcrumb,
+.breadcrumb-wrapper,
 .nav,
 .field-type-taxonomy-term-reference,
 ul.links,
@@ -88,14 +112,15 @@ ul.links,
 .action-links,
 .pager,
 .messages,
-.help {
+.help,
+#tasks {
   display: none;
 }
 
 /*
  * Ensure the display the main content region
  */
-/* line 105, ../sass/print.scss */
+/* line 107, ../sass/print.scss */
 #content {
   display: block !important;
 }
@@ -103,9 +128,9 @@ ul.links,
 /*
  * Layout
  */
-/* line 113, ../sass/print.scss */
+/* line 114, ../sass/print.scss */
 #header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* line 118, ../sass/print.scss */
@@ -114,10 +139,17 @@ ul.links,
   padding: 0 !important;
 }
 
+/* line 123, ../sass/print.scss */
+.sidebar {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid grey thin;
+}
+
 /*
  * HTML elements
  */
-/* line 127, ../sass/print.scss */
+/* line 132, ../sass/print.scss */
 h1,
 h2,
 h3,
@@ -126,21 +158,20 @@ h5,
 h6 {
   color: #333333;
   margin: 0;
-  padding: 0;
-  line-height: 1;
+  padding: 2px;
 }
 
-/* line 140, ../sass/print.scss */
+/* line 143, ../sass/print.scss */
 h1 {
   font-size: 14pt;
 }
 
-/* line 145, ../sass/print.scss */
+/* line 147, ../sass/print.scss */
 h2 {
   font-size: 13pt;
 }
 
-/* line 150, ../sass/print.scss */
+/* line 151, ../sass/print.scss */
 h3 {
   font-size: 12pt;
 }
@@ -165,17 +196,17 @@ h6 a,
   color: #333333;
 }
 
-/* line 175, ../sass/print.scss */
-.h-group a:link, .h-group a:visited {
+/* line 173, ../sass/print.scss */
+hgroup a:link, hgroup a:visited {
   text-decoration: none;
 }
 
-/* line 182, ../sass/print.scss */
+/* line 177, ../sass/print.scss */
 #page-title {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-/* line 187, ../sass/print.scss */
+/* line 181, ../sass/print.scss */
 pre,
 code,
 tt,
@@ -186,7 +217,7 @@ var {
   font-family: Consolas, "Lucida Console", Menlo, Monaco, "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 198, ../sass/print.scss */
+/* line 191, ../sass/print.scss */
 blockquote {
   margin: 20px;
   padding: 10px;
@@ -195,7 +226,7 @@ blockquote {
   background: #eeeeee;
 }
 
-/* line 207, ../sass/print.scss */
+/* line 199, ../sass/print.scss */
 hr {
   background-color: #666666;
 }
@@ -203,29 +234,29 @@ hr {
 /*
  * Header, Logo, Site name
  */
-/* line 215, ../sass/print.scss */
+/* line 206, ../sass/print.scss */
 #header {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-/* line 220, ../sass/print.scss */
+/* line 210, ../sass/print.scss */
 #logo img {
   padding: 0 10px 0 0;
   margin: 0 !important;
-  float: none !important;
+  float: left;
 }
 
 /*
  * Images
  */
-/* line 230, ../sass/print.scss */
+/* line 219, ../sass/print.scss */
 img {
   float: left;
   margin: 4px 20px 10px 0;
   page-break-inside: avoid;
 }
 
-/* line 237, ../sass/print.scss */
+/* line 225, ../sass/print.scss */
 a img {
   border: none;
 }
@@ -233,46 +264,46 @@ a img {
 /*
  * Tables
  */
-/* line 245, ../sass/print.scss */
+/* line 232, ../sass/print.scss */
 table {
   margin: 1px;
   text-align: left;
 }
 
-/* line 251, ../sass/print.scss */
+/* line 237, ../sass/print.scss */
 th {
   border-bottom: 1px solid #333333;
   font-weight: 700;
 }
 
-/* line 257, ../sass/print.scss */
+/* line 242, ../sass/print.scss */
 td {
   border-bottom: 1px solid #333333;
 }
 
-/* line 262, ../sass/print.scss */
+/* line 246, ../sass/print.scss */
 th,
 td {
   padding: 4px 10px 4px 0;
 }
 
-/* line 268, ../sass/print.scss */
+/* line 251, ../sass/print.scss */
 tfoot {
   font-style: italic;
 }
 
-/* line 273, ../sass/print.scss */
+/* line 255, ../sass/print.scss */
 caption {
   margin-bottom: 10px;
   text-align: left;
 }
 
-/* line 279, ../sass/print.scss */
+/* line 260, ../sass/print.scss */
 thead {
   display: table-header-group;
 }
 
-/* line 284, ../sass/print.scss */
+/* line 264, ../sass/print.scss */
 tr {
   page-break-inside: avoid;
 }
@@ -280,7 +311,7 @@ tr {
 /*
  * Forms
  */
-/* line 292, ../sass/print.scss */
+/* line 271, ../sass/print.scss */
 form {
   margin-bottom: 10px;
 }
@@ -288,13 +319,14 @@ form {
 /*
  * Poll module
  */
-/* line 300, ../sass/print.scss */
+/* line 278, ../sass/print.scss */
 .poll .text,
 .poll .percent,
 .poll .total {
   text-align: left;
 }
-/* line 305, ../sass/print.scss */
+
+/* line 283, ../sass/print.scss */
 .poll form {
   margin-bottom: 0;
 }
@@ -302,15 +334,15 @@ form {
 /*
  * Articles
  */
-/* line 314, ../sass/print.scss */
+/* line 290, ../sass/print.scss */
 .node,
 .comment {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
-  page-break-inside: avoid;
+  /*  page-break-inside: avoid; */
 }
 
-/* line 321, ../sass/print.scss */
+/* line 297, ../sass/print.scss */
 .submitted {
   color: #666666;
   text-decoration: none;
@@ -319,7 +351,8 @@ form {
   margin: 0;
   padding: 0;
 }
-/* line 329, ../sass/print.scss */
+
+/* line 305, ../sass/print.scss */
 .submitted a {
   color: #666666;
   text-decoration: none;
