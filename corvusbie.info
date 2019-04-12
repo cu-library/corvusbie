@@ -17,7 +17,7 @@
   stylesheets[all][] = css/global.styles.css
 
   ; Print - uncomment to load basic print styles.
-  ; stylesheets[print][] = css/print.css
+  stylesheets[print][] = css/print.css
 
 
   ; Internet Explorer Stylesheets
