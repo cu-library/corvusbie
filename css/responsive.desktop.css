@@ -9,13 +9,13 @@
  */
 /* line 15, ../sass/responsive.desktop.scss */
 #menu-bar {
-  flex: 1 1 auto;
   border-left: 1px solid #eee;
-  align-items: center;
   margin: 0px;
+  float: left;
+  height: 70px;
 }
 /* line 21, ../sass/responsive.desktop.scss */
-#menu-bar li.sf-item-6.sf-depth-1, #menu-bar li.sf-item-7.sf-depth-1 {
+#menu-bar li.sf-item-1.sf-depth-1, #menu-bar li.sf-item-2.sf-depth-1 {
   display: none;
 }
 /* line 25, ../sass/responsive.desktop.scss */
@@ -28,91 +28,172 @@
   margin: 0px 10px 0px 0px;
   transform: rotate(-90deg);
 }
-/* line 36, ../sass/responsive.desktop.scss */
+/* line 35, ../sass/responsive.desktop.scss */
+#menu-bar li.sf-depth-1 a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 14.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 41, ../sass/responsive.desktop.scss */
 #menu-bar li.sf-depth-1 a img {
   width: 10px;
-  margin-left: 5px;
+  height: 10px;
+  margin-left: 8px;
   transition: filter 0.1s ease-in-out;
   filter: none;
   transition: transform 0.1s ease-in-out;
   transform: rotate(0deg);
 }
-/* line 46, ../sass/responsive.desktop.scss */
+/* line 52, ../sass/responsive.desktop.scss */
 #menu-bar li.sf-depth-1 a:focus img, #menu-bar li.sf-depth-1 a:hover img {
   filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
 }
-/* line 51, ../sass/responsive.desktop.scss */
+/* line 57, ../sass/responsive.desktop.scss */
 #menu-bar li.sf-depth-1 a.sf-clicked img {
   transform: rotate(180deg);
   transition: transform 0.1s ease-in-out;
 }
-/* line 57, ../sass/responsive.desktop.scss */
-#menu-bar nav > ul {
-  display: flex;
-}
-/* line 61, ../sass/responsive.desktop.scss */
+/* line 66, ../sass/responsive.desktop.scss */
 #menu-bar nav {
   margin: 0px;
 }
 
-/* line 66, ../sass/responsive.desktop.scss */
+/* line 71, ../sass/responsive.desktop.scss */
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
   top: 70px;
 }
-/* line 68, ../sass/responsive.desktop.scss */
+/* line 73, ../sass/responsive.desktop.scss */
 .sf-menu li:hover > ul a, .sf-menu li.sfHover > ul a {
   padding: 5px 15px;
   background: white;
 }
 
-/* line 74, ../sass/responsive.desktop.scss */
+/* line 79, ../sass/responsive.desktop.scss */
 .nav-widget {
+  width: 90px;
   display: block;
-  flex: 1 1 auto;
-  max-width: 150px;
+  float: right;
+  height: 70px;
   border-left: 1px solid #eee;
 }
-/* line 81, ../sass/responsive.desktop.scss */
+/* line 87, ../sass/responsive.desktop.scss */
 .nav-widget a {
-  min-width: 100px;
+  padding-top: 23px;
+  padding-bottom: 22.5px;
+  padding-left: 7px;
+  display: block;
 }
-/* line 83, ../sass/responsive.desktop.scss */
+/* line 92, ../sass/responsive.desktop.scss */
+.nav-widget a span {
+  position: relative;
+  top: -1px;
+}
+/* line 96, ../sass/responsive.desktop.scss */
 .nav-widget a img {
   transition: filter 0.1s ease-in-out;
   filter: none;
-  height: 24px;
+  height: 15px;
+  width: 15px;
 }
-/* line 90, ../sass/responsive.desktop.scss */
+/* line 104, ../sass/responsive.desktop.scss */
 .nav-widget a:focus img, .nav-widget a:hover img {
   filter: invert(14%) sepia(70%) saturate(4801%) hue-rotate(342deg) brightness(88%) contrast(99%);
 }
-/* line 96, ../sass/responsive.desktop.scss */
+/* line 110, ../sass/responsive.desktop.scss */
 .nav-widget img {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
-/* line 101, ../sass/responsive.desktop.scss */
-#nav-wrapper {
-  flex: 1 1 auto;
+/* line 128, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) {
+  height: 300px;
 }
-
-/* line 106, ../sass/responsive.desktop.scss */
-#branding {
-  flex: 0 0 auto;
+/* line 130, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box {
+  font-size: 1.3rem;
+  margin-top: 107.5px;
 }
-
-/* line 115, ../sass/responsive.desktop.scss */
+/* line 134, ../sass/responsive.desktop.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
-  font-size: 1.3rem;
+  height: 64px;
 }
-/* line 118, ../sass/responsive.desktop.scss */
+/* line 137, ../sass/responsive.desktop.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
-  font-size: 1.3rem;
+  height: 64px;
+  position: relative;
+  top: -64px;
 }
-/* line 124, ../sass/responsive.desktop.scss */
-body.front #main-content #content > div:nth-child(1) #summon-box ul li a {
-  color: white;
+/* line 143, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: -56px;
   font-size: 1.1rem;
+  height: 21px;
+}
+/* line 150, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul li {
+  padding: 0px 13px;
+}
+/* line 156, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block {
+  margin-top: 37.5px;
+}
+/* line 159, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
+  padding: 8px 30px;
+}
+/* line 162, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
+  font-size: 150%;
+  margin-top: 0px;
+  margin-bottom: 0.83em;
+}
+/* line 171, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(2) div.card {
+  min-height: 287px;
+}
+/* line 173, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(2) div.card div.icon-header {
+  padding-top: 40px;
+}
+/* line 182, ../sass/responsive.desktop.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title {
+  bottom: 15px;
+  left: 15px;
+  font-size: 0.9rem;
+}
+
+/* line 195, ../sass/responsive.desktop.scss */
+#footer > div > div > :nth-child(1) {
+  float: left;
+}
+/* line 198, ../sass/responsive.desktop.scss */
+#footer > div > div > :nth-child(2) {
+  float: left;
+  width: 200px;
+}
+/* line 202, ../sass/responsive.desktop.scss */
+#footer > div > div > :nth-child(3) {
+  float: left;
+  border-left: 1px solid #bdbdbd;
+  padding-left: 20px;
+}
+/* line 207, ../sass/responsive.desktop.scss */
+#footer > div > div > :nth-child(4) {
+  float: right;
+  border-left: 1px solid #bdbdbd;
+  height: 268px;
+  padding-right: 30px;
+}
+/* line 214, ../sass/responsive.desktop.scss */
+#footer > div > div #social-links {
+  float: right;
+  position: relative;
+  top: -40px;
 }
 
 /*# sourceMappingURL=responsive.desktop.css.map */

@@ -7,5 +7,71 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
+/* line 22, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) {
+  height: 300px;
+}
+/* line 24, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box {
+  font-size: 1.0rem;
+  margin-top: 107.5px;
+}
+/* line 28, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
+  height: 64px;
+}
+/* line 31, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
+  height: 64px;
+  position: relative;
+  top: -64px;
+}
+/* line 37, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: -56px;
+  font-size: 0.9rem;
+}
+/* line 43, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul li {
+  padding: 0px 6px;
+}
+/* line 49, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block {
+  margin-top: 50px;
+}
+/* line 52, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
+  padding: 8px 10px;
+}
+/* line 55, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today h2 {
+  margin: 10px 0px;
+  font-size: 1.3rem;
+}
+/* line 60, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
+  font-size: 110%;
+  margin-top: 0px;
+  margin-bottom: 0.83em;
+}
+/* line 69, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-first {
+  background: #fff;
+}
+/* line 72, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-second {
+  background: #eee;
+}
+/* line 75, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-third {
+  background: #eee;
+}
+/* line 78, ../sass/responsive.tablet.portrait.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-fourth {
+  background: #fff;
+}
 
 /*# sourceMappingURL=responsive.tablet.portrait.css.map */

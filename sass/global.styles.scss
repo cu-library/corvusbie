@@ -187,9 +187,6 @@ var {
  * Wraps all header elements - branding and .region-header
  */
 #header {
-  display: flex;
-  align-items: center;
-  justify-content: left;
   border-top: $carleton_red_border;
   border-bottom: $carleton_light_border;
 
@@ -207,14 +204,6 @@ var {
       transition-duration: 0.1s;
     }
   }
-
-  a.sf-depth-1, div.nav-widget a {
-    height: $menubar_height;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
 }
 
 
@@ -249,8 +238,8 @@ var {
  */
 #footer {
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
   a {
     color: $carleton_footer_text;
@@ -266,64 +255,54 @@ var {
     list-style-type: none;
   }
 
+  ul.menu {
+    padding: 10px 0px;
+    margin: 0px;
+  }
+
   div.footer-header {
-    margin: 1em 0px;
+    padding-top: 10px;
   }
 
   div.footer-content {
+    padding-top: 10px;
     color: $carleton_footer_text;
   }
 
-  > div > div {
-    display: flex;
-    flex-wrap: wrap;
-    > nav {
-    }
-    > div:nth-child(2) {
-      border-left: $carleton_dark_border;
-      padding-left: 20px;
-      flex: 1 0 auto;
-    }
-    > div:nth-child(3) {
-      border-left: $carleton_dark_border;
-      padding-left: 20px;
-      width: 230px;
-      padding-top: 1em;
-      flex: 1 0 auto;
-      img {
-        width: 200px;
-        height: 53px;
-        margin-bottom: 15px;
-      }
-      #footer-carleton-links a {
-        padding-right: 15px;
-      }
-    }
-    > div:nth-child(4) {
-      flex: 1 0 100%;
-    }
-  }
+  #carleton-footer-block {
+    padding-top: 10px;
+    img {
+      width: 200px;
+      margin-bottom: 10px;
 
-  #block-menu-menu-footer-menu ul.menu {
-    padding: 0px;
-  }
-
-  #block-menu-menu-footer-menu > div > div > ul.menu {
-    display: flex;
-    > li {
-      width: 230px;
+    }
+    a {
+      display: block;
     }
   }
 
   #copyright-and-social-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     img {
       height: 30px;
       transition: filter 0.3s ease-in-out;
       filter: none;
     }
+
+    #social-links {
+      display: block;
+      padding: 0px;
+
+      li {
+        display: block;
+        float: left;
+        padding-right: 20px;
+      }
+      a {
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
     a:focus,
     a:hover {
       img {
@@ -366,9 +345,8 @@ var {
  * Wraps the nav elements
  */
 #nav-wrapper {
-  align-items: center;
+  margin-left: 240px;
   .container {
-    display: flex;
   }
 }
 
@@ -377,17 +355,16 @@ var {
  */
 #header-wrapper {
   background: linear-gradient(rgba(96,96,96,.8), rgba(90,90,90,.8)), url("images/banner-sculpture.jpg");
+  background-color: $carleton_fallback_background_grey;
   background-size: cover;
   color: white;
   min-height: $header_height;
-  display: flex;
   margin-bottom: 36px;
-  align-items: center;
   .container {
     max-width: $constrain-width;
   }
   > div.container {
-    padding: 1rem 0;
+    padding: 40px 0;
   }
 }
 
@@ -523,19 +500,21 @@ body:not(.front) #content-wrapper {
  * Wraps all the branding elements, logo, name and slogan
  */
 #branding {
-  flex: 1 0 auto;
-  display: flex;
-  align-items: center;
-  min-width: 225px;
+  position: absolute;
+  width: 235px;
   height: $menubar_height;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 /*
  * Logo
  */
 #logo {
-  padding-right: 9px;
+  padding-top: ($menubar_height - 40px) / 2;
   height: 40px;
+  width: 40px;
+  float: left;
   img {
     height: 40px;
   }
@@ -545,10 +524,10 @@ body:not(.front) #content-wrapper {
  * Wrapper for the site name and slogan
  */
 #name-and-slogan {
-  flex-direction: column;
-  align-items: flex-start;
   line-height: 1;
-  height: 40px
+  height: 40px;
+  float: left;
+  padding-top: ($menubar_height - 40px) / 2;
 }
 
 
@@ -825,28 +804,25 @@ ul.links {
  * Tertiary content
  */
 .region-tertiary-content {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
 
   .block {
+    float: right;
     margin: 0px;
   }
 
   #helpandchat a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0px;
     background: $carleton_red;
     color: white;
-    padding: 10px 25px 10px 25px;
     transition: padding 0.3s ease-in-out;
+    padding: 10px 25px;
     border-radius: $rounded_radius $rounded_radius 0px 0px;
+    display: block;
 
     img {
       padding-right: 7px;
       height: 25px;
+      float: left;
     }
 
     &:hover,
@@ -892,8 +868,12 @@ a {
 
 #sidr-wrapper-0 {
 
+  height: $menubar_height;
+
   a {
-    padding-left: 40px;
+    float: right;
+    display: block;
+    padding-left: 31px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-image: url("images/menu.png");
@@ -2408,13 +2388,13 @@ body.front {
     #content > div:nth-child(1) {
 
       margin: 0px;
-      min-height: 300px;
       background-image: linear-gradient(
           rgba(160, 7, 7, 0.73),
           rgba(160, 7, 7, 0.73)
         ), url("images/main-exterior.jpg");
       background-position: 50%;
       background-size: cover;
+      background-color: $carleton_fallback_background_red;
 
       div.block.panel-pane {
         margin-bottom: 0px;
@@ -2426,44 +2406,37 @@ body.front {
       }
 
       #summon-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 300px;
         padding: 0px;
 
         form {
-          display: flex;
           width: 100%;
-          justify-content: center;
 
           input[type='text'] {
-            flex: 1 1 auto;
-            border-radius: $rounded_radius 0px 0px $rounded_radius;
+            border-radius: $rounded_radius;
             border: none;
-            padding: 20px;
-            max-width: 750px;
+            padding: 0px 10px;
+            float: left;
+            width: 100%;
+            box-sizing : border-box;
+            padding-right: 95px;
           }
 
           input[type='submit'] {
-            flex: 0 1 auto;
             border-radius: 0px $rounded_radius $rounded_radius 0px;
             border: none;
-            padding: 10px 20px;
+            float: right;
+            width: 90px;
           }
         }
 
         ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 10px;
+          margin: 0px;
           padding: 0px;
-          flex-wrap: wrap;
+          text-align: center;
 
           li{
             list-style: none;
-            padding: 0px 15px;
+            display: inline;
             a {
               color: white;
             }
@@ -2473,29 +2446,14 @@ body.front {
 
       div.pane-views-hours-today-block {
         margin: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        min-height: 300px;
 
         p > a {
           color: $carleton_red;
         }
 
         div.view-id-hours_today {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-evenly;
-          padding: 8px 20px;
           background: $carleton_lightgrey;
           border-radius: $rounded_radius;
-
-          div.view-content {
-            font-size: 150%;
-            margin-top: 0px;
-            margin-bottom: 0.83em;
-          }
         }
       }
     }
@@ -2512,38 +2470,59 @@ body.front {
 
       div.region-four-first {
         background: $carleton_lightgrey;
+
+        div.icon-header {
+          width: 90px;
+        }
       }
 
       div.region-four-second {
         background: #fff;
+        div.icon-header {
+          width: 210px;
+        }
       }
 
       div.region-four-third {
         background: $carleton_lightgrey;
+        div.icon-header {
+          width: 125px;
+        }
       }
 
       div.region-four-fourth {
         background: #fff;
+        div.icon-header {
+          width: 185px;
+        }
       }
 
       div.card {
 
         div.icon-header {
-          flex: 1 1 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 50px 0px 10px 0px;
 
-          h2 {
-            padding: 10px;
-            text-align: center;
-            margin: 0px;
-          }
+          margin: 0 auto;
+
+          padding-top: 20px;
 
           img {
-            width: 40px;
+            display: inline;
+            width: 30px;
+            height: 30px;
+            padding-right: 10px;
           }
+
+          p {
+            display: none;
+          }
+
+          h2 {
+            display: inline;
+            position: relative;
+            top: -8px;
+            font-size: 1.25rem;
+          }
+
         }
 
         div.separator {
@@ -2555,8 +2534,7 @@ body.front {
 
         div.list-and-more {
 
-          flex: 1 1 0;
-          padding: 20px;
+          padding: 20px 20px 0px 20px;
 
           a {
             color: black;
@@ -2568,6 +2546,10 @@ body.front {
             li {
               list-style: none;
             }
+          }
+
+          p {
+            margin: 0px;
           }
 
           a.view-more {
@@ -2592,10 +2574,9 @@ body.front {
         div.region-two-50-first {
           div.view-news-random-image {
             position: relative;
-            padding: 10px;
             #featured {
               position: absolute;
-              top: 30px;
+              top: 15px;
               background: $carleton_red;
               color: white;
               padding: 10px 30px;
@@ -2603,16 +2584,15 @@ body.front {
             }
             div.slide-title {
               position: absolute;
-              bottom: 33px;
+              bottom: 7px;
               color: white;
               font-weight: bold;
-              font-size: 1rem;
+              font-size: 0.7rem;
               background-color: rgba(0, 0, 0, 0.7);
-              padding: 10px 30px;
-              left: 20px;
               a {
                 color: white;
               }
+              padding: 0px 9px;
             }
             img {
               width: 100%;
@@ -2871,9 +2851,7 @@ body.front {
 }
 .paragraphs-item-text-with-left-image figure,
 .paragraphs-item-text-with-right-image figure {
- display:flex;
- justify-content:center;
- align-items:center;
+
 }
 .field-name-field-image-caption {
  font-size:120%;

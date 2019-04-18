@@ -13,12 +13,12 @@
  */
 
 #menu-bar {
-  flex: 1 1 auto;
   border-left: $carleton_light_border;
-  align-items: center;
   margin: 0px;
+  float: left;
+  height: $menubar_height;
 
-  li.sf-item-6.sf-depth-1, li.sf-item-7.sf-depth-1 {
+  li.sf-item-1.sf-depth-1, li.sf-item-2.sf-depth-1 {
     display: none;
   }
 
@@ -33,9 +33,15 @@
   }
 
   li.sf-depth-1 a {
+    display: block;
+    padding-top: ($menubar_height - 40px) / 2;
+    padding-bottom: ($menubar_height - 41px) / 2;
+    padding-left: 10px;
+    padding-right: 10px;
     img {
       width: 10px;
-      margin-left: 5px;
+      height: 10px;
+      margin-left: 8px;
       transition: filter 0.1s ease-in-out;
       filter: none;
       transition: transform 0.1s ease-in-out;
@@ -55,7 +61,6 @@
   }
 
   nav > ul {
-    display: flex;
   }
 
   nav {
@@ -72,18 +77,27 @@
 }
 
 .nav-widget {
+  width: 90px;
   display: block;
-  flex: 1 1 auto;
-  max-width: 150px;
+  float: right;
+  height: $menubar_height;
 
   border-left: $carleton_light_border;
 
   a {
-    min-width: 100px;
+    padding-top: ($menubar_height - 24px) / 2;
+    padding-bottom: ($menubar_height - 25px) / 2;
+    padding-left: 7px;
+    display: block;
+    span {
+      position: relative;
+      top: -1px;
+    }
     img {
       transition: filter 0.1s ease-in-out;
       filter: none;
-      height: 24px;
+      height: 15px;
+      width: 15px;
     }
     &:focus,
     &:hover {
@@ -94,36 +108,81 @@
   }
 
   img {
-    padding-right: 10px;
+    padding-right: 5px;
   }
 }
 
 #nav-wrapper {
-  flex: 1 1 auto;
 }
 
 
 #branding {
-  flex: 0 0 auto;
 }
+
+$search_widget_height: 64px;
+$first_row_height: 300px;
+$search_ul_height: 21px;
 
 body.front {
   #main-content {
     #content > div:nth-child(1) {
+      height: $first_row_height;
       #summon-box {
+        font-size: 1.3rem;
+        margin-top: ($first_row_height - ($search_widget_height + $search_ul_height)) / 2;
         form {
           input[type='text'] {
-            font-size: 1.3rem;
+            height: $search_widget_height;
           }
           input[type='submit'] {
-            font-size: 1.3rem;
+            height: $search_widget_height;
+            position: relative;
+            top: -$search_widget_height;
           }
         }
         ul {
-          li{
-            a {
-              color: white;
-              font-size: 1.1rem;
+          float: left;
+          width: 100%;
+          position: relative;
+          top: -56px;
+          font-size: 1.1rem;
+          height: $search_ul_height;
+          li {
+            padding: 0px 13px;
+          }
+        }
+      }
+
+      div.pane-views-hours-today-block {
+        margin-top: ($first_row_height - 225px) / 2;
+
+        div.view-id-hours_today {
+          padding: 8px 30px;
+
+          div.view-content {
+            font-size: 150%;
+            margin-top: 0px;
+            margin-bottom: 0.83em;
+          }
+        }
+      }
+    }
+    #content > div:nth-child(2) {
+      div.card {
+        min-height: 287px;
+        div.icon-header {
+          padding-top: 40px;
+        }
+      }
+    }
+    #content > div:nth-child(3) {
+      div.at-panel {
+        div.region-two-50-first {
+          div.view-news-random-image {
+            div.slide-title {
+              bottom: 15px;
+              left: 15px;
+              font-size: 0.9rem;
             }
           }
         }
@@ -131,4 +190,33 @@ body.front {
     }
   }
 }
+
+#footer > div > div {
+  > :nth-child(1) {
+    float: left;
+  }
+  > :nth-child(2) {
+    float: left;
+    width: 200px;
+  }
+  > :nth-child(3) {
+    float: left;
+    border-left: $carleton_dark_border;
+    padding-left: 20px;
+  }
+  > :nth-child(4) {
+    float: right;
+    border-left: $carleton_dark_border;
+    height: 268px;
+    padding-right: 30px;
+  }
+
+  #social-links {
+    float: right;
+    position: relative;
+    top: -40px;
+  }
+
+}
+
 

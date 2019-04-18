@@ -16,6 +16,8 @@
   stylesheets[all][] = css/global.base.css
   stylesheets[all][] = css/global.styles.css
 
+  stylesheets[all][] = css/sidr.custom.css
+
   ; Print - uncomment to load basic print styles.
   stylesheets[print][] = css/print.css
 

@@ -12,3 +12,115 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
+$search_widget_height: 64px;
+$first_row_height: 300px;
+$search_ul_height: 21px;
+
+body.front {
+  #main-content {
+    #content > div:nth-child(1) {
+      height: $first_row_height;
+      #summon-box {
+        font-size: 1.1rem;
+        margin-top: ($first_row_height - ($search_widget_height + $search_ul_height)) / 2;
+        form {
+          input[type='text'] {
+            height: $search_widget_height;
+          }
+          input[type='submit'] {
+            height: $search_widget_height;
+            position: relative;
+            top: -$search_widget_height;
+          }
+        }
+        ul {
+          float: left;
+          width: 100%;
+          position: relative;
+          top: -56px;
+          font-size: 0.9rem;
+          height: $search_ul_height;
+          li {
+            padding: 0px 6px;
+          }
+        }
+      }
+
+      div.pane-views-hours-today-block {
+        margin-top: ($first_row_height - 225px) / 2;
+
+        div.view-id-hours_today {
+          padding: 8px 20px;
+
+          h2 {
+            margin: 10px 0px;
+          }
+
+          div.view-content {
+            font-size: 140%;
+            margin-top: 0px;
+            margin-bottom: 0.83em;
+          }
+        }
+      }
+    }
+    #content > div:nth-child(2) {
+      div.region-four-first {
+        background: #fff;
+      }
+      div.region-four-second {
+        background: $carleton_lightgrey;
+      }
+      div.region-four-third {
+        background: $carleton_lightgrey;
+      }
+      div.region-four-fourth {
+        background: #fff;
+      }
+    }
+    #content > div:nth-child(3) {
+      div.at-panel {
+        div.region-two-50-first {
+          div.view-news-random-image {
+            div.slide-title {
+              bottom: 15px;
+              left: 15px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer > div > div {
+  > :nth-child(1) {
+    float: left;
+    width: 43%;
+    padding-left: 30px;
+  }
+  > :nth-child(2) {
+    float: right;
+    width: 43%;
+  }
+  > :nth-child(3) {
+    float: left;
+    border-left: none;
+    width: 43%;
+    padding-left: 30px;
+  }
+  > :nth-child(4) {
+    float: right;
+    border-left: none;
+    height: 268px;
+    width: 43%;
+  }
+
+  #social-links {
+    float: right;
+    position: relative;
+    top: -40px;
+  }
+
+}

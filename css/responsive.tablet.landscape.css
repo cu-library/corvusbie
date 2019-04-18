@@ -7,5 +7,109 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
+/* line 21, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) {
+  height: 300px;
+}
+/* line 23, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box {
+  font-size: 1.1rem;
+  margin-top: 107.5px;
+}
+/* line 27, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
+  height: 64px;
+}
+/* line 30, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
+  height: 64px;
+  position: relative;
+  top: -64px;
+}
+/* line 36, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: -56px;
+  font-size: 0.9rem;
+  height: 21px;
+}
+/* line 43, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul li {
+  padding: 0px 6px;
+}
+/* line 49, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block {
+  margin-top: 37.5px;
+}
+/* line 52, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
+  padding: 8px 20px;
+}
+/* line 55, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today h2 {
+  margin: 10px 0px;
+}
+/* line 59, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
+  font-size: 140%;
+  margin-top: 0px;
+  margin-bottom: 0.83em;
+}
+/* line 68, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-first {
+  background: #fff;
+}
+/* line 71, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-second {
+  background: #eee;
+}
+/* line 74, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-third {
+  background: #eee;
+}
+/* line 77, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(2) div.region-four-fourth {
+  background: #fff;
+}
+/* line 85, ../sass/responsive.tablet.landscape.scss */
+body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title {
+  bottom: 15px;
+  left: 15px;
+  font-size: 0.9rem;
+}
+
+/* line 98, ../sass/responsive.tablet.landscape.scss */
+#footer > div > div > :nth-child(1) {
+  float: left;
+  width: 43%;
+  padding-left: 30px;
+}
+/* line 103, ../sass/responsive.tablet.landscape.scss */
+#footer > div > div > :nth-child(2) {
+  float: right;
+  width: 43%;
+}
+/* line 107, ../sass/responsive.tablet.landscape.scss */
+#footer > div > div > :nth-child(3) {
+  float: left;
+  border-left: none;
+  width: 43%;
+  padding-left: 30px;
+}
+/* line 113, ../sass/responsive.tablet.landscape.scss */
+#footer > div > div > :nth-child(4) {
+  float: right;
+  border-left: none;
+  height: 268px;
+  width: 43%;
+}
+/* line 120, ../sass/responsive.tablet.landscape.scss */
+#footer > div > div #social-links {
+  float: right;
+  position: relative;
+  top: -40px;
+}
 
 /*# sourceMappingURL=responsive.tablet.landscape.css.map */

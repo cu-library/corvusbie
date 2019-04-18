@@ -34,4 +34,49 @@
   border-bottom: 1px solid #fff;
 }
 
+/* line 45, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box {
+  padding-top: 10px;
+  font-size: 0.8rem;
+}
+/* line 49, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='text'] {
+  height: 60px;
+}
+/* line 52, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
+  font-size: 1rem;
+  height: 60px;
+  position: relative;
+  top: -60px;
+}
+/* line 59, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul {
+  font-size: 1.1rem;
+  float: left;
+  width: 100%;
+  position: relative;
+  top: -50px;
+}
+/* line 65, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) #summon-box ul li {
+  padding: 10px 12px;
+  line-height: 1.1rem;
+}
+/* line 72, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block {
+  position: relative;
+  top: -20px;
+}
+/* line 75, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
+  padding: 8px 20px;
+}
+/* line 78, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
+  font-size: 140%;
+  margin-top: 0px;
+  margin-bottom: 0.83em;
+}
+
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */

@@ -155,16 +155,16 @@
                 <?php if ($primary_navigation): print $primary_navigation; endif; ?>
                 <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
                 <?php print render($page['menu_bar']); ?>
-                <div id="login-widget" class="nav-widget">
-                  <a href="/login">
-                    <img src="/sites/all/themes/corvusbie/images/person.svg" />
-                    <span>Login</span>
-                  </a>
-                </div>
                 <div id="search-widget" class="nav-widget">
                   <a href="/search-options">
                     <img src="/sites/all/themes/corvusbie/images/search.svg" />
                     <span>Search</span>
+                  </a>
+                </div>
+                <div id="login-widget" class="nav-widget">
+                  <a href="/login">
+                    <img src="/sites/all/themes/corvusbie/images/person.svg" />
+                    <span>Login</span>
                   </a>
                 </div>
               </div>
