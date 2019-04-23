@@ -75,8 +75,13 @@ body.front {
         div.view-id-hours_today {
           padding: 8px 20px;
 
+          h2 {
+            margin: 10px 0px;
+            font-size: 1.2rem;
+          }
+
           div.view-content {
-            font-size: 140%;
+            font-size: 120%;
             margin-top: 0px;
             margin-bottom: 0.83em;
           }

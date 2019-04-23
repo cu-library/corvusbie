@@ -81,14 +81,15 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
 /* line 85, ../sass/responsive.smalltouch.portrait.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today h2 {
   margin: 10px 0px;
+  font-size: 1.2rem;
 }
-/* line 89, ../sass/responsive.smalltouch.portrait.scss */
+/* line 90, ../sass/responsive.smalltouch.portrait.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today p {
   margin: 0px;
 }
-/* line 93, ../sass/responsive.smalltouch.portrait.scss */
+/* line 94, ../sass/responsive.smalltouch.portrait.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
-  font-size: 140%;
+  font-size: 110%;
   margin-top: 10px;
   margin-bottom: 10px;
 }

@@ -73,8 +73,13 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
   padding: 8px 20px;
 }
 /* line 78, ../sass/responsive.smalltouch.landscape.scss */
+body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today h2 {
+  margin: 10px 0px;
+  font-size: 1.2rem;
+}
+/* line 83, ../sass/responsive.smalltouch.landscape.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today div.view-content {
-  font-size: 140%;
+  font-size: 120%;
   margin-top: 0px;
   margin-bottom: 0.83em;
 }
