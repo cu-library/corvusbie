@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
   $("#superfish-1-accordion").detach().appendTo('#menubar-wrapper');
 
   $("#menu-bar li.sf-depth-2.last img").each(function(){
-    parent = $(this).parent();
+    var parent = $(this).parent();
     $(this).detach().prependTo(parent);
   });
 });
@@ -38,10 +38,10 @@ jQuery(document).ready(function($) {
 
 //Course Reserves search
 function submit_form() {
-selind = document.forms.course_reserves_search.search_action.selectedIndex;
-selval = document.forms.course_reserves_search.search_action[selind].value;
-document.forms.course_reserves_search.action=selval;
-document.forms.course_reserves_search.submit();
+  var selind = document.forms.course_reserves_search.search_action.selectedIndex;
+  var selval = document.forms.course_reserves_search.search_action[selind].value;
+  document.forms.course_reserves_search.action=selval;
+  document.forms.course_reserves_search.submit();
 }
 
 //Journal Articles in Scholars Portal search
