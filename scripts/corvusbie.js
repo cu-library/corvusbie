@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
     helpError = window.setTimeout(function() {
         deactivateChat();
     }, 2000);
-    $.getScript("https://ca.libraryh3lp.com/presence/jid/carletonn/chat.ca.libraryh3lp.com/js", function(data, textStatus, jqxhr) {
+    $.getScript("https://ca.libraryh3lp.com/presence/jid/carleton/chat.ca.libraryh3lp.com/js", function(data, textStatus, jqxhr) {
       if ((Array.isArray(jabber_resources)) && (jabber_resources.length > 0)) {
         if (jabber_resources[0]["show"] == "available") {
           window.clearTimeout(helpError);
