@@ -59,19 +59,22 @@ jQuery(document).ready(function($) {
 
   // --- Help and Chat Widget (Floaty Thing) Activation ---
   function activateChat() {
-    $("#helpandchatimg").attr("alt", "discussion icon");
-    $("#helpandchatimg").attr("src", "/sites/all/themes/corvusbie/images/comment-discussion.svg");
-    $("#helpandchattext").text("Ask a Librarian");
-    $("#helpandchatlink").attr("href", "#");
-    $("#helpandchatlink").attr("onclick", "window.open(\"https://ca.libraryh3lp.com/chat/carleton@chat.ca.libraryh3lp.com?skin=15653\", \"AskUs\", \"resizable=1,width=375,height=350\"); return false;");
+    $('#helpandchatimg').attr('alt', 'discussion icon');
+    $('#helpandchatimg').attr('src', '/sites/all/themes/corvusbie/images/comment-discussion.svg');
+    $('#helpandchattext').text('Ask a Librarian');
+    $('#helpandchatlink').attr('href', '#');
+    $('#helpandchatlink').click(function( event ) {
+      event.preventDefault();
+      window.open("https://ca.libraryh3lp.com/chat/carleton@chat.ca.libraryh3lp.com?skin=15653", "AskUs", "resizable=1,width=375,height=350");
+    });
   }
 
   function deactivateChat() {
-    $("#helpandchatimg").attr("alt", "question icon");
-    $("#helpandchatimg").attr("src", "/sites/all/themes/corvusbie/images/question.svg");
-    $("#helpandchattext").text("Help");
-    $("#helpandchatlink").attr("href", "/help");
-    $("#helpandchatlink").attr("onclick", null);
+    $('#helpandchatimg').attr('alt', 'question icon');
+    $('#helpandchatimg').attr('src', '/sites/all/themes/corvusbie/images/question.svg');
+    $('#helpandchattext').text('Help');
+    $('#helpandchatlink').attr('href', '/help');
+    $('#helpandchatlink').unbind('click');
   }
 
   function checkhelpavail() {
@@ -81,9 +84,9 @@ jQuery(document).ready(function($) {
     helpError = window.setTimeout(function() {
         deactivateChat();
     }, 2000);
-    $.getScript("https://ca.libraryh3lp.com/presence/jid/carleton/chat.ca.libraryh3lp.com/js", function(data, textStatus, jqxhr) {
+    $.getScript('https://ca.libraryh3lp.com/presence/jid/carleton/chat.ca.libraryh3lp.com/js', function(data, textStatus, jqxhr) {
       if ((Array.isArray(jabber_resources)) && (jabber_resources.length > 0)) {
-        if (jabber_resources[0]["show"] == "available") {
+        if (jabber_resources[0]['show'] == 'available') {
           window.clearTimeout(helpError);
           activateChat();
         }
