@@ -112,4 +112,15 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   top: -40px;
 }
 
+/*
+ * Sidebars - targets both
+ */
+/* line 132, ../sass/responsive.tablet.landscape.scss */
+.sidebar section.block, .sidebar nav.block, .sidebar .block-24 {
+  padding: 5%;
+  border-radius: 4px;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+
 /*# sourceMappingURL=responsive.tablet.landscape.css.map */

@@ -220,4 +220,14 @@ body.front {
 
 }
 
-
+/*
+ * Sidebars - targets both
+ */
+.sidebar {
+  section.block, nav.block, .block-24 {
+    padding: 5%;
+    border-radius: $rounded_radius;
+    border-left: $carleton_dark_border;
+    border-right: $carleton_dark_border;
+  }
+}

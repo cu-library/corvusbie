@@ -768,12 +768,9 @@ ul.links {
  */
 .sidebar {
   section.block, nav.block, .block-24 {
-    border-radius: $rounded_radius;
-    border-left: $carleton_dark_border;
-    border-right: $carleton_dark_border;
     border-bottom: $carleton_dark_border;
     border-top: $carleton_red_border;
-    padding: 5%;
+    padding: 10px;
   }
 }
 
