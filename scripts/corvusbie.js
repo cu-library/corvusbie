@@ -123,7 +123,7 @@ function search_scholars_portal_journals() {
   Drupal.behaviors.SidrMenuClose = {
     attach: function (context, settings) {
 
-      if ($.browser.msie && parseFloat($.browser.version) <= 8) {
+      if ($.browser.msie && parseFloat($.browser.version) <= 9) {
         return;
       }
 
