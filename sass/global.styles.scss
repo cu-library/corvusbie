@@ -475,6 +475,7 @@ body:not(.front) #content-wrapper {
   position: fixed;
   bottom: 0px;
   width: 100%;
+  z-index: 1;
   .container {
     max-width: $constrain-width;
   }
@@ -2835,6 +2836,10 @@ body.front {
   line-height: 4;
   text-align: center;
   transition: all .35s;
+}
+
+.guide-accordion-header-permalink {
+  float: right;
 }
 
 .field-name-field-detailed-guide-section-lab a:hover {
