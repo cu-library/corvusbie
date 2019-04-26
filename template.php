@@ -21,6 +21,17 @@
  * 2. Uncomment the required function to use.
  */
 
+function corvusbie_css_alter(&$css) {
+  if (isset($css['sites/all/themes/adaptivetheme/at_core/css/at.layout.css'])) {
+    $css['sites/all/themes/adaptivetheme/at_core/css/at.layout.css']['media'] = 'all';
+  }
+  if (isset($css['public://adaptivetheme/corvusbie_files/corvusbie.responsive.layout.css'])) {
+    $css['public://adaptivetheme/corvusbie_files/corvusbie.responsive.layout.css']['media'] = 'all';
+  }
+  if (isset($css['sites/all/themes/corvusbie/css/print.css'])) {
+    $css['sites/all/themes/corvusbie/css/print.css']['weight'] = '1.0';
+  }
+}
 
 /**
  * Preprocess variables for the html template.
@@ -29,8 +40,6 @@ function corvusbie_preprocess_html(&$vars) {
   global $theme_key;
 
   // Add the external CSS for fonts
-  // drupal_add_css('https://fonts.googleapis.com/css?family=Roboto:300,400', array('type' => 'external'));
-
   drupal_add_css('https://cloud.typography.com/6307052/6144772/css/fonts.css', array('type' => 'external'));
 
   // Add body classes to course guide book pages

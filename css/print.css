@@ -1,107 +1,47 @@
-/*
- * @file
- * Print Styles
- * This probably needs work, but it's a good starting point.
- */
-/*
- * Body
- */
-/* line 9, ../sass/print.scss */
-body {
-  width: 100% !important;
-  margin: 1em !important;
-  padding: 0 !important;
-  /*  line-height: 1.4; */
-  word-spacing: 1.1pt;
-  letter-spacing: 0.2pt;
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+/* line 1, ../sass/print.scss */
+#header-wrapper {
+  background: none !important;
   color: black;
-  background: none;
-  font-size: 11pt;
+}
+/* line 4, ../sass/print.scss */
+#header-wrapper a {
+  color: black;
 }
 
-/*
- * Links
- */
-/* line 25, ../sass/print.scss */
+/* line 9, ../sass/print.scss */
 a {
   background: transparent;
   text-decoration: underline;
 }
 
-/* line 29, ../sass/print.scss */
+/* line 13, ../sass/print.scss */
 a:link {
   color: #000;
 }
 
-/* line 30, ../sass/print.scss */
+/* line 16, ../sass/print.scss */
 a:visited {
   color: #000;
 }
 
-/* line 31, ../sass/print.scss */
+/* line 19, ../sass/print.scss */
 a:hover {
-  color: #00f;
+  color: #000;
 }
 
-/* line 33, ../sass/print.scss */
-.print-links {
-  font-size: 0.8em;
-}
-
-/* Original styling for links -- adding URL after the link. Decided we prefer footnote approach
-  a[href^="http://"]:after, a[href^="http://"]:visited:after {
-  content: " (" attr(href) ")";
-  font-size: 10pt;
-}  */
-/*
- * Strip background from likely candidates
- */
-/* line 46, ../sass/print.scss */
-div[id*="wrapper"],
-[class*="title"],
-[class*="inner"],
-header,
-footer,
-#branding,
-#container,
-#columns,
-.columns-inner,
-#content-column,
-.content-inner,
-.region,
-.region-header,
-.region-content,
-.article,
-.article-title,
-.article-content,
-.comment,
-.comment-title,
-.comment-content,
-.block,
-.block-inner,
-.block-title,
-.block-content,
-table,
-table * {
-  background: none !important;
+/* line 23, ../sass/print.scss */
+.guide-accordion-content-collapsed {
+  max-height: 9999px;
 }
 
 /*
  * Hide various bits of the page
-
-.sidebar, */
-/* line 79, ../sass/print.scss */
-#nav-wrapper,
+ */
+/* line 30, ../sass/print.scss */
 #footer,
 #tertiary-content-wrapper,
-.region-header,
 .region-footer,
-#breadcrumb,
-.breadcrumb-wrapper,
-.nav,
 .field-type-taxonomy-term-reference,
-ul.links,
 .feed-icon,
 .poll .bar,
 .poll .foreground,
@@ -113,236 +53,12 @@ ul.links,
 .pager,
 .messages,
 .help,
-#tasks {
+#tasks,
+.guide-accordion-header-permalink {
   display: none;
 }
 
-/*
- * Ensure the display the main content region
- */
-/* line 107, ../sass/print.scss */
-#content {
-  display: block !important;
-}
-
-/*
- * Layout
- */
-/* line 114, ../sass/print.scss */
-#header {
-  margin-bottom: 10px;
-}
-
-/* line 118, ../sass/print.scss */
-.content-inner {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* line 123, ../sass/print.scss */
-.sidebar {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: solid grey thin;
-}
-
-/*
- * HTML elements
- */
-/* line 132, ../sass/print.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #333333;
-  margin: 0;
-  padding: 2px;
-}
-
-/* line 143, ../sass/print.scss */
-h1 {
-  font-size: 14pt;
-}
-
-/* line 147, ../sass/print.scss */
-h2 {
-  font-size: 13pt;
-}
-
-/* line 151, ../sass/print.scss */
-h3 {
-  font-size: 12pt;
-}
-
-/* line 155, ../sass/print.scss */
-h4,
-h5,
-h6 {
-  font-size: 11pt;
-}
-
-/* line 161, ../sass/print.scss */
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a,
-#site-name a,
-#site-slogan {
-  text-decoration: none !important;
-  color: #333333;
-}
-
-/* line 173, ../sass/print.scss */
-hgroup a:link, hgroup a:visited {
-  text-decoration: none;
-}
-
-/* line 177, ../sass/print.scss */
-#page-title {
-  margin-top: 10px;
-}
-
-/* line 181, ../sass/print.scss */
-pre,
-code,
-tt,
-samp,
-kbd,
-var {
-  font-size: 10pt;
-  font-family: Consolas, "Lucida Console", Menlo, Monaco, "DejaVu Sans Mono", monospace, sans-serif;
-}
-
-/* line 191, ../sass/print.scss */
-blockquote {
-  margin: 20px;
-  padding: 10px;
-  font-size: 10pt;
-  font-style: italic;
-  background: #eeeeee;
-}
-
-/* line 199, ../sass/print.scss */
-hr {
-  background-color: #666666;
-}
-
-/*
- * Header, Logo, Site name
- */
-/* line 206, ../sass/print.scss */
-#header {
-  padding-bottom: 10px;
-}
-
-/* line 210, ../sass/print.scss */
-#logo img {
-  padding: 0 10px 0 0;
-  margin: 0 !important;
-  float: left;
-}
-
-/*
- * Images
- */
-/* line 219, ../sass/print.scss */
-img {
-  float: left;
-  margin: 4px 20px 10px 0;
-  page-break-inside: avoid;
-}
-
-/* line 225, ../sass/print.scss */
-a img {
-  border: none;
-}
-
-/*
- * Tables
- */
-/* line 232, ../sass/print.scss */
-table {
-  margin: 1px;
-  text-align: left;
-}
-
-/* line 237, ../sass/print.scss */
-th {
-  border-bottom: 1px solid #333333;
-  font-weight: 700;
-}
-
-/* line 242, ../sass/print.scss */
-td {
-  border-bottom: 1px solid #333333;
-}
-
-/* line 246, ../sass/print.scss */
-th,
-td {
-  padding: 4px 10px 4px 0;
-}
-
-/* line 251, ../sass/print.scss */
-tfoot {
-  font-style: italic;
-}
-
-/* line 255, ../sass/print.scss */
-caption {
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-/* line 260, ../sass/print.scss */
-thead {
-  display: table-header-group;
-}
-
-/* line 264, ../sass/print.scss */
-tr {
-  page-break-inside: avoid;
-}
-
-/*
- * Forms
- */
-/* line 271, ../sass/print.scss */
-form {
-  margin-bottom: 10px;
-}
-
-/*
- * Poll module
- */
-/* line 278, ../sass/print.scss */
-.poll .text,
-.poll .percent,
-.poll .total {
-  text-align: left;
-}
-
-/* line 283, ../sass/print.scss */
-.poll form {
-  margin-bottom: 0;
-}
-
-/*
- * Articles
- */
-/* line 290, ../sass/print.scss */
-.node,
-.comment {
-  margin-bottom: 10px;
-  overflow: hidden;
-  /*  page-break-inside: avoid; */
-}
-
-/* line 297, ../sass/print.scss */
+/* line 50, ../sass/print.scss */
 .submitted {
   color: #666666;
   text-decoration: none;
@@ -352,7 +68,7 @@ form {
   padding: 0;
 }
 
-/* line 305, ../sass/print.scss */
+/* line 58, ../sass/print.scss */
 .submitted a {
   color: #666666;
   text-decoration: none;

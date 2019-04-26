@@ -3055,31 +3055,24 @@ margin: 0 0 0.5em 0;
 list-style: none;
 }
 
+
 /* Quick Guides */
 
 .node-subject-quick-guide {
 
-/* section.field-name-field-key-resources {
-    padding: 10px;
-    padding-top: 0;
-    margin: 25px 35px 0;
-} */
-
   .field-name-field-key-resources h2.field-label {
     font-size: 1.5em;
-/* font-weight: bold;
-margin-left: 0.5em; */
     padding-bottom: 10px;
   }
 
   .field-collection-item-field-key-resources .field-name-field-key-resource-databases {
     font-size: 1.17em;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .field-name-field-key-resource-link {
     font-size: 1.17em;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .field-collection-view {
@@ -3091,10 +3084,26 @@ margin-left: 0.5em; */
     border: 0;
   }
 
-/* .need-more {
-margin:0 55px;
-} */
+ .need-more {
+    border-top: solid thin lightgrey;
+    margin: 40px 0;
 
+    h2 {
+      padding: 10px 0;
+    }
+
+    .field-name-field-link-to-detailed-guide {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding-top: 10px;
+
+      h2 {
+        font-weight: 400;
+      }
+    }
+  }
 }
 
 /* Find Databases and Database Details */
