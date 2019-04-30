@@ -136,3 +136,23 @@ body.front {
     border-right: $carleton_dark_border;
   }
 }
+
+/* Alert box */
+#block-block-38 {
+  div.notice-or-alert {
+    width: 566px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 110%;
+    img {
+      display: inline;
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
+    }
+    div {
+      display: inline;
+    }
+  }
+}

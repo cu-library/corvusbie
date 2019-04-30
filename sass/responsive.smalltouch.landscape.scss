@@ -90,3 +90,20 @@ body.front {
     }
   }
 }
+
+/* Alert box */
+#block-block-38 {
+  div.notice-or-alert {
+    width: 310px;
+    margin: 5px auto;
+    overflow: auto;
+    img {
+      float: left;
+      margin-right: 20px;
+      margin-top: 12px;
+    }
+    div.notice-or-alert-text {
+      float: left;
+    }
+  }
+}

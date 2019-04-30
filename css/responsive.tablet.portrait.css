@@ -74,4 +74,22 @@ body.front #main-content #content > div:nth-child(2) div.region-four-fourth {
   background: #fff;
 }
 
+/* Alert box */
+/* line 87, ../sass/responsive.tablet.portrait.scss */
+#block-block-38 div.notice-or-alert {
+  width: 310px;
+  margin: 10px auto;
+  overflow: auto;
+}
+/* line 91, ../sass/responsive.tablet.portrait.scss */
+#block-block-38 div.notice-or-alert img {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+/* line 96, ../sass/responsive.tablet.portrait.scss */
+#block-block-38 div.notice-or-alert div.notice-or-alert-text {
+  float: left;
+}
+
 /*# sourceMappingURL=responsive.tablet.portrait.css.map */

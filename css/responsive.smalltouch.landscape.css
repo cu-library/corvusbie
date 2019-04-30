@@ -84,4 +84,22 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
   margin-bottom: 0.83em;
 }
 
+/* Alert box */
+/* line 96, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.notice-or-alert {
+  width: 310px;
+  margin: 5px auto;
+  overflow: auto;
+}
+/* line 100, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.notice-or-alert img {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+/* line 105, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.notice-or-alert div.notice-or-alert-text {
+  float: left;
+}
+
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */

@@ -94,4 +94,20 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
   margin-bottom: 10px;
 }
 
+/* Alert box */
+/* line 107, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-38 div.notice-or-alert {
+  font-size: 90%;
+}
+/* line 109, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-38 div.notice-or-alert img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+/* line 114, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-38 div.notice-or-alert div.notice-or-alert-text {
+  float: left;
+}
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
