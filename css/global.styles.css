@@ -2589,4 +2589,9 @@ div.field-name-field-link-to-quick-guide div.field-item::after {
   margin-bottom: 0px;
 }
 
+/* line 3207, ../sass/global.styles.scss */
+.author-datetime {
+  font-style: italic;
+}
+
 /*# sourceMappingURL=global.styles.css.map */

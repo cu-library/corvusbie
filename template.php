@@ -102,12 +102,15 @@ function corvusbie_process_page(&$vars) {
 /**
  * Override or insert variables into the node templates.
  */
-/* -- Delete this line if you want to use these functions
 function corvusbie_preprocess_node(&$vars) {
+  $vars['submitted'] = date( "F j, Y",$vars['created']);
+  $vars['user_picture'] = '';
 }
+
+/*
 function corvusbie_process_node(&$vars) {
 }
-// */
+*/
 
 /**
  * Override or insert variables into the comment templates.
