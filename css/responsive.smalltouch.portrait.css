@@ -94,19 +94,35 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
   margin-bottom: 10px;
 }
 
-/* Alert box */
+/* Notice box */
 /* line 107, ../sass/responsive.smalltouch.portrait.scss */
-#block-block-38 div.notice-or-alert {
+#block-block-38 div.site-notice {
   font-size: 90%;
 }
 /* line 109, ../sass/responsive.smalltouch.portrait.scss */
-#block-block-38 div.notice-or-alert img {
+#block-block-38 div.site-notice img {
   float: left;
   margin-right: 10px;
   margin-top: 12px;
 }
 /* line 114, ../sass/responsive.smalltouch.portrait.scss */
-#block-block-38 div.notice-or-alert div.notice-or-alert-text {
+#block-block-38 div.site-notice div.site-notice-text {
+  float: left;
+}
+
+/* Alert box */
+/* line 122, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-64 div.site-alert {
+  font-size: 90%;
+}
+/* line 124, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-64 div.site-alert img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+/* line 129, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-64 div.site-alert div.site-alert-text {
   float: left;
 }
 

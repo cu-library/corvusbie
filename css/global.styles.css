@@ -2583,13 +2583,19 @@ div.field-name-field-link-to-quick-guide div.field-item::after {
   border-radius: 4px;
 }
 
-/* Alert box */
+/* Notice box */
 /* line 3199, ../sass/global.styles.scss */
 #block-block-38 {
   margin-bottom: 0px;
 }
 
-/* line 3207, ../sass/global.styles.scss */
+/* Alert box */
+/* line 3204, ../sass/global.styles.scss */
+#block-block-64 {
+  margin-bottom: 0px;
+}
+
+/* line 3208, ../sass/global.styles.scss */
 .author-datetime {
   font-style: italic;
 }

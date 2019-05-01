@@ -137,14 +137,32 @@ body.front {
   }
 }
 
-/* Alert box */
+/* Notice box */
 #block-block-38 {
-  div.notice-or-alert {
+  div.site-notice {
     width: 566px;
-    margin: 10px auto;
     padding: 10px;
-    border: 2px solid red;
     font-size: 110%;
+    img {
+      display: inline;
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
+    }
+    div {
+      display: inline;
+    }
+  }
+}
+
+/* Alert box */
+#block-block-64 {
+  div.site-alert {
+    width: 566px;
+    padding: 10px;
+    font-size: 110%;
+    border: 2px solid red;
+    margin: 10px auto;
     img {
       display: inline;
       position: relative;

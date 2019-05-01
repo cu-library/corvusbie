@@ -91,9 +91,9 @@ body.front {
   }
 }
 
-/* Alert box */
+/* Notice box */
 #block-block-38 {
-  div.notice-or-alert {
+  div.site-notice {
     width: 310px;
     margin: 5px auto;
     overflow: auto;
@@ -102,7 +102,24 @@ body.front {
       margin-right: 20px;
       margin-top: 12px;
     }
-    div.notice-or-alert-text {
+    div.site-notice-text {
+      float: left;
+    }
+  }
+}
+
+/* Alert box */
+#block-block-64 {
+  div.site-alert {
+    width: 310px;
+    margin: 5px auto;
+    overflow: auto;
+    img {
+      float: left;
+      margin-right: 20px;
+      margin-top: 12px;
+    }
+    div.site-alert-text {
       float: left;
     }
   }

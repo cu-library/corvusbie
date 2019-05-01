@@ -102,16 +102,31 @@ body.front {
   }
 }
 
-/* Alert box */
+/* Notice box */
 #block-block-38 {
-  div.notice-or-alert {
+  div.site-notice {
     font-size: 90%;
     img {
       float: left;
       margin-right: 10px;
       margin-top: 12px;
     }
-    div.notice-or-alert-text {
+    div.site-notice-text {
+      float: left;
+    }
+  }
+}
+
+/* Alert box */
+#block-block-64 {
+  div.site-alert {
+    font-size: 90%;
+    img {
+      float: left;
+      margin-right: 10px;
+      margin-top: 12px;
+    }
+    div.site-alert-text {
       float: left;
     }
   }
