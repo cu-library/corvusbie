@@ -40,8 +40,8 @@ function corvusbie_preprocess_html(&$vars) {
   global $theme_key;
 
   // Add the external CSS for fonts
-  drupal_add_css('https://cloud.typography.com/6307052/6144772/css/fonts.css', array('type' => 'external'));
-
+  drupal_add_css('https://cloud.typography.com/6307052/6118752/css/fonts.css', array('type' => 'external'));
+  
   // Add body classes to course guide book pages
   $courseguidepathprefix = 'research/course-guides/';
   if (strncmp(request_path(), $courseguidepathprefix, strlen($courseguidepathprefix)) === 0 ){
