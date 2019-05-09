@@ -202,13 +202,13 @@ body.front {
   }
   > :nth-child(3) {
     float: left;
-    border-left: $carleton_dark_border;
+    border-left: $carleton_footer_seperator;
     padding-left: 20px;
   }
   > :nth-child(4) {
     float: right;
-    border-left: $carleton_dark_border;
-    height: 268px;
+    border-left: $carleton_footer_seperator;
+    height: 293px;
     padding-right: 30px;
   }
 

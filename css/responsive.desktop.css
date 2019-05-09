@@ -180,14 +180,14 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 /* line 203, ../sass/responsive.desktop.scss */
 #footer > div > div > :nth-child(3) {
   float: left;
-  border-left: 1px solid #bdbdbd;
+  border-left: 1px solid #4a4a4a;
   padding-left: 20px;
 }
 /* line 208, ../sass/responsive.desktop.scss */
 #footer > div > div > :nth-child(4) {
   float: right;
-  border-left: 1px solid #bdbdbd;
-  height: 268px;
+  border-left: 1px solid #4a4a4a;
+  height: 293px;
   padding-right: 30px;
 }
 /* line 215, ../sass/responsive.desktop.scss */
