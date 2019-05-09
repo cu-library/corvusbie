@@ -211,39 +211,37 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 /* Notice box */
 /* line 237, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice {
-  width: 612px;
   padding: 10px;
   font-size: 120%;
 }
-/* line 241, ../sass/responsive.desktop.scss */
+/* line 240, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 247, ../sass/responsive.desktop.scss */
+/* line 246, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice div {
   display: inline;
 }
 
 /* Alert box */
-/* line 255, ../sass/responsive.desktop.scss */
+/* line 254, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert {
-  width: 612px;
   padding: 10px;
   font-size: 120%;
   margin: 10px auto;
   border: 4px solid red;
 }
-/* line 261, ../sass/responsive.desktop.scss */
+/* line 259, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 267, ../sass/responsive.desktop.scss */
+/* line 265, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert div {
   display: inline;
 }
