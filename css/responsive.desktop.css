@@ -180,14 +180,14 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 /* line 203, ../sass/responsive.desktop.scss */
 #footer > div > div > :nth-child(3) {
   float: left;
-  border-left: 1px solid #bdbdbd;
+  border-left: 1px solid #4a4a4a;
   padding-left: 20px;
 }
 /* line 208, ../sass/responsive.desktop.scss */
 #footer > div > div > :nth-child(4) {
   float: right;
-  border-left: 1px solid #bdbdbd;
-  height: 268px;
+  border-left: 1px solid #4a4a4a;
+  height: 243px;
   padding-right: 30px;
 }
 /* line 215, ../sass/responsive.desktop.scss */
@@ -211,39 +211,37 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 /* Notice box */
 /* line 237, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice {
-  width: 612px;
   padding: 10px;
   font-size: 120%;
 }
-/* line 241, ../sass/responsive.desktop.scss */
+/* line 240, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 247, ../sass/responsive.desktop.scss */
+/* line 246, ../sass/responsive.desktop.scss */
 #block-block-38 div.site-notice div {
   display: inline;
 }
 
 /* Alert box */
-/* line 255, ../sass/responsive.desktop.scss */
+/* line 254, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert {
-  width: 612px;
   padding: 10px;
   font-size: 120%;
   margin: 10px auto;
   border: 4px solid red;
 }
-/* line 261, ../sass/responsive.desktop.scss */
+/* line 259, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 267, ../sass/responsive.desktop.scss */
+/* line 265, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert div {
   display: inline;
 }

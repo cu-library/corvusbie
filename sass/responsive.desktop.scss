@@ -202,13 +202,13 @@ body.front {
   }
   > :nth-child(3) {
     float: left;
-    border-left: $carleton_dark_border;
+    border-left: $carleton_footer_seperator;
     padding-left: 20px;
   }
   > :nth-child(4) {
     float: right;
-    border-left: $carleton_dark_border;
-    height: 268px;
+    border-left: $carleton_footer_seperator;
+    height: 243px;
     padding-right: 30px;
   }
 
@@ -235,7 +235,6 @@ body.front {
 /* Notice box */
 #block-block-38 {
   div.site-notice {
-    width: 612px;
     padding: 10px;
     font-size: 120%;
     img {
@@ -253,7 +252,6 @@ body.front {
 /* Alert box */
 #block-block-64 {
   div.site-alert {
-    width: 612px;
     padding: 10px;
     font-size: 120%;
     margin: 10px auto;

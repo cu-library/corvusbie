@@ -785,6 +785,9 @@ ul.links {
  * Second sidebar
  */
 .region-sidebar-second {
+  section.block  {
+    margin-right: $gutter-width;
+  }
   .view-sidebar-related-help .field-content,
   .view-sidebar-related-subject-guides .field-content,
   .view-sidebar-related-services .field-content,
