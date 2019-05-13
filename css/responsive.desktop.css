@@ -187,7 +187,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 #footer > div > div > :nth-child(4) {
   float: right;
   border-left: 1px solid #4a4a4a;
-  height: 293px;
+  height: 243px;
   padding-right: 30px;
 }
 /* line 215, ../sass/responsive.desktop.scss */
