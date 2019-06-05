@@ -1,35 +1,53 @@
 /* line 1, ../sass/print.scss */
 #header-wrapper {
   background: none !important;
+  min-height: auto;
+  margin-bottom: 0;
+  margin-top: 20px;
   color: black;
 }
-/* line 4, ../sass/print.scss */
+/* line 7, ../sass/print.scss */
 #header-wrapper a {
   color: black;
 }
 
-/* line 9, ../sass/print.scss */
+/* line 12, ../sass/print.scss */
+body {
+  font-size: 80%;
+}
+
+/* line 16, ../sass/print.scss */
+h1 {
+  font-size: 1.8em;
+}
+
+/* line 20, ../sass/print.scss */
+h2 {
+  font-size: 1.3em;
+}
+
+/* line 24, ../sass/print.scss */
 a {
   background: transparent;
   text-decoration: underline;
 }
 
-/* line 13, ../sass/print.scss */
+/* line 28, ../sass/print.scss */
 a:link {
   color: #000;
 }
 
-/* line 16, ../sass/print.scss */
+/* line 31, ../sass/print.scss */
 a:visited {
   color: #000;
 }
 
-/* line 19, ../sass/print.scss */
+/* line 34, ../sass/print.scss */
 a:hover {
   color: #000;
 }
 
-/* line 23, ../sass/print.scss */
+/* line 38, ../sass/print.scss */
 .guide-accordion-content-collapsed {
   max-height: 9999px;
 }
@@ -37,7 +55,7 @@ a:hover {
 /*
  * Hide various bits of the page
  */
-/* line 30, ../sass/print.scss */
+/* line 45, ../sass/print.scss */
 #footer,
 #tertiary-content-wrapper,
 .region-footer,
@@ -54,11 +72,13 @@ a:hover {
 .messages,
 .help,
 #tasks,
-.guide-accordion-header-permalink {
+.guide-accordion-header-permalink,
+#breadcrumb-wrapper,
+#menu-bar {
   display: none;
 }
 
-/* line 50, ../sass/print.scss */
+/* line 67, ../sass/print.scss */
 .submitted {
   color: #666666;
   text-decoration: none;
@@ -68,7 +88,7 @@ a:hover {
   padding: 0;
 }
 
-/* line 58, ../sass/print.scss */
+/* line 75, ../sass/print.scss */
 .submitted a {
   color: #666666;
   text-decoration: none;
