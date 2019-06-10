@@ -157,13 +157,13 @@
                 <?php print render($page['menu_bar']); ?>
                 <div id="search-widget" class="nav-widget">
                   <a href="/search-options">
-                    <img src="/sites/all/themes/corvusbie/images/search.svg" />
+                    <img src="/sites/all/themes/corvusbie/images/search.svg" alt="Search"/>
                     <span>Search</span>
                   </a>
                 </div>
                 <div id="login-widget" class="nav-widget">
                   <a href="/login">
-                    <img src="/sites/all/themes/corvusbie/images/person.svg" />
+                    <img src="/sites/all/themes/corvusbie/images/person.svg" alt="Login"/>
                     <span>Login</span>
                   </a>
                 </div>

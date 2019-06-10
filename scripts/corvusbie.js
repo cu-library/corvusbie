@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 
   // --- Help and Chat Widget (Floaty Thing) Activation ---
   function activateChat() {
-    $('#helpandchatimg').attr('alt', 'discussion icon');
+    $('#helpandchatimg').attr('alt', 'Chat');
     $('#helpandchatimg').attr('src', '/sites/all/themes/corvusbie/images/comment-discussion.svg');
     $('#helpandchattext').text('Ask a Librarian');
     $('#helpandchatlink').attr('href', '#');
@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
   }
 
   function deactivateChat() {
-    $('#helpandchatimg').attr('alt', 'question icon');
+    $('#helpandchatimg').attr('alt', 'Help');
     $('#helpandchatimg').attr('src', '/sites/all/themes/corvusbie/images/question.svg');
     $('#helpandchattext').text('Help');
     $('#helpandchatlink').attr('href', '/help');
