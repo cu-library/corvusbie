@@ -2418,14 +2418,15 @@ body.front {
             float: left;
             width: 100%;
             box-sizing : border-box;
-            padding-right: 95px;
+            padding-right: 115px;
           }
 
           input[type='submit'] {
             border-radius: 0px $rounded_radius $rounded_radius 0px;
             border: none;
             float: right;
-            width: 90px;
+            width: 110px;
+            background-color: #dddddd;
           }
         }
 
