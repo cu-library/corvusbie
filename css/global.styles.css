@@ -1772,158 +1772,159 @@ body.front #main-content #content > div:nth-child(1) #summon-box form input[type
   float: left;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 95px;
+  padding-right: 115px;
 }
 /* line 2424, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box form input[type='submit'] {
   border-radius: 0px 4px 4px 0px;
   border: none;
   float: right;
-  width: 90px;
+  width: 110px;
+  background-color: #dddddd;
 }
-/* line 2432, ../sass/global.styles.scss */
+/* line 2433, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
-/* line 2437, ../sass/global.styles.scss */
+/* line 2438, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box ul li {
   list-style: none;
   display: inline;
 }
-/* line 2440, ../sass/global.styles.scss */
+/* line 2441, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) #summon-box ul li a {
   color: white;
 }
-/* line 2447, ../sass/global.styles.scss */
+/* line 2448, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block {
   margin: 0px;
 }
-/* line 2450, ../sass/global.styles.scss */
+/* line 2451, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block p > a {
   color: #bf112b;
 }
-/* line 2454, ../sass/global.styles.scss */
+/* line 2455, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-block div.view-id-hours_today {
   background: #eee;
   border-radius: 4px;
 }
-/* line 2461, ../sass/global.styles.scss */
+/* line 2462, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) {
   margin: 0px;
   background: linear-gradient(to right, #eeeeee 0%, #eeeeee 50%, #ffffff 51%);
 }
-/* line 2466, ../sass/global.styles.scss */
+/* line 2467, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.at-panel {
   max-width: 1240px;
   margin: 0 auto;
 }
-/* line 2471, ../sass/global.styles.scss */
+/* line 2472, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-first {
   background: #eee;
 }
-/* line 2474, ../sass/global.styles.scss */
+/* line 2475, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-first div.icon-header {
   width: 90px;
 }
-/* line 2479, ../sass/global.styles.scss */
+/* line 2480, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-second {
   background: #fff;
 }
-/* line 2481, ../sass/global.styles.scss */
+/* line 2482, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-second div.icon-header {
   width: 210px;
 }
-/* line 2486, ../sass/global.styles.scss */
+/* line 2487, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-third {
   background: #eee;
 }
-/* line 2488, ../sass/global.styles.scss */
+/* line 2489, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-third div.icon-header {
   width: 125px;
 }
-/* line 2493, ../sass/global.styles.scss */
+/* line 2494, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-fourth {
   background: #fff;
 }
-/* line 2495, ../sass/global.styles.scss */
+/* line 2496, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.region-four-fourth div.icon-header {
   width: 185px;
 }
-/* line 2502, ../sass/global.styles.scss */
+/* line 2503, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.icon-header {
   margin: 0 auto;
   padding-top: 20px;
 }
-/* line 2508, ../sass/global.styles.scss */
+/* line 2509, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.icon-header img {
   display: inline;
   width: 30px;
   height: 30px;
   padding-right: 10px;
 }
-/* line 2515, ../sass/global.styles.scss */
+/* line 2516, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.icon-header p {
   display: none;
 }
-/* line 2519, ../sass/global.styles.scss */
+/* line 2520, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.icon-header h2 {
   display: inline;
   position: relative;
   top: -8px;
   font-size: 1.25rem;
 }
-/* line 2528, ../sass/global.styles.scss */
+/* line 2529, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.separator {
   background: #bf112b;
   height: 3px;
   width: 50px;
   margin: 0 auto;
 }
-/* line 2535, ../sass/global.styles.scss */
+/* line 2536, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more {
   padding: 20px 20px 0px 20px;
 }
-/* line 2539, ../sass/global.styles.scss */
+/* line 2540, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more a {
   color: black;
 }
-/* line 2543, ../sass/global.styles.scss */
+/* line 2544, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more ul {
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
-/* line 2546, ../sass/global.styles.scss */
+/* line 2547, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more ul li {
   list-style: none;
 }
-/* line 2551, ../sass/global.styles.scss */
+/* line 2552, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more p {
   margin: 0px;
 }
-/* line 2555, ../sass/global.styles.scss */
+/* line 2556, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(2) div.card div.list-and-more a.view-more {
   color: #bf112b;
 }
-/* line 2562, ../sass/global.styles.scss */
+/* line 2563, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) {
   padding-top: 40px;
 }
-/* line 2566, ../sass/global.styles.scss */
+/* line 2567, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) a {
   color: black;
 }
-/* line 2570, ../sass/global.styles.scss */
+/* line 2571, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel {
   max-width: 1240px;
   margin: 0 auto;
 }
-/* line 2575, ../sass/global.styles.scss */
+/* line 2576, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image {
   position: relative;
 }
-/* line 2577, ../sass/global.styles.scss */
+/* line 2578, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image #featured {
   position: absolute;
   top: 15px;
@@ -1932,7 +1933,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   padding: 10px 30px;
   text-align: center;
 }
-/* line 2585, ../sass/global.styles.scss */
+/* line 2586, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title {
   position: absolute;
   bottom: 7px;
@@ -1942,34 +1943,34 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0px 9px;
 }
-/* line 2592, ../sass/global.styles.scss */
+/* line 2593, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image div.slide-title a {
   color: white;
 }
-/* line 2597, ../sass/global.styles.scss */
+/* line 2598, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-first div.view-news-random-image img {
   width: 100%;
   max-height: 380px;
 }
-/* line 2604, ../sass/global.styles.scss */
+/* line 2605, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second h2 {
   margin: 0px;
 }
-/* line 2607, ../sass/global.styles.scss */
+/* line 2608, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.separator {
   background: #bf112b;
   height: 3px;
   width: 50px;
 }
-/* line 2614, ../sass/global.styles.scss */
+/* line 2615, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.view-content div.views-row {
   margin-bottom: 20px;
 }
-/* line 2618, ../sass/global.styles.scss */
+/* line 2619, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.more-link {
   float: left;
 }
-/* line 2620, ../sass/global.styles.scss */
+/* line 2621, ../sass/global.styles.scss */
 body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two-50-second div.view-library-news div.more-link a {
   color: #bf112b;
 }
@@ -1977,35 +1978,35 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 /* =============================================================================
  *   Top-level pages
  * ========================================================================== */
-/* line 2638, ../sass/global.styles.scss */
+/* line 2639, ../sass/global.styles.scss */
 #main-content .view-find-guides-frontpage .views-row {
   padding: 15px 0;
   border-bottom: thin solid #eee;
 }
-/* line 2642, ../sass/global.styles.scss */
+/* line 2643, ../sass/global.styles.scss */
 #main-content .view-find-guides-frontpage .views-row a {
   font-weight: 500;
 }
-/* line 2649, ../sass/global.styles.scss */
+/* line 2650, ../sass/global.styles.scss */
 #main-content .top-level-page td {
   padding: 15px;
 }
-/* line 2654, ../sass/global.styles.scss */
+/* line 2655, ../sass/global.styles.scss */
 #main-content .top-level-panel {
   max-width: 768px;
   margin: 0 auto;
   padding-top: 40px;
   border-top: 10px solid #bdbdbd;
 }
-/* line 2660, ../sass/global.styles.scss */
+/* line 2661, ../sass/global.styles.scss */
 #main-content .top-level-panel .block-title {
   font-size: 1.8em;
 }
-/* line 2664, ../sass/global.styles.scss */
+/* line 2665, ../sass/global.styles.scss */
 #main-content .top-level-panel .block-content {
   font-size: 1.4em;
 }
-/* line 2668, ../sass/global.styles.scss */
+/* line 2669, ../sass/global.styles.scss */
 #main-content .top-level-panel p {
   font-size: 0.8em;
 }
@@ -2014,7 +2015,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
  *   Interface components
  * ========================================================================== */
 /* Quicksearch (Find) boxes */
-/* line 2681, ../sass/global.styles.scss */
+/* line 2682, ../sass/global.styles.scss */
 .quicksearch input,
 .quicksearch textarea,
 .quicksearch select {
@@ -2022,22 +2023,22 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   padding: 15px;
   margin: 8px 0;
 }
-/* line 2689, ../sass/global.styles.scss */
+/* line 2690, ../sass/global.styles.scss */
 .quicksearch .radio-button input {
   margin: 5px 5px 5px 10px;
 }
 
-/* line 2694, ../sass/global.styles.scss */
+/* line 2695, ../sass/global.styles.scss */
 .quicksearch-more-links {
   margin: 20px 0;
 }
-/* line 2697, ../sass/global.styles.scss */
+/* line 2698, ../sass/global.styles.scss */
 .quicksearch-more-links p, .quicksearch-more-links ul {
   margin: 0;
 }
 
 /* Help boxes */
-/* line 2703, ../sass/global.styles.scss */
+/* line 2704, ../sass/global.styles.scss */
 .help-box {
   width: 230px;
   height: 120px;
@@ -2050,7 +2051,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
 }
 
-/* line 2715, ../sass/global.styles.scss */
+/* line 2716, ../sass/global.styles.scss */
 .help-box a::before {
   content: "";
   position: absolute;
@@ -2061,7 +2062,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Donate (single line) boxes */
-/* line 2725, ../sass/global.styles.scss */
+/* line 2726, ../sass/global.styles.scss */
 .donate {
   font-size: 1.45em;
   margin: 10px;
@@ -2072,15 +2073,15 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   box-shadow: 0 1px 2px rgba(2, 2, 2, 0.3);
   font-weight: 500;
 }
-/* line 2735, ../sass/global.styles.scss */
+/* line 2736, ../sass/global.styles.scss */
 .donate p {
   margin-bottom: 10px;
 }
-/* line 2739, ../sass/global.styles.scss */
+/* line 2740, ../sass/global.styles.scss */
 .donate a {
   color: #4a4a4a;
 }
-/* line 2743, ../sass/global.styles.scss */
+/* line 2744, ../sass/global.styles.scss */
 .donate a::before {
   content: "";
   position: absolute;
@@ -2091,7 +2092,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Data & GIS (multi-line) boxes */
-/* line 2754, ../sass/global.styles.scss */
+/* line 2755, ../sass/global.styles.scss */
 .data-box-links {
   margin: 10px;
   padding: 5px;
@@ -2103,11 +2104,11 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   width: 85%;
   height: 140px;
 }
-/* line 2765, ../sass/global.styles.scss */
+/* line 2766, ../sass/global.styles.scss */
 .data-box-links h2 {
   margin: 0;
 }
-/* line 2769, ../sass/global.styles.scss */
+/* line 2770, ../sass/global.styles.scss */
 .data-box-links a::before {
   content: "";
   position: absolute;
@@ -2118,18 +2119,18 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Accordions */
-/* line 2780, ../sass/global.styles.scss */
+/* line 2781, ../sass/global.styles.scss */
 .field-collection-view {
   padding: 0;
   border: 0;
 }
 
-/* line 2785, ../sass/global.styles.scss */
+/* line 2786, ../sass/global.styles.scss */
 .field-collection-container .field-items .field-item {
   margin: 0;
 }
 
-/* line 2789, ../sass/global.styles.scss */
+/* line 2790, ../sass/global.styles.scss */
 .guide-accordion-header-wrapper {
   position: relative;
   display: block;
@@ -2140,21 +2141,21 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   color: black;
   min-height: 80px;
 }
-/* line 2799, ../sass/global.styles.scss */
+/* line 2800, ../sass/global.styles.scss */
 .guide-accordion-header-wrapper h2 {
   margin: 1px;
   padding: 25px 10px;
   width: 85%;
 }
 
-/* line 2806, ../sass/global.styles.scss */
+/* line 2807, ../sass/global.styles.scss */
 .guide-accordion-content {
   max-height: 9999px;
   padding: 0 30px;
   transition: all .35s;
 }
 
-/* line 2812, ../sass/global.styles.scss */
+/* line 2813, ../sass/global.styles.scss */
 .guide-accordion-content-collapsed {
   max-height: 0;
   overflow: hidden;
@@ -2162,18 +2163,18 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   transition: all .35s;
 }
 
-/* line 2819, ../sass/global.styles.scss */
+/* line 2820, ../sass/global.styles.scss */
 .guide-accordion-header.guide-accordion-header-collapsed::after {
   transform: rotate(0deg);
 }
 
-/* line 2823, ../sass/global.styles.scss */
+/* line 2824, ../sass/global.styles.scss */
 .guide-accordion-header::after {
   content: "+";
   transform: rotate(135deg);
 }
 
-/* line 2828, ../sass/global.styles.scss */
+/* line 2829, ../sass/global.styles.scss */
 .guide-accordion-header::after {
   position: absolute;
   right: 0;
@@ -2186,18 +2187,18 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   transition: all .35s;
 }
 
-/* line 2840, ../sass/global.styles.scss */
+/* line 2841, ../sass/global.styles.scss */
 .guide-accordion-header-permalink {
   float: right;
 }
 
-/* line 2844, ../sass/global.styles.scss */
+/* line 2845, ../sass/global.styles.scss */
 .field-name-field-detailed-guide-section-lab a:hover {
   text-decoration: none;
 }
 
 /* Paragraphs */
-/* line 2849, ../sass/global.styles.scss */
+/* line 2850, ../sass/global.styles.scss */
 .paragraphs-item-full-width-image,
 .paragraphs-item-text-with-right-image,
 .paragraphs-item-text-with-left-image {
@@ -2206,38 +2207,38 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   background: lightgrey;
 }
 
-/* line 2860, ../sass/global.styles.scss */
+/* line 2861, ../sass/global.styles.scss */
 .field-name-field-image-caption {
   font-size: 120%;
   padding: 20px 10px 10px 10px;
 }
 
-/* line 2864, ../sass/global.styles.scss */
+/* line 2865, ../sass/global.styles.scss */
 .field-name-field-image-caption p {
   margin: 0px;
 }
 
 /* Google Custom Search boxes */
-/* line 2869, ../sass/global.styles.scss */
+/* line 2870, ../sass/global.styles.scss */
 .gsc-control-cse {
   background: transparent !important;
   border: none !important;
 }
 
-/* line 2874, ../sass/global.styles.scss */
+/* line 2875, ../sass/global.styles.scss */
 .gsc-search-box td,
 .gsc-search-box tr,
 .gsc-search box tbody {
   border: none !important;
 }
 
-/* line 2880, ../sass/global.styles.scss */
+/* line 2881, ../sass/global.styles.scss */
 .gsc-input table {
   margin: 0px;
 }
 
 /* Service Hours */
-/* line 2885, ../sass/global.styles.scss */
+/* line 2886, ../sass/global.styles.scss */
 .service-hours {
   border-top: thick solid lightgray;
   display: inline-block;
@@ -2248,12 +2249,12 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
  *   One-off pages
  * ========================================================================== */
 /* Hours calendar */
-/* line 2895, ../sass/global.styles.scss */
+/* line 2896, ../sass/global.styles.scss */
 .calendar-calendar div.calendar {
   font-size: inherit;
 }
 
-/* line 2899, ../sass/global.styles.scss */
+/* line 2900, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.single-day div.monthview {
   background: none repeat scroll 0 0 #fff;
   height: 5em;
@@ -2264,116 +2265,116 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   font-weight: 500;
 }
 
-/* line 2909, ../sass/global.styles.scss */
+/* line 2910, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.single-day .calendar.monthview .contents {
   width: 115px;
 }
 
-/* line 2913, ../sass/global.styles.scss */
+/* line 2914, ../sass/global.styles.scss */
 .calendar-calendar .cutoff {
   display: none;
 }
 
-/* line 2917, ../sass/global.styles.scss */
+/* line 2918, ../sass/global.styles.scss */
 .calendar-calendar .month-view .full td.date-box.today, calendar-calendar .month-view .full tr td.single-day.ends-today, .calendar-calendar .month-view .full tr td.single-day.today {
   border-color: #bf112b;
 }
 
-/* line 2921, ../sass/global.styles.scss */
+/* line 2922, ../sass/global.styles.scss */
 .calendar-calendar th.days {
   color: #bdbdbd;
   background-color: #fff;
 }
 
-/* line 2926, ../sass/global.styles.scss */
+/* line 2927, ../sass/global.styles.scss */
 .view .date-nav-wrapper .date-prev,
 .view .date-nav-wrapper .date-next {
   background: #eee;
 }
 
-/* line 2931, ../sass/global.styles.scss */
+/* line 2932, ../sass/global.styles.scss */
 .views-field-field-hours-building-note br {
   display: none;
 }
 
-/* line 2935, ../sass/global.styles.scss */
+/* line 2936, ../sass/global.styles.scss */
 .views-field-field-hours-building-note .field-content {
   font-size: .8em;
 }
 
 /* Floor Maps */
-/* line 2941, ../sass/global.styles.scss */
+/* line 2942, ../sass/global.styles.scss */
 .node-type-floor-map .views-row tr:nth-child(2n+2) {
   background-color: #fff;
 }
-/* line 2945, ../sass/global.styles.scss */
+/* line 2946, ../sass/global.styles.scss */
 .node-type-floor-map .block-6 ul.primary li a {
   padding: 10px 20px;
   color: #bf112b;
 }
 
 /* Citation Styles */
-/* line 2952, ../sass/global.styles.scss */
+/* line 2953, ../sass/global.styles.scss */
 .apa-style, .mla-style {
   line-height: 2.5em;
   text-indent: -2em;
   padding-left: 2em;
 }
 
-/* line 2958, ../sass/global.styles.scss */
+/* line 2959, ../sass/global.styles.scss */
 .chicago-bib {
   text-indent: -2em;
   padding-left: 2em;
 }
 
-/* line 2963, ../sass/global.styles.scss */
+/* line 2964, ../sass/global.styles.scss */
 .chicago-notes {
   text-indent: 2em;
 }
 
-/* line 2967, ../sass/global.styles.scss */
+/* line 2968, ../sass/global.styles.scss */
 .ieee-style {
   padding-left: 3em;
 }
 
-/* line 2971, ../sass/global.styles.scss */
+/* line 2972, ../sass/global.styles.scss */
 .ieee-style .number {
   margin-left: -2.6em;
   margin-right: 1.3em;
 }
 
 /* Strategic Plan */
-/* line 2977, ../sass/global.styles.scss */
+/* line 2978, ../sass/global.styles.scss */
 .kpm-theme {
   font-weight: bold;
 }
 
-/* line 2981, ../sass/global.styles.scss */
+/* line 2982, ../sass/global.styles.scss */
 .kpm-theme h2 {
   margin: 0;
 }
 
-/* line 2985, ../sass/global.styles.scss */
+/* line 2986, ../sass/global.styles.scss */
 .kpm-goal h3 {
   background-color: #eee;
   margin: 0;
 }
 
-/* line 2990, ../sass/global.styles.scss */
+/* line 2991, ../sass/global.styles.scss */
 .kpm-goal p {
   font-weight: 400;
 }
 
 /* Subject Guides */
 /* Subject Guides - editing */
-/* line 2997, ../sass/global.styles.scss */
+/* line 2998, ../sass/global.styles.scss */
 #guide-section-limit-reached-message {
   margin-left: 1.5rem;
   color: green;
   font-weight: bolder;
 }
 
-/* line 3003, ../sass/global.styles.scss */
+/* line 3004, ../sass/global.styles.scss */
 #edit-field-other-subject-guides-und,
 #edit-field-general-research-help-und,
 #edit-field-related-guides-help-und,
@@ -2381,7 +2382,7 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   height: 300px;
 }
 
-/* line 3010, ../sass/global.styles.scss */
+/* line 3011, ../sass/global.styles.scss */
 #edit-field-related-help-und,
 #edit-field-related-find-und,
 #edit-field-related-govinfo-und {
@@ -2389,141 +2390,141 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Subject Guides page */
-/* line 3017, ../sass/global.styles.scss */
+/* line 3018, ../sass/global.styles.scss */
 #block-views-subject-guides-block {
   width: 95%;
   font-size: 1.25em;
 }
-/* line 3021, ../sass/global.styles.scss */
+/* line 3022, ../sass/global.styles.scss */
 #block-views-subject-guides-block .views-summary {
   padding-right: 2px;
 }
 
-/* line 3027, ../sass/global.styles.scss */
+/* line 3028, ../sass/global.styles.scss */
 .view-subject-guides .views-row {
   padding-top: 10px;
   font-size: 1.15em;
 }
-/* line 3032, ../sass/global.styles.scss */
+/* line 3033, ../sass/global.styles.scss */
 .view-subject-guides .views-field-title {
   font-weight: 500;
 }
-/* line 3036, ../sass/global.styles.scss */
+/* line 3037, ../sass/global.styles.scss */
 .view-subject-guides .subject-guide-type {
   color: #767676;
   font-style: italic;
   font-size: 0.9em;
 }
 
-/* line 3043, ../sass/global.styles.scss */
+/* line 3044, ../sass/global.styles.scss */
 #views-exposed-form-subject-guides-page .form-item #edit-uid {
   max-width: 155px;
 }
 
 /* Detailed Guide Sidebar - Related Guides */
-/* line 3048, ../sass/global.styles.scss */
+/* line 3049, ../sass/global.styles.scss */
 .detailed-guide-related-guides .views-label {
   font-weight: 400;
 }
 
-/* line 3052, ../sass/global.styles.scss */
+/* line 3053, ../sass/global.styles.scss */
 .detailed-guide-related-guides .item-list ul li {
   margin: 0 0 0.5em 0;
   list-style: none;
 }
 
 /* Quick Guides */
-/* line 3062, ../sass/global.styles.scss */
+/* line 3063, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resources h2.field-label {
   font-size: 1.5em;
   padding-bottom: 10px;
 }
-/* line 3067, ../sass/global.styles.scss */
+/* line 3068, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-item-field-key-resources .field-name-field-key-resource-databases {
   font-size: 1.17em;
   font-weight: 400;
 }
-/* line 3072, ../sass/global.styles.scss */
+/* line 3073, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-name-field-key-resource-link {
   font-size: 1.17em;
   font-weight: 400;
 }
-/* line 3077, ../sass/global.styles.scss */
+/* line 3078, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-view {
   border: 0;
   padding: 0.5em 0 0.3em 0;
 }
-/* line 3082, ../sass/global.styles.scss */
+/* line 3083, ../sass/global.styles.scss */
 .node-subject-quick-guide .field-collection-container {
   border: 0;
 }
-/* line 3086, ../sass/global.styles.scss */
+/* line 3087, ../sass/global.styles.scss */
 .node-subject-quick-guide .need-more {
   border-top: solid thin lightgrey;
   margin: 40px 0;
 }
-/* line 3090, ../sass/global.styles.scss */
+/* line 3091, ../sass/global.styles.scss */
 .node-subject-quick-guide .need-more h2 {
   padding: 10px 0;
 }
-/* line 3094, ../sass/global.styles.scss */
+/* line 3095, ../sass/global.styles.scss */
 .node-subject-quick-guide .need-more .field-name-field-link-to-detailed-guide {
   font-size: 1.2em;
 }
-/* line 3098, ../sass/global.styles.scss */
+/* line 3099, ../sass/global.styles.scss */
 .node-subject-quick-guide .need-more section {
   padding-top: 10px;
 }
-/* line 3101, ../sass/global.styles.scss */
+/* line 3102, ../sass/global.styles.scss */
 .node-subject-quick-guide .need-more section h2 {
   font-weight: 400;
 }
 
 /* Find Databases and Database Details */
-/* line 3109, ../sass/global.styles.scss */
+/* line 3110, ../sass/global.styles.scss */
 .custom-alpha-pager {
   width: 95%;
   font-size: 1.25em;
 }
-/* line 3113, ../sass/global.styles.scss */
+/* line 3114, ../sass/global.styles.scss */
 .custom-alpha-pager a {
   padding-right: 3px;
 }
 
-/* line 3118, ../sass/global.styles.scss */
+/* line 3119, ../sass/global.styles.scss */
 #edit-submit-databases-title {
   border: 1px solid #c3c3c3;
   padding: 15px;
   margin-top: 33px;
 }
 
-/* line 3124, ../sass/global.styles.scss */
+/* line 3125, ../sass/global.styles.scss */
 .field-name-field-database-advisory {
   color: black;
   font-weight: 500;
 }
 
-/* line 3129, ../sass/global.styles.scss */
+/* line 3130, ../sass/global.styles.scss */
 .database-alert {
   color: black;
 }
 
-/* line 3133, ../sass/global.styles.scss */
+/* line 3134, ../sass/global.styles.scss */
 .db-connect-link {
   font-size: 1.25em;
 }
-/* line 3136, ../sass/global.styles.scss */
+/* line 3137, ../sass/global.styles.scss */
 .db-connect-link a {
   font-weight: 500;
 }
 
-/* line 3141, ../sass/global.styles.scss */
+/* line 3142, ../sass/global.styles.scss */
 .connect-box {
   border: 2px solid #ccc;
   padding-top: 20px;
 }
 
-/* line 3146, ../sass/global.styles.scss */
+/* line 3147, ../sass/global.styles.scss */
 .db-news ul,
 .db-news li {
   margin: 0px;
@@ -2532,54 +2533,54 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 }
 
 /* Find Data */
-/* line 3154, ../sass/global.styles.scss */
+/* line 3155, ../sass/global.styles.scss */
 .data-search {
   background: #eee;
 }
-/* line 3157, ../sass/global.styles.scss */
+/* line 3158, ../sass/global.styles.scss */
 .data-search input, .data-search select {
   padding: 15px;
 }
 
 /* Ottawa Room and Collections pages */
-/* line 3163, ../sass/global.styles.scss */
+/* line 3164, ../sass/global.styles.scss */
 .collection-block {
   float: left;
   padding: 10px;
 }
 
-/* line 3168, ../sass/global.styles.scss */
+/* line 3169, ../sass/global.styles.scss */
 .collection-block h3 {
   margin: 0;
 }
 
 /* Fix edit buttons */
-/* line 3173, ../sass/global.styles.scss */
+/* line 3174, ../sass/global.styles.scss */
 td.ctools-export-ui-operations .ctools-dropbutton {
   position: relative;
 }
 
 /* Subject Guide References */
-/* line 3178, ../sass/global.styles.scss */
+/* line 3179, ../sass/global.styles.scss */
 div.field-name-field-link-to-detailed-guide {
   font-size: 150%;
 }
 
-/* line 3183, ../sass/global.styles.scss */
+/* line 3184, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item {
   font-size: 110%;
 }
-/* line 3185, ../sass/global.styles.scss */
+/* line 3186, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::before {
   content: "Just need a few resources to get you started? Try the ";
 }
-/* line 3188, ../sass/global.styles.scss */
+/* line 3189, ../sass/global.styles.scss */
 div.field-name-field-link-to-quick-guide div.field-item::after {
   content: ".";
 }
 
 /* Collaborative Futures News box */
-/* line 3194, ../sass/global.styles.scss */
+/* line 3195, ../sass/global.styles.scss */
 #block-views-library-news-block-2 {
   padding: 20px;
   border: solid thin #ccc;
@@ -2587,18 +2588,18 @@ div.field-name-field-link-to-quick-guide div.field-item::after {
 }
 
 /* Notice box */
-/* line 3201, ../sass/global.styles.scss */
+/* line 3202, ../sass/global.styles.scss */
 #block-block-38 {
   margin-bottom: 0px;
 }
 
 /* Alert box */
-/* line 3206, ../sass/global.styles.scss */
+/* line 3207, ../sass/global.styles.scss */
 #block-block-64 {
   margin-bottom: 0px;
 }
 
-/* line 3210, ../sass/global.styles.scss */
+/* line 3211, ../sass/global.styles.scss */
 .author-datetime {
   font-style: italic;
 }
