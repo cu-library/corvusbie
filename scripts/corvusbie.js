@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
   // --- Limit number of accordions on edit screen for subject guides.
   function checkAndDisable(){
     var index = $('#edit-field-detailed-guide-section input[name="field_detailed_guide_section_add_more"]').parent().prev().find('tr:last').index();
-    if (index >= 4) {
+    if (index >= 5) {
       $('#edit-field-detailed-guide-section input[name="field_detailed_guide_section_add_more"]').attr( "disabled", true ).after('<span id="guide-section-limit-reached-message">Contact Shelley or Kevin if you require additional sections.</span>');
     }
   }
