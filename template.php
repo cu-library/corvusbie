@@ -210,3 +210,12 @@ function corvusbie_preprocess_username(&$variables) {
   );
 }
 
+//Jump to the first result if there's only one result.
+function corvusbie_preprocess_views_view(&$vars) {
+  $view = $vars['view'];
+  if ($view->name == 'databases_title' && $view->current_display == 'page') {
+    if (count($view->result)==1){
+      drupal_goto('node/' . $view->result[0]->nid);
+    }
+  }
+}
