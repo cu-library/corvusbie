@@ -77,35 +77,44 @@ body.front #main-content #content > div:nth-child(2) div.region-four-fourth {
 /* Notice box */
 /* line 87, ../sass/responsive.tablet.portrait.scss */
 #block-block-38 div.site-notice {
-  width: 310px;
-  margin: 10px auto;
-  overflow: auto;
+  padding: 10px;
+  font-size: 110%;
 }
-/* line 91, ../sass/responsive.tablet.portrait.scss */
+/* line 90, ../sass/responsive.tablet.portrait.scss */
 #block-block-38 div.site-notice img {
-  float: left;
-  margin-right: 20px;
-  margin-top: 12px;
+  display: inline;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
 }
 /* line 96, ../sass/responsive.tablet.portrait.scss */
-#block-block-38 div.site-notice div.site-notice-text {
-  float: left;
+#block-block-38 div.site-notice div {
+  display: inline;
+}
+/* line 99, ../sass/responsive.tablet.portrait.scss */
+#block-block-38 div.site-notice div.site-notice-text-primary {
+  font-weight: 500;
+}
+/* line 102, ../sass/responsive.tablet.portrait.scss */
+#block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
+  color: #aaa;
+  padding: 0px 6px 0px 6px;
 }
 
 /* Alert box */
-/* line 104, ../sass/responsive.tablet.portrait.scss */
+/* line 111, ../sass/responsive.tablet.portrait.scss */
 #block-block-64 div.site-alert {
   width: 310px;
   margin: 10px auto;
   overflow: auto;
 }
-/* line 108, ../sass/responsive.tablet.portrait.scss */
+/* line 115, ../sass/responsive.tablet.portrait.scss */
 #block-block-64 div.site-alert img {
   float: left;
   margin-right: 20px;
   margin-top: 12px;
 }
-/* line 113, ../sass/responsive.tablet.portrait.scss */
+/* line 120, ../sass/responsive.tablet.portrait.scss */
 #block-block-64 div.site-alert div.site-alert-text {
   float: left;
 }

@@ -85,16 +85,23 @@ body.front {
 /* Notice box */
 #block-block-38 {
   div.site-notice {
-    width: 310px;
-    margin: 10px auto;
-    overflow: auto;
+    padding: 10px;
+    font-size: 110%;
     img {
-      float: left;
-      margin-right: 20px;
-      margin-top: 12px;
+      display: inline;
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
     }
-    div.site-notice-text {
-      float: left;
+    div {
+      display: inline;
+    }
+    div.site-notice-text-primary {
+      font-weight: 500;
+    }
+    span.site-notice-text-secondary-seperator {
+      color:#aaa;
+      padding: 0px 6px 0px 6px;
     }
   }
 }

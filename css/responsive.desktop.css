@@ -225,23 +225,32 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
 #block-block-38 div.site-notice div {
   display: inline;
 }
+/* line 249, ../sass/responsive.desktop.scss */
+#block-block-38 div.site-notice div.site-notice-text-primary {
+  font-weight: 500;
+}
+/* line 252, ../sass/responsive.desktop.scss */
+#block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
+  color: #aaa;
+  padding: 0px 6px 0px 6px;
+}
 
 /* Alert box */
-/* line 254, ../sass/responsive.desktop.scss */
+/* line 261, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert {
   padding: 10px;
   font-size: 120%;
   margin: 10px auto;
   border: 4px solid red;
 }
-/* line 259, ../sass/responsive.desktop.scss */
+/* line 266, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 265, ../sass/responsive.desktop.scss */
+/* line 272, ../sass/responsive.desktop.scss */
 #block-block-64 div.site-alert div {
   display: inline;
 }

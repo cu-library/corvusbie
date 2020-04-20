@@ -87,35 +87,42 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
 /* Notice box */
 /* line 96, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice {
-  width: 310px;
   margin: 5px auto;
   overflow: auto;
 }
-/* line 100, ../sass/responsive.smalltouch.landscape.scss */
+/* line 99, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice img {
   float: left;
   margin-right: 20px;
   margin-top: 12px;
 }
-/* line 105, ../sass/responsive.smalltouch.landscape.scss */
+/* line 104, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice div.site-notice-text {
   float: left;
 }
+/* line 107, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.site-notice div.site-notice-text-primary {
+  font-weight: 500;
+}
+/* line 110, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
+  display: none;
+}
 
 /* Alert box */
-/* line 113, ../sass/responsive.smalltouch.landscape.scss */
+/* line 118, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert {
   width: 310px;
   margin: 5px auto;
   overflow: auto;
 }
-/* line 117, ../sass/responsive.smalltouch.landscape.scss */
+/* line 122, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert img {
   float: left;
   margin-right: 20px;
   margin-top: 12px;
 }
-/* line 122, ../sass/responsive.smalltouch.landscape.scss */
+/* line 127, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert div.site-alert-text {
   float: left;
 }
