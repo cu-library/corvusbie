@@ -114,6 +114,12 @@ body.front {
     div.site-notice-text {
       float: left;
     }
+    div.site-notice-text-primary {
+      font-weight: 500;
+    }
+    span.site-notice-text-secondary-seperator {
+      display: none;
+    }
   }
 }
 

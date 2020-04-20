@@ -94,7 +94,6 @@ body.front {
 /* Notice box */
 #block-block-38 {
   div.site-notice {
-    width: 310px;
     margin: 5px auto;
     overflow: auto;
     img {
@@ -104,6 +103,12 @@ body.front {
     }
     div.site-notice-text {
       float: left;
+    }
+    div.site-notice-text-primary {
+      font-weight: 500;
+    }
+    span.site-notice-text-secondary-seperator {
+      display: none;
     }
   }
 }

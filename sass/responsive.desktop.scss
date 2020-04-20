@@ -246,6 +246,13 @@ body.front {
     div {
       display: inline;
     }
+    div.site-notice-text-primary {
+      font-weight: 500;
+    }
+    span.site-notice-text-secondary-seperator {
+      color:#aaa; 
+      padding: 0px 6px 0px 6px;
+    }
   }
 }
 
