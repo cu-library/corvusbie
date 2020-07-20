@@ -3225,3 +3225,15 @@ body.page-help section div.libraryh3lp a img {
 body.page-help section div.libraryh3lp a:hover img {
   box-shadow: 0px 0px 5px 0px #8D8D8D;
 }
+
+/* Website search form on Search Options panel */
+
+#search-options-website-search-block {
+  max-width: 768px;
+  margin: 0 auto;
+
+  input[type='submit']{
+    padding: 14px;
+    margin: 8px 0;
+  }
+}
