@@ -2631,4 +2631,10 @@ body.page-help section div.libraryh3lp a:hover img {
   margin: 8px 0;
 }
 
+/* User profile */
+/* line 3243, ../sass/global.styles.scss */
+article.user-profile section {
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=global.styles.css.map */
