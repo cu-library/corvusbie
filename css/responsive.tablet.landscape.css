@@ -137,35 +137,39 @@ body.front #main-content #content > div:nth-child(3) div.at-panel div.region-two
   margin-right: 10px;
 }
 /* line 151, ../sass/responsive.tablet.landscape.scss */
+#block-block-38 div.site-notice ul {
+  margin: 0.5em 0;
+}
+/* line 154, ../sass/responsive.tablet.landscape.scss */
 #block-block-38 div.site-notice div {
   display: inline;
 }
-/* line 154, ../sass/responsive.tablet.landscape.scss */
+/* line 157, ../sass/responsive.tablet.landscape.scss */
 #block-block-38 div.site-notice div.site-notice-text-primary {
   font-weight: 500;
 }
-/* line 157, ../sass/responsive.tablet.landscape.scss */
+/* line 160, ../sass/responsive.tablet.landscape.scss */
 #block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
   color: #aaa;
   padding: 0px 6px 0px 6px;
 }
 
 /* Alert box */
-/* line 166, ../sass/responsive.tablet.landscape.scss */
+/* line 169, ../sass/responsive.tablet.landscape.scss */
 #block-block-64 div.site-alert {
   padding: 10px;
   font-size: 110%;
   border: 2px solid red;
   margin: 10px auto;
 }
-/* line 171, ../sass/responsive.tablet.landscape.scss */
+/* line 174, ../sass/responsive.tablet.landscape.scss */
 #block-block-64 div.site-alert img {
   display: inline;
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
-/* line 177, ../sass/responsive.tablet.landscape.scss */
+/* line 180, ../sass/responsive.tablet.landscape.scss */
 #block-block-64 div.site-alert div {
   display: inline;
 }
