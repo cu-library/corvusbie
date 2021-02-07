@@ -92,37 +92,42 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
 }
 /* line 99, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice img {
-  float: left;
-  margin-right: 20px;
-  margin-top: 12px;
+  display: inline;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
 }
-/* line 104, ../sass/responsive.smalltouch.landscape.scss */
-#block-block-38 div.site-notice div.site-notice-text {
-  float: left;
+/* line 105, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.site-notice ul {
+  margin: 0.3em 0;
 }
-/* line 107, ../sass/responsive.smalltouch.landscape.scss */
+/* line 108, ../sass/responsive.smalltouch.landscape.scss */
+#block-block-38 div.site-notice div {
+  display: inline;
+}
+/* line 111, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice div.site-notice-text-primary {
   font-weight: 500;
 }
-/* line 110, ../sass/responsive.smalltouch.landscape.scss */
+/* line 114, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
   display: none;
 }
 
 /* Alert box */
-/* line 118, ../sass/responsive.smalltouch.landscape.scss */
+/* line 122, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert {
   width: 310px;
   margin: 5px auto;
   overflow: auto;
 }
-/* line 122, ../sass/responsive.smalltouch.landscape.scss */
+/* line 126, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert img {
   float: left;
   margin-right: 20px;
   margin-top: 12px;
 }
-/* line 127, ../sass/responsive.smalltouch.landscape.scss */
+/* line 131, ../sass/responsive.smalltouch.landscape.scss */
 #block-block-64 div.site-alert div.site-alert-text {
   float: left;
 }
