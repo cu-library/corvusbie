@@ -101,39 +101,40 @@ body.front #main-content #content > div:nth-child(1) div.pane-views-hours-today-
 }
 /* line 109, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-38 div.site-notice img {
-  float: left;
+  display: inline;
+  position: relative;
+  top: 5px;
   margin-right: 10px;
-  margin-top: 12px;
 }
-/* line 114, ../sass/responsive.smalltouch.portrait.scss */
+/* line 115, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-38 div.site-notice ul {
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
-/* line 117, ../sass/responsive.smalltouch.portrait.scss */
-#block-block-38 div.site-notice div.site-notice-text {
-  float: left;
+/* line 118, ../sass/responsive.smalltouch.portrait.scss */
+#block-block-38 div.site-notice div {
+  display: inline;
 }
-/* line 120, ../sass/responsive.smalltouch.portrait.scss */
+/* line 121, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-38 div.site-notice div.site-notice-text-primary {
   font-weight: 500;
 }
-/* line 123, ../sass/responsive.smalltouch.portrait.scss */
+/* line 124, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-38 div.site-notice span.site-notice-text-secondary-seperator {
   display: none;
 }
 
 /* Alert box */
-/* line 131, ../sass/responsive.smalltouch.portrait.scss */
+/* line 132, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-64 div.site-alert {
   font-size: 90%;
 }
-/* line 133, ../sass/responsive.smalltouch.portrait.scss */
+/* line 134, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-64 div.site-alert img {
   float: left;
   margin-right: 10px;
   margin-top: 12px;
 }
-/* line 138, ../sass/responsive.smalltouch.portrait.scss */
+/* line 139, ../sass/responsive.smalltouch.portrait.scss */
 #block-block-64 div.site-alert div.site-alert-text {
   float: left;
 }
