@@ -2637,4 +2637,9 @@ article.user-profile section {
   overflow: hidden;
 }
 
+/* line 3247, ../sass/global.styles.scss */
+.clear {
+  clear: both;
+}
+
 /*# sourceMappingURL=global.styles.css.map */
